@@ -7,7 +7,7 @@ const { URL } = require('url');
 const httpAgent = new http.Agent({ keepAlive: false });
 const httpsAgent = new https.Agent({ keepAlive: false });
 
-function fetchUrl(rawUrl, getBody = false) {
+function fetchUrl(rawUrl, getBody = false, timeoutMs = 12000) {
   return new Promise((resolve) => {
     let url;
     try { url = new URL(rawUrl); } catch { return resolve({ ok: false, status: 0, body: null }); }
@@ -18,7 +18,7 @@ function fetchUrl(rawUrl, getBody = false) {
       port: isHttps ? 443 : 80,
       path: (url.pathname || '/') + (url.search || ''),
       method: 'GET',
-      timeout: 12000,
+      timeout: timeoutMs,
       agent: isHttps ? httpsAgent : httpAgent,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -112,10 +112,12 @@ async function getPageSpeed(siteUrl, apiKey) {
   for (const strategy of strategies) {
     const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(siteUrl)}&strategy=${strategy}&key=${apiKey}`;
     try {
-      const res = await fetchUrl(apiUrl, true);
+      const res = await fetchUrl(apiUrl, true, 45000);
       if (res.body) {
         const data = JSON.parse(res.body);
-        scores[strategy] = Math.round((data.lighthouseResult?.categories?.performance?.score || 0) * 100);
+        scores[strategy] = data.error ? null : Math.round((data.lighthouseResult?.categories?.performance?.score || 0) * 100);
+      } else {
+        scores[strategy] = null;
       }
     } catch { scores[strategy] = null; }
   }
@@ -138,14 +140,17 @@ async function auditSite(site, apiKey) {
   console.log(`  Broken links: ${brokenLinks.length}, Broken images: ${brokenImages.length}`);
   if (pageSpeed) console.log(`  PageSpeed — mobile: ${pageSpeed.mobile}, desktop: ${pageSpeed.desktop}`);
 
+  const crawlBlocked = pages.length <= 1 && links.length === 0;
+
   return {
     url: site.url,
     name: site.name,
     auditedAt: new Date().toISOString(),
     durationMs: Date.now() - start,
     pagesChecked: pages.length,
-    brokenLinks,
-    brokenImages,
+    crawlBlocked,
+    brokenLinks: crawlBlocked ? null : brokenLinks,
+    brokenImages: crawlBlocked ? null : brokenImages,
     pageSpeed: pageSpeed || null,
   };
 }
