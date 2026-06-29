@@ -37,7 +37,9 @@ function ssh(cfg, cmd) {
       `ssh -i "${SSH_KEY}" -p ${cfg.port} -o StrictHostKeyChecking=no -o ConnectTimeout=10 ${cfg.user}@${cfg.host} ${JSON.stringify(cmd)}`,
       { encoding: 'utf8', timeout: 30000 }
     ).trim();
-  } catch {
+  } catch (e) {
+    console.error(`SSH error [${cfg.user}@${cfg.host}]: ${e.message}`);
+    if (e.stderr) console.error('stderr:', e.stderr.toString().trim());
     return null;
   }
 }
