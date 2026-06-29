@@ -9,12 +9,26 @@ const { sites } = JSON.parse(fs.readFileSync('sites.json', 'utf8'));
 function checkUptime(siteUrl) {
   return new Promise((resolve) => {
     const start = Date.now();
-    const url = new URL(siteUrl);
+    let url;
+    try { url = new URL(siteUrl); } catch {
+      return resolve({ up: false, responseTime: 0, error: 'Invalid URL' });
+    }
     const lib = url.protocol === 'https:' ? https : http;
-    const req = lib.get(siteUrl, { timeout: 10000 }, (res) => {
+    const options = {
+      hostname: url.hostname,
+      port: url.protocol === 'https:' ? 443 : 80,
+      path: url.pathname + url.search || '/',
+      method: 'GET',
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      }
+    };
+    const req = lib.request(options, (res) => {
       res.resume();
       resolve({
-        up: res.statusCode < 400,
+        up: res.statusCode < 500,
         statusCode: res.statusCode,
         responseTime: Date.now() - start,
         headers: {
@@ -25,8 +39,8 @@ function checkUptime(siteUrl) {
         }
       });
     });
-    req.on('error', () => resolve({ up: false, responseTime: Date.now() - start }));
-    req.on('timeout', () => { req.destroy(); resolve({ up: false, responseTime: 10000 }); });
+    req.on('error', (err) => resolve({ up: false, responseTime: Date.now() - start, error: err.message }));
+    req.on('timeout', () => { req.destroy(); resolve({ up: false, responseTime: 10000, error: 'Timeout' }); });
   });
 }
 
