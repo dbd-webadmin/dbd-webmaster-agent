@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-06-29T19:25:11.230Z",
+  "updatedAt": "2026-06-29T22:41:43.387Z",
   "sites": [
     {
       "name": "Destination by Design",
       "url": "https://destinationbydesign.com",
-      "host": "Hostinger",
+      "host": "WP Engine",
       "managedByDbd": true,
       "sshAccess": true,
       "clientEmail": "accounts@dbdplanning.com",
       "notes": null,
-      "checkedAt": "2026-06-29T19:25:11.230Z",
+      "checkedAt": "2026-06-29T22:41:43.387Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 125,
+      "responseTime": 200,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -25,7 +25,7 @@
       "ssl": {
         "valid": true,
         "expiry": "2026-08-22T20:34:57.000Z",
-        "daysLeft": 54
+        "daysLeft": 53
       }
     }
   ]
