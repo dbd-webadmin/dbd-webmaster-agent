@@ -1,3 +1,14 @@
 {
-  "sites": []
+  "sites": [
+    {
+      "name": "Destination by Design",
+      "url": "https://destinationbydesign.com",
+      "clientEmail": "accounts@dbdplanning.com",
+      "host": "Hostinger",
+      "managedByDbd": true,
+      "sshAccess": true,
+      "notes": "",
+      "active": true
+    }
+  ]
 }
