@@ -1,10 +1,14 @@
 {
   "url": "https://destinationbydesign.com",
   "name": "Destination by Design",
-  "auditedAt": "2026-06-29T19:40:44.864Z",
-  "durationMs": 24316,
+  "auditedAt": "2026-06-29T19:44:02.328Z",
+  "durationMs": 35781,
   "pagesChecked": 1,
-  "brokenLinks": [],
-  "brokenImages": [],
-  "pageSpeed": {}
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
+  "pageSpeed": {
+    "mobile": null,
+    "desktop": null
+  }
 }
