@@ -41,6 +41,7 @@ function checkUptime(siteUrl) {
     });
     req.on('error', (err) => resolve({ up: false, responseTime: Date.now() - start, error: err.message }));
     req.on('timeout', () => { req.destroy(); resolve({ up: false, responseTime: 10000, error: 'Timeout' }); });
+    req.end();
   });
 }
 
