@@ -5,11 +5,12 @@
       "url": "https://destinationbydesign.com",
       "slug": "destinationbydesign-com",
       "clientEmail": "accounts@dbdplanning.com",
-      "host": "Hostinger",
+      "host": "WP Engine",
       "managedByDbd": true,
       "sshAccess": true,
       "notes": "",
-      "active": true
+      "active": true,
+      "sshInstallName": ""
     }
   ]
 }
