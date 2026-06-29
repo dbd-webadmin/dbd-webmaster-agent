@@ -1,0 +1,59 @@
+name: Update Plugins via SSH
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: 'Domain name (e.g. destinationbydesign.com)'
+        required: true
+        default: 'destinationbydesign.com'
+      plugin:
+        description: 'Plugin slug to update, or "all" to update everything'
+        required: true
+        default: 'all'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p 65002 93.127.218.76 >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Check site exists
+        id: check
+        run: |
+          DOMAIN="${{ github.event.inputs.domain }}"
+          WP_PATH="/home/u995288748/domains/${DOMAIN}/public_html"
+          EXISTS=$(ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 "[ -f '${WP_PATH}/wp-config.php' ] && echo yes || echo no")
+          echo "exists=${EXISTS}" >> $GITHUB_OUTPUT
+          echo "wp_path=${WP_PATH}" >> $GITHUB_OUTPUT
+          if [ "$EXISTS" != "yes" ]; then
+            echo "ERROR: WordPress not found at ${WP_PATH}"
+            exit 1
+          fi
+
+      - name: List available updates (before)
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
+            "wp plugin list --path='${{ steps.check.outputs.wp_path }}' --update=available --fields=name,version,update_version --format=table 2>/dev/null" || true
+
+      - name: Run plugin update
+        run: |
+          PLUGIN="${{ github.event.inputs.plugin }}"
+          WP_PATH="${{ steps.check.outputs.wp_path }}"
+          if [ "$PLUGIN" = "all" ]; then
+            ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
+              "wp plugin update --all --path='${WP_PATH}' 2>&1"
+          else
+            ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
+              "wp plugin update '${PLUGIN}' --path='${WP_PATH}' 2>&1"
+          fi
+
+      - name: Confirm updated versions (after)
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
+            "wp plugin list --path='${{ steps.check.outputs.wp_path }}' --fields=name,version,status --format=table 2>/dev/null" || true
