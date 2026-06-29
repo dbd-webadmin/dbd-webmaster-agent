@@ -43,7 +43,7 @@ jobs:
             SSH_USER="$INSTALL"
             SSH_HOST="${INSTALL}.ssh.wpengine.net"
             SSH_PORT="22"
-            WP_PATH="/home/${INSTALL}/sites/${INSTALL}"
+            WP_PATH="/home/wpe-user/sites/${INSTALL}"
           else
             SSH_USER="u995288748"
             SSH_HOST="93.127.218.76"

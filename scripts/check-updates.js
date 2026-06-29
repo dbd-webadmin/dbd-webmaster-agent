@@ -18,7 +18,7 @@ function getSshConfig(site) {
       user: name,
       host: `${name}.ssh.wpengine.net`,
       port: '22',
-      wpPath: `/home/${name}/sites/${name}`,
+      wpPath: `/home/wpe-user/sites/${name}`,
     };
   }
   let hostname;
