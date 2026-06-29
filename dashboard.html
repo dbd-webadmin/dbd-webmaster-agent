@@ -71,6 +71,8 @@
           <th>Cache</th>
           <th>DNS TTL</th>
           <th>Stack</th>
+          <th>PageSpeed</th>
+          <th>Broken</th>
           <th>Security Headers</th>
         </tr>
       </thead>
@@ -102,13 +104,26 @@
     }
 
     async function load() {
-      const [monRes, stackRes] = await Promise.all([
+      const [monRes, stackRes, sitesRes] = await Promise.all([
         fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
         fetch('stack-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+        fetch('sites.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
       ]);
 
       const stackMap = {};
       (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
+
+      const slugMap = {};
+      (sitesRes.sites || []).forEach(s => { if (s.url && s.slug) slugMap[s.url] = s.slug; });
+
+      const auditMap = {};
+      await Promise.all((sitesRes.sites || []).map(async s => {
+        if (!s.slug) return;
+        const res = await fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null);
+        if (res && res.ok) {
+          try { auditMap[s.url] = await res.json(); } catch {}
+        }
+      }));
 
       const sites = monRes.sites || [];
       document.getElementById('updated').textContent = 'Last checked: ' + new Date(monRes.updatedAt).toLocaleString();
@@ -141,7 +156,17 @@
         const h = s.headers || {};
         const cache = parseCacheControl(h.cacheControl);
         const stack = stackMap[s.url] || {};
+        const audit = auditMap[s.url] || null;
         const ttl = formatTtl(stack.dnsTtl);
+
+        const psHtml = audit && audit.pageSpeed
+          ? `<span class="dot ${audit.pageSpeed.mobile >= 80 ? 'green' : audit.pageSpeed.mobile >= 50 ? 'yellow' : 'red'}"></span>${audit.pageSpeed.mobile}<span style="color:#ccc;margin:0 3px">/</span>${audit.pageSpeed.desktop}`
+          : '<span style="color:#ccc">—</span>';
+
+        const brokenCount = audit ? (audit.brokenLinks.length + audit.brokenImages.length) : null;
+        const brokenHtml = audit
+          ? `<span class="dot ${brokenCount === 0 ? 'green' : 'red'}"></span>${brokenCount === 0 ? 'None' : brokenCount + ' found'}`
+          : '<span style="color:#ccc">—</span>';
 
         const stackHtml = stack.builder
           ? `<span class="stack-tag">${stack.builder}</span>${stack.wpVersion ? `<div class="sub">WP ${stack.wpVersion}</div>` : ''}${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
@@ -161,6 +186,8 @@
           <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
           <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
           <td>${stackHtml}</td>
+          <td>${psHtml}</td>
+          <td>${brokenHtml}</td>
           <td><div class="headers">
             <span class="header-tag ${h.hsts ? 'ok' : ''}">HSTS</span>
             <span class="header-tag ${h.xFrameOptions ? 'ok' : ''}">X-Frame</span>

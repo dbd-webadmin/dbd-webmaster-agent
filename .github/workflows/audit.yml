@@ -1,0 +1,57 @@
+name: Daily Site Audit
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    inputs:
+      site_index:
+        description: 'Start at site index (default: auto)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Determine batch
+        id: batch
+        run: |
+          TOTAL=$(node -e "const s = require('./sites.json'); console.log(s.sites.length)")
+          BATCH=4
+          if [ -n "${{ github.event.inputs.site_index }}" ]; then
+            INDEX=${{ github.event.inputs.site_index }}
+          else
+            DAY=$(date -u +%j | sed 's/^0*//')
+            INDEX=$(( (DAY * BATCH) % (TOTAL > 0 ? TOTAL : 1) ))
+          fi
+          echo "index=$INDEX" >> $GITHUB_OUTPUT
+          echo "batch=$BATCH" >> $GITHUB_OUTPUT
+          echo "Auditing sites starting at index $INDEX (batch of $BATCH)"
+
+      - name: Run audit
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          SITE_INDEX: ${{ steps.batch.outputs.index }}
+          BATCH_SIZE: ${{ steps.batch.outputs.batch }}
+        run: node scripts/audit.js
+
+      - name: Commit results
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add audit-results/
+          git diff --staged --quiet || git commit -m "Audit results $(date -u +'%Y-%m-%d')"
+          git push
