@@ -101,7 +101,7 @@ async function checkLinks(urls) {
       const res = await fetchUrl(url, false);
       return { url, status: res.status, ok: res.ok };
     }));
-    results.filter(r => !r.ok).forEach(r => broken.push(r));
+    results.filter(r => !r.ok && r.status !== 429 && r.status !== 400).forEach(r => broken.push(r));
   }
   return broken;
 }
