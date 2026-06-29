@@ -10,6 +10,15 @@ function toBool(val) {
   return ['yes', 'true', '1', 'y'].includes(val.toString().toLowerCase().trim());
 }
 
+function toSlug(url) {
+  try {
+    const hostname = new URL(url).hostname.replace(/^www\./, '');
+    return hostname.replace(/\./g, '-');
+  } catch {
+    return url.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+  }
+}
+
 async function syncSites() {
   const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 
@@ -28,16 +37,20 @@ async function syncSites() {
 
   const sites = rows
     .filter(row => row[0] && row[1])
-    .map(row => ({
-      name: row[0]?.trim() || '',
-      url: row[1]?.trim() || '',
-      clientEmail: row[2]?.trim() || '',
-      host: row[3]?.trim() || '',
-      managedByDbd: toBool(row[4]),
-      sshAccess: toBool(row[5]),
-      notes: row[6]?.trim() || '',
-      active: row[7] === undefined ? true : toBool(row[7]),
-    }))
+    .map(row => {
+      const url = row[1]?.trim() || '';
+      return {
+        name: row[0]?.trim() || '',
+        url,
+        slug: toSlug(url),
+        clientEmail: row[2]?.trim() || '',
+        host: row[3]?.trim() || '',
+        managedByDbd: toBool(row[4]),
+        sshAccess: toBool(row[5]),
+        notes: row[6]?.trim() || '',
+        active: row[7] === undefined ? true : toBool(row[7]),
+      };
+    })
     .filter(site => site.active);
 
   const output = { sites };
