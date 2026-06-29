@@ -36,6 +36,9 @@ function checkUptime(siteUrl) {
           xFrameOptions: !!res.headers['x-frame-options'],
           xContentType: !!res.headers['x-content-type-options'],
           csp: !!res.headers['content-security-policy'],
+          cacheControl: res.headers['cache-control'] || null,
+          expires: res.headers['expires'] || null,
+          server: res.headers['server'] || null,
         }
       });
     });
@@ -63,7 +66,18 @@ function checkSSL(siteUrl) {
 
 async function checkSite(site) {
   const [uptime, ssl] = await Promise.all([checkUptime(site.url), checkSSL(site.url)]);
-  return { name: site.name, url: site.url, client: site.client, clientEmail: site.clientEmail, checkedAt: new Date().toISOString(), ...uptime, ssl };
+  return {
+    name: site.name,
+    url: site.url,
+    host: site.host || null,
+    managedByDbd: site.managedByDbd || false,
+    sshAccess: site.sshAccess || false,
+    clientEmail: site.clientEmail || null,
+    notes: site.notes || null,
+    checkedAt: new Date().toISOString(),
+    ...uptime,
+    ssl,
+  };
 }
 
 async function run() {

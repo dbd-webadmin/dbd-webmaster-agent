@@ -20,10 +20,10 @@
     .alerts { margin: 0 32px 16px; }
     .alert { background: #fff5f5; border-left: 4px solid #e53e3e; border-radius: 4px; padding: 12px 16px; margin-bottom: 8px; font-size: 14px; }
     .alert.warn { background: #fffbeb; border-color: #d69e2e; }
-    .sites { padding: 0 32px 32px; }
+    .sites { padding: 0 32px 32px; overflow-x: auto; }
     .sites table { width: 100%; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-collapse: collapse; overflow: hidden; }
-    th { text-align: left; padding: 12px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; border-bottom: 1px solid #eee; }
-    td { padding: 14px 16px; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+    th { text-align: left; padding: 12px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; border-bottom: 1px solid #eee; white-space: nowrap; }
+    td { padding: 14px 16px; font-size: 14px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #fafafa; }
     .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
@@ -38,6 +38,8 @@
     .headers { display: flex; gap: 4px; flex-wrap: wrap; }
     .header-tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #eee; color: #666; }
     .header-tag.ok { background: #c6f6d5; color: #276749; }
+    .sub { font-size: 12px; color: #aaa; margin-top: 2px; }
+    .stack-tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #ebf8ff; color: #2b6cb0; display: inline-block; margin-bottom: 2px; }
     .loading { text-align: center; padding: 80px; color: #888; }
   </style>
 </head>
@@ -61,24 +63,53 @@
       <thead>
         <tr>
           <th>Site</th>
-          <th>Client</th>
           <th>Status</th>
           <th>Response</th>
           <th>SSL</th>
+          <th>Cache</th>
+          <th>DNS TTL</th>
+          <th>Stack</th>
           <th>Security Headers</th>
         </tr>
       </thead>
-      <tbody id="tbody"><tr><td colspan="6" class="loading">Loading results...</td></tr></tbody>
+      <tbody id="tbody"><tr><td colspan="8" class="loading">Loading results...</td></tr></tbody>
     </table>
   </div>
 
   <script>
-    async function load() {
-      const res = await fetch('results.json?t=' + Date.now());
-      const data = await res.json();
-      const sites = data.sites;
+    function parseCacheControl(cc) {
+      if (!cc) return { label: 'None', cls: 'yellow' };
+      if (cc.includes('no-store') || cc.includes('no-cache')) return { label: 'No cache', cls: 'yellow' };
+      const m = cc.match(/max-age=(\d+)/);
+      if (m) {
+        const sec = parseInt(m[1]);
+        if (sec === 0) return { label: 'No cache', cls: 'yellow' };
+        if (sec < 3600) return { label: `${sec}s`, cls: 'yellow' };
+        if (sec >= 31536000) return { label: '1yr+', cls: 'green' };
+        const hrs = Math.round(sec / 3600);
+        return { label: `${hrs}h`, cls: 'green' };
+      }
+      return { label: 'Set', cls: 'green' };
+    }
 
-      document.getElementById('updated').textContent = 'Last checked: ' + new Date(data.updatedAt).toLocaleString();
+    function formatTtl(ttl) {
+      if (ttl === null || ttl === undefined) return { label: '—', cls: 'grey' };
+      if (ttl <= 300) return { label: `${ttl}s`, cls: 'yellow' };
+      if (ttl >= 86400) return { label: `${Math.round(ttl/3600)}h`, cls: 'green' };
+      return { label: `${Math.round(ttl/60)}m`, cls: 'green' };
+    }
+
+    async function load() {
+      const [monRes, stackRes] = await Promise.all([
+        fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+        fetch('stack-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+      ]);
+
+      const stackMap = {};
+      (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
+
+      const sites = monRes.sites || [];
+      document.getElementById('updated').textContent = 'Last checked: ' + new Date(monRes.updatedAt).toLocaleString();
       document.getElementById('total').textContent = sites.length;
 
       const down = sites.filter(s => !s.up);
@@ -106,12 +137,27 @@
         const sslClass = !s.ssl ? 'grey' : s.ssl.daysLeft <= 14 ? 'red' : s.ssl.daysLeft <= 30 ? 'yellow' : 'green';
         const speed = s.responseTime < 800 ? 'green' : s.responseTime < 2000 ? 'yellow' : 'red';
         const h = s.headers || {};
+        const cache = parseCacheControl(h.cacheControl);
+        const stack = stackMap[s.url] || {};
+        const ttl = formatTtl(stack.dnsTtl);
+
+        const stackHtml = stack.builder
+          ? `<span class="stack-tag">${stack.builder}</span>${stack.wpVersion ? `<div class="sub">WP ${stack.wpVersion}</div>` : ''}${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
+          : stack.wordpress
+            ? `<span class="stack-tag">WordPress</span>${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
+            : '<span style="color:#ccc">—</span>';
+
         return `<tr>
-          <td><a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a></td>
-          <td style="color:#888">${s.client}</td>
+          <td>
+            <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
+            ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
+          </td>
           <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span></td>
           <td><span class="dot ${speed}"></span>${s.responseTime}ms</td>
           <td><span class="dot ${sslClass}"></span>${sslText}</td>
+          <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
+          <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
+          <td>${stackHtml}</td>
           <td><div class="headers">
             <span class="header-tag ${h.hsts ? 'ok' : ''}">HSTS</span>
             <span class="header-tag ${h.xFrameOptions ? 'ok' : ''}">X-Frame</span>
