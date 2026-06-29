@@ -8,7 +8,7 @@ on:
         required: true
         default: 'destinationbydesign.com'
       plugin:
-        description: 'Plugin slug to update, or "all" to update everything'
+        description: 'Plugin slug to update, "all" for all plugins, or "core" to update WordPress itself'
         required: true
         default: 'all'
 
@@ -41,11 +41,14 @@ jobs:
           ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
             "wp plugin list --path='${{ steps.check.outputs.wp_path }}' --update=available --fields=name,version,update_version --format=table 2>/dev/null" || true
 
-      - name: Run plugin update
+      - name: Run update
         run: |
           PLUGIN="${{ github.event.inputs.plugin }}"
           WP_PATH="${{ steps.check.outputs.wp_path }}"
-          if [ "$PLUGIN" = "all" ]; then
+          if [ "$PLUGIN" = "core" ]; then
+            ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
+              "wp core update --path='${WP_PATH}' 2>&1"
+          elif [ "$PLUGIN" = "all" ]; then
             ssh -i ~/.ssh/id_ed25519 -p 65002 u995288748@93.127.218.76 \
               "wp plugin update --all --path='${WP_PATH}' 2>&1"
           else

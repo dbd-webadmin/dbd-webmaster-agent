@@ -56,6 +56,7 @@
     <div class="stat" id="stat-up"><div class="number" id="count-up">—</div><div class="label">Online</div></div>
     <div class="stat" id="stat-down"><div class="number" id="count-down">—</div><div class="label">Down</div></div>
     <div class="stat" id="stat-ssl"><div class="number" id="count-ssl">—</div><div class="label">SSL expiring soon</div></div>
+    <div class="stat" id="stat-updates"><div class="number" id="count-updates">—</div><div class="label">Sites with updates</div></div>
   </div>
 
   <div class="alerts" id="alerts"></div>
@@ -71,6 +72,7 @@
           <th>Cache</th>
           <th>DNS TTL</th>
           <th>Stack</th>
+          <th>Updates</th>
           <th>PageSpeed</th>
           <th>Broken</th>
           <th>Security Headers</th>
@@ -117,12 +119,15 @@
       (sitesRes.sites || []).forEach(s => { if (s.url && s.slug) slugMap[s.url] = s.slug; });
 
       const auditMap = {};
+      const updateMap = {};
       await Promise.all((sitesRes.sites || []).map(async s => {
         if (!s.slug) return;
-        const res = await fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null);
-        if (res && res.ok) {
-          try { auditMap[s.url] = await res.json(); } catch {}
-        }
+        const [auditRes, updateRes] = await Promise.all([
+          fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
+          fetch(`update-status/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
+        ]);
+        if (auditRes && auditRes.ok) { try { auditMap[s.url] = await auditRes.json(); } catch {} }
+        if (updateRes && updateRes.ok) { try { updateMap[s.url] = await updateRes.json(); } catch {} }
       }));
 
       const sites = monRes.sites || [];
@@ -138,6 +143,13 @@
       document.getElementById('count-ssl').textContent = sslWarn.length;
       document.getElementById('stat-down').className = 'stat ' + (down.length > 0 ? 'red' : 'green');
       document.getElementById('stat-ssl').className = 'stat ' + (sslWarn.length > 0 ? 'yellow' : 'green');
+
+      const sitesWithUpdates = sites.filter(s => {
+        const u = updateMap[s.url];
+        return u && (u.pluginUpdates?.length > 0 || u.wordpressUpdate);
+      });
+      document.getElementById('count-updates').textContent = sitesWithUpdates.length;
+      document.getElementById('stat-updates').className = 'stat ' + (sitesWithUpdates.length > 0 ? 'yellow' : 'green');
 
       const alerts = document.getElementById('alerts');
       alerts.innerHTML = '';
@@ -158,6 +170,22 @@
         const stack = stackMap[s.url] || {};
         const audit = auditMap[s.url] || null;
         const ttl = formatTtl(stack.dnsTtl);
+
+        const updates = updateMap[s.url] || null;
+        const pluginCount = updates?.pluginUpdates?.length || 0;
+        const hasWpUpdate = !!updates?.wordpressUpdate;
+        const ACTIONS_URL = 'https://github.com/dbd-webadmin/dbd-webmaster-agent/actions/workflows/update-plugins.yml';
+        let updatesHtml;
+        if (!updates) {
+          updatesHtml = '<span style="color:#ccc">—</span>';
+        } else if (pluginCount === 0 && !hasWpUpdate) {
+          updatesHtml = '<span class="dot green"></span>Up to date';
+        } else {
+          const parts = [];
+          if (pluginCount > 0) parts.push(`<a href="${ACTIONS_URL}" target="_blank" title="Open GitHub Actions to update plugins on ${s.url.replace('https://','')}" style="color:#d69e2e;font-weight:600">${pluginCount} plugin${pluginCount > 1 ? 's' : ''}</a>`);
+          if (hasWpUpdate) parts.push(`<a href="${ACTIONS_URL}" target="_blank" title="Enter plugin: core — to update WordPress to ${updates.wordpressUpdate.version}" style="color:#e53e3e;font-weight:600">WP ${updates.wordpressUpdate.version}</a>`);
+          updatesHtml = '<span class="dot ' + (hasWpUpdate ? 'red' : 'yellow') + '"></span>' + parts.join(' · ');
+        }
 
         const psHtml = audit && audit.pageSpeed
           ? `<span class="dot ${audit.pageSpeed.mobile >= 80 ? 'green' : audit.pageSpeed.mobile >= 50 ? 'yellow' : 'red'}"></span>${audit.pageSpeed.mobile}<span style="color:#ccc;margin:0 3px">/</span>${audit.pageSpeed.desktop}`
@@ -188,6 +216,7 @@
           <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
           <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
           <td>${stackHtml}</td>
+          <td>${updatesHtml}</td>
           <td>${psHtml}</td>
           <td>${brokenHtml}</td>
           <td><div class="headers">
