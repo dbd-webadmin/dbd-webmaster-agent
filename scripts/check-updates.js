@@ -31,11 +31,11 @@ function getSshConfig(site) {
   };
 }
 
-function ssh(cfg, cmd) {
+function ssh(cfg, cmd, timeoutMs = 60000) {
   try {
     return execSync(
-      `ssh -i "${SSH_KEY}" -p ${cfg.port} -o StrictHostKeyChecking=no -o ConnectTimeout=10 ${cfg.user}@${cfg.host} ${JSON.stringify(cmd)}`,
-      { encoding: 'utf8', timeout: 30000 }
+      `ssh -i "${SSH_KEY}" -p ${cfg.port} -o StrictHostKeyChecking=no -o ConnectTimeout=30 ${cfg.user}@${cfg.host} ${JSON.stringify(cmd)}`,
+      { encoding: 'utf8', timeout: timeoutMs }
     ).trim();
   } catch (e) {
     console.error(`SSH error [${cfg.user}@${cfg.host}]: ${e.message}`);
@@ -52,10 +52,13 @@ for (const site of sites) {
   const cfg = getSshConfig(site);
   if (!cfg) { console.log(`Skipping ${site.url} — could not build SSH config`); continue; }
 
-  const exists = ssh(cfg, `[ -f '${cfg.wpPath}/wp-config.php' ] && echo yes || echo no`);
-  if (exists !== 'yes') {
-    console.log(`Skipping ${site.url} — WP not found at ${cfg.wpPath}`);
-    continue;
+  const isWpEngine = site.host?.toLowerCase().includes('wp engine');
+  if (!isWpEngine) {
+    const exists = ssh(cfg, `[ -f '${cfg.wpPath}/wp-config.php' ] && echo yes || echo no`);
+    if (exists !== 'yes') {
+      console.log(`Skipping ${site.url} — WP not found at ${cfg.wpPath}`);
+      continue;
+    }
   }
 
   const pluginJson = ssh(cfg, `wp plugin list --path='${cfg.wpPath}' --update=available --fields=name,version,update_version --format=json 2>/dev/null || echo '[]'`);
