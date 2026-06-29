@@ -43,6 +43,39 @@
     .loading { text-align: center; padding: 80px; color: #888; }
     .snippet-btn { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #1a1a2e; color: white; border: none; cursor: pointer; margin-top: 4px; display: inline-block; }
     .snippet-btn:hover { background: #2d2d4e; }
+    .update-btn { font-size: 12px; padding: 4px 10px; border-radius: 4px; background: #fff; border: 1px solid #d69e2e; color: #d69e2e; cursor: pointer; white-space: nowrap; }
+    .update-btn:hover { background: #fffbeb; }
+    .update-btn.core { border-color: #e53e3e; color: #e53e3e; }
+    .update-btn.core:hover { background: #fff5f5; }
+    .update-btn.success { border-color: #38a169; color: #38a169; background: #f0fff4; }
+
+    /* Modal */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: white; border-radius: 12px; width: 640px; max-width: 95vw; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .modal-header { padding: 20px 24px 16px; border-bottom: 1px solid #eee; }
+    .modal-header h2 { font-size: 17px; font-weight: 600; }
+    .modal-header .modal-domain { font-size: 13px; color: #888; margin-top: 3px; }
+    .modal-body { padding: 8px 0; overflow-y: auto; flex: 1; }
+    .modal-footer { padding: 16px 24px; border-top: 1px solid #eee; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .modal-close { position: absolute; top: 0; right: 0; padding: 20px 24px; background: none; border: none; font-size: 20px; cursor: pointer; color: #888; line-height: 1; }
+    .modal-header { position: relative; }
+    .update-row { display: grid; grid-template-columns: 1fr 90px 16px 90px auto; gap: 12px; align-items: center; padding: 12px 24px; border-bottom: 1px solid #f5f5f5; }
+    .update-row:last-child { border-bottom: none; }
+    .update-row:hover { background: #fafafa; }
+    .update-row .plugin-name { font-size: 13px; font-weight: 500; word-break: break-all; }
+    .update-row .version { font-size: 12px; color: #888; font-family: monospace; }
+    .update-row .arrow { color: #ccc; font-size: 12px; text-align: center; }
+    .update-row .new-version { font-size: 12px; color: #276749; font-family: monospace; font-weight: 600; }
+    .update-row.core-row .plugin-name { color: #c53030; }
+    .update-row.core-row .new-version { color: #c53030; }
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #aaa; padding: 12px 24px 4px; font-weight: 600; }
+    .update-all-btn { font-size: 13px; padding: 8px 16px; border-radius: 6px; background: #1a1a2e; color: white; border: none; cursor: pointer; }
+    .update-all-btn:hover { background: #2d2d4e; }
+    .modal-hint { font-size: 12px; color: #aaa; flex: 1; }
+    .trigger-link { font-size: 12px; color: #4a90d9; text-decoration: none; }
+    .trigger-link:hover { text-decoration: underline; }
+    .updates-cell-btn { background: none; border: none; cursor: pointer; text-align: left; padding: 0; font-size: 14px; }
   </style>
 </head>
 <body>
@@ -78,11 +111,30 @@
           <th>Security Headers</th>
         </tr>
       </thead>
-      <tbody id="tbody"><tr><td colspan="8" class="loading">Loading results...</td></tr></tbody>
+      <tbody id="tbody"><tr><td colspan="11" class="loading">Loading results...</td></tr></tbody>
     </table>
   </div>
 
+  <!-- Update modal -->
+  <div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-title">Available Updates</h2>
+        <div class="modal-domain" id="modal-domain"></div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer">
+        <button class="update-all-btn" id="update-all-btn" onclick="triggerUpdate(null, 'all', this)">Update All Plugins</button>
+        <span class="modal-hint">Clicking Update copies the slug &amp; opens GitHub Actions → paste it in the "plugin" field → Run workflow</span>
+      </div>
+    </div>
+  </div>
+
   <script>
+    const ACTIONS_URL = 'https://github.com/dbd-webadmin/dbd-webmaster-agent/actions/workflows/update-plugins.yml';
+    let currentDomain = '';
+
     function parseCacheControl(cc) {
       if (!cc) return { label: 'None', cls: 'yellow' };
       if (cc.includes('no-store') || cc.includes('no-cache')) return { label: 'No cache', cls: 'yellow' };
@@ -92,8 +144,7 @@
         if (sec === 0) return { label: 'No cache', cls: 'yellow' };
         if (sec < 3600) return { label: `${sec}s`, cls: 'yellow' };
         if (sec >= 31536000) return { label: '1yr+', cls: 'green' };
-        const hrs = Math.round(sec / 3600);
-        return { label: `${hrs}h`, cls: 'green' };
+        return { label: `${Math.round(sec/3600)}h`, cls: 'green' };
       }
       return { label: 'Set', cls: 'green' };
     }
@@ -105,6 +156,63 @@
       return { label: `${Math.round(ttl/60)}m`, cls: 'green' };
     }
 
+    function showUpdatesModal(siteName, domain, updates) {
+      currentDomain = domain;
+      document.getElementById('modal-title').textContent = 'Available Updates';
+      document.getElementById('modal-domain').textContent = siteName + ' — ' + domain;
+
+      const body = document.getElementById('modal-body');
+      let html = '';
+
+      if (updates.wordpressUpdate) {
+        const u = updates.wordpressUpdate;
+        html += `<div class="section-label">WordPress Core</div>
+        <div class="update-row core-row">
+          <span class="plugin-name">WordPress</span>
+          <span class="version">${updates.currentWpVersion || '?'}</span>
+          <span class="arrow">→</span>
+          <span class="new-version">${u.version}</span>
+          <button class="update-btn core" onclick="triggerUpdate('${domain}', 'core', this)">Update Core</button>
+        </div>`;
+      }
+
+      if (updates.pluginUpdates && updates.pluginUpdates.length > 0) {
+        html += `<div class="section-label">Plugins (${updates.pluginUpdates.length})</div>`;
+        updates.pluginUpdates.forEach(p => {
+          html += `<div class="update-row">
+            <span class="plugin-name">${p.name}</span>
+            <span class="version">${p.version}</span>
+            <span class="arrow">→</span>
+            <span class="new-version">${p.update_version}</span>
+            <button class="update-btn" onclick="triggerUpdate('${domain}', '${p.name}', this)">Update</button>
+          </div>`;
+        });
+      }
+
+      body.innerHTML = html;
+
+      const allBtn = document.getElementById('update-all-btn');
+      allBtn.onclick = () => triggerUpdate(domain, 'all', allBtn);
+      allBtn.style.display = (updates.pluginUpdates?.length > 0) ? '' : 'none';
+
+      document.getElementById('modal-overlay').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('modal-overlay').classList.remove('open');
+    }
+
+    function triggerUpdate(domain, plugin, btn) {
+      const d = domain || currentDomain;
+      navigator.clipboard.writeText(plugin).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('success');
+        setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+      }).catch(() => {});
+      window.open(ACTIONS_URL, '_blank');
+    }
+
     async function load() {
       const [monRes, stackRes, sitesRes] = await Promise.all([
         fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
@@ -114,9 +222,6 @@
 
       const stackMap = {};
       (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
-
-      const slugMap = {};
-      (sitesRes.sites || []).forEach(s => { if (s.url && s.slug) slugMap[s.url] = s.slug; });
 
       const auditMap = {};
       const updateMap = {};
@@ -174,17 +279,23 @@
         const updates = updateMap[s.url] || null;
         const pluginCount = updates?.pluginUpdates?.length || 0;
         const hasWpUpdate = !!updates?.wordpressUpdate;
-        const ACTIONS_URL = 'https://github.com/dbd-webadmin/dbd-webmaster-agent/actions/workflows/update-plugins.yml';
+        const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+        const safeData = JSON.stringify({ siteName: s.name, domain, updates }).replace(/'/g, '&#39;');
+
         let updatesHtml;
         if (!updates) {
           updatesHtml = '<span style="color:#ccc">—</span>';
         } else if (pluginCount === 0 && !hasWpUpdate) {
           updatesHtml = '<span class="dot green"></span>Up to date';
         } else {
-          const parts = [];
-          if (pluginCount > 0) parts.push(`<a href="${ACTIONS_URL}" target="_blank" title="Open GitHub Actions to update plugins on ${s.url.replace('https://','')}" style="color:#d69e2e;font-weight:600">${pluginCount} plugin${pluginCount > 1 ? 's' : ''}</a>`);
-          if (hasWpUpdate) parts.push(`<a href="${ACTIONS_URL}" target="_blank" title="Enter plugin: core — to update WordPress to ${updates.wordpressUpdate.version}" style="color:#e53e3e;font-weight:600">WP ${updates.wordpressUpdate.version}</a>`);
-          updatesHtml = '<span class="dot ' + (hasWpUpdate ? 'red' : 'yellow') + '"></span>' + parts.join(' · ');
+          const label = [
+            pluginCount > 0 ? `${pluginCount} plugin${pluginCount > 1 ? 's' : ''}` : '',
+            hasWpUpdate ? `WP ${updates.wordpressUpdate.version}` : '',
+          ].filter(Boolean).join(' · ');
+          const dot = hasWpUpdate ? 'red' : 'yellow';
+          updatesHtml = `<button class="updates-cell-btn" onclick='openUpdates(${safeData})'>
+            <span class="dot ${dot}"></span><span style="color:${hasWpUpdate ? '#e53e3e' : '#d69e2e'};font-weight:600">${label}</span>
+          </button>`;
         }
 
         const psHtml = audit && audit.pageSpeed
@@ -227,6 +338,10 @@
           </div></td>
         </tr>`;
       }).join('');
+    }
+
+    function openUpdates(data) {
+      showUpdatesModal(data.siteName, data.domain, data.updates);
     }
 
     function copySnippet(slug) {
