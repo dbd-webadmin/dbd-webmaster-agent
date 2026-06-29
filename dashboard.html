@@ -132,7 +132,8 @@
   </div>
 
   <script>
-    const ACTIONS_URL = 'https://github.com/dbd-webadmin/dbd-webmaster-agent/actions/workflows/update-plugins.yml';
+    const WORKER_URL = 'https://dbd-webhook-relay.accounts-a21.workers.dev';
+    const WEBHOOK_SECRET = 'dbd-webhook-2026';
     let currentDomain = '';
 
     function parseCacheControl(cc) {
@@ -202,15 +203,50 @@
       document.getElementById('modal-overlay').classList.remove('open');
     }
 
-    function triggerUpdate(domain, plugin, btn) {
+    async function triggerUpdate(domain, plugin, btn) {
       const d = domain || currentDomain;
-      navigator.clipboard.writeText(plugin).then(() => {
-        const orig = btn.textContent;
-        btn.textContent = '✓ Copied!';
-        btn.classList.add('success');
-        setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
-      }).catch(() => {});
-      window.open(ACTIONS_URL, '_blank');
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Queuing…';
+
+      try {
+        const res = await fetch(
+          `${WORKER_URL}/trigger?domain=${encodeURIComponent(d)}&plugin=${encodeURIComponent(plugin)}&secret=${WEBHOOK_SECRET}`,
+          { method: 'POST' }
+        );
+        const data = await res.json();
+        if (data.ok) {
+          btn.textContent = '✓ Queued';
+          btn.classList.add('success');
+          showToast(`Update started for ${d} (${plugin}) — takes about 1 min`);
+          setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 4000);
+        } else {
+          btn.textContent = '✗ Failed';
+          btn.style.borderColor = '#e53e3e';
+          btn.style.color = '#e53e3e';
+          showToast('Error: ' + (data.error || 'Unknown error'), true);
+          setTimeout(() => { btn.textContent = orig; btn.style.borderColor = ''; btn.style.color = ''; btn.disabled = false; }, 4000);
+        }
+      } catch (e) {
+        btn.textContent = '✗ Error';
+        showToast('Could not reach the worker. Check your connection.', true);
+        setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3000);
+      }
+    }
+
+    function showToast(msg, isError = false) {
+      let t = document.getElementById('toast');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'toast';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 20px;border-radius:8px;font-size:14px;color:white;z-index:2000;max-width:480px;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:opacity 0.3s';
+        document.body.appendChild(t);
+      }
+      t.style.background = isError ? '#e53e3e' : '#276749';
+      t.textContent = msg;
+      t.style.opacity = '1';
+      clearTimeout(t._timer);
+      t._timer = setTimeout(() => { t.style.opacity = '0'; }, 4000);
     }
 
     async function load() {
@@ -279,7 +315,7 @@
         const updates = updateMap[s.url] || null;
         const pluginCount = updates?.pluginUpdates?.length || 0;
         const hasWpUpdate = !!updates?.wordpressUpdate;
-        const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+        const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '').split('/')[0];
         const safeData = JSON.stringify({ siteName: s.name, domain, updates }).replace(/'/g, '&#39;');
 
         let updatesHtml;
