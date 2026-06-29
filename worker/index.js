@@ -31,6 +31,8 @@ export default {
       const domain = url.searchParams.get('domain');
       const plugin = url.searchParams.get('plugin');
       const secret = url.searchParams.get('secret');
+      const host = url.searchParams.get('host') || 'hostinger';
+      const install_name = url.searchParams.get('install_name') || '';
 
       if (!domain || !plugin) return json({ error: 'Missing domain or plugin' }, 400);
       if (!secret || secret !== env.WEBHOOK_SECRET) return json({ error: 'Unauthorized' }, 401);
@@ -45,7 +47,7 @@ export default {
             'User-Agent': 'DBD-Webmaster-Worker',
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ ref: 'main', inputs: { domain, plugin } }),
+          body: JSON.stringify({ ref: 'main', inputs: { domain, plugin, host, install_name } }),
         }
       );
 

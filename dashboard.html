@@ -157,8 +157,13 @@
       return { label: `${Math.round(ttl/60)}m`, cls: 'green' };
     }
 
-    function showUpdatesModal(siteName, domain, updates) {
+    let currentHost = '';
+    let currentInstallName = '';
+
+    function showUpdatesModal(siteName, domain, updates, host, installName) {
       currentDomain = domain;
+      currentHost = host || 'hostinger';
+      currentInstallName = installName || '';
       document.getElementById('modal-title').textContent = 'Available Updates';
       document.getElementById('modal-domain').textContent = siteName + ' — ' + domain;
 
@@ -205,13 +210,15 @@
 
     async function triggerUpdate(domain, plugin, btn) {
       const d = domain || currentDomain;
+      const h = currentHost;
+      const n = currentInstallName;
       const orig = btn.textContent;
       btn.disabled = true;
       btn.textContent = 'Queuing…';
 
       try {
         const res = await fetch(
-          `${WORKER_URL}/trigger?domain=${encodeURIComponent(d)}&plugin=${encodeURIComponent(plugin)}&secret=${WEBHOOK_SECRET}`,
+          `${WORKER_URL}/trigger?domain=${encodeURIComponent(d)}&plugin=${encodeURIComponent(plugin)}&host=${encodeURIComponent(h)}&install_name=${encodeURIComponent(n)}&secret=${WEBHOOK_SECRET}`,
           { method: 'POST' }
         );
         const data = await res.json();
@@ -258,6 +265,9 @@
 
       const stackMap = {};
       (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
+
+      const siteMetaMap = {};
+      (sitesRes.sites || []).forEach(s => { if (s.url) siteMetaMap[s.url] = s; });
 
       const auditMap = {};
       const updateMap = {};
@@ -316,7 +326,10 @@
         const pluginCount = updates?.pluginUpdates?.length || 0;
         const hasWpUpdate = !!updates?.wordpressUpdate;
         const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '').split('/')[0];
-        const safeData = JSON.stringify({ siteName: s.name, domain, updates }).replace(/'/g, '&#39;');
+        const siteMeta = siteMetaMap[s.url] || {};
+        const hostType = (s.host || '').toLowerCase().includes('wp engine') ? 'wpengine' : 'hostinger';
+        const installName = siteMeta.sshInstallName || '';
+        const safeData = JSON.stringify({ siteName: s.name, domain, updates, host: hostType, installName }).replace(/'/g, '&#39;');
 
         let updatesHtml;
         if (!updates) {
@@ -351,9 +364,14 @@
             ? `<span class="stack-tag">WordPress</span>${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
             : '<span style="color:#ccc">—</span>';
 
+        const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+
         return `<tr>
           <td>
-            <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
+            <div style="display:flex;align-items:center;gap:8px">
+              <img src="${faviconUrl}" width="16" height="16" style="border-radius:3px;flex-shrink:0" onerror="this.style.display='none'">
+              <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
+            </div>
             ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
             ${s.slug ? `<button class="snippet-btn" onclick="copySnippet('${s.slug}')">Copy WP Snippet</button>` : ''}
           </td>
@@ -377,7 +395,7 @@
     }
 
     function openUpdates(data) {
-      showUpdatesModal(data.siteName, data.domain, data.updates);
+      showUpdatesModal(data.siteName, data.domain, data.updates, data.host, data.installName);
     }
 
     function copySnippet(slug) {
