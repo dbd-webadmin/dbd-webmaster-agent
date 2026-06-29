@@ -1,15 +1,21 @@
 {
-  "updatedAt": "2026-06-29T13:15:51.735Z",
+  "updatedAt": "2026-06-29T13:23:25.822Z",
   "sites": [
     {
       "name": "Destination by Design",
       "url": "https://destinationbydesign.com",
       "client": "Internal",
       "clientEmail": "accounts@dbdplanning.com",
-      "checkedAt": "2026-06-29T13:15:51.734Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-06-29T13:23:25.822Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 205,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": false
+      },
       "ssl": {
         "valid": true,
         "expiry": "2026-08-22T20:34:57.000Z",
