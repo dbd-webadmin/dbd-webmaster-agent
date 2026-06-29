@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-06-29T21:40:13.089Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": ""
+    }
+  },
+  {
     "receivedAt": "2026-06-29T21:39:22.117Z",
     "type": "login_failed",
     "data": {
@@ -388,14 +396,6 @@
     "type": "manual_test_2",
     "data": {
       "event": "manual_test_2"
-    }
-  },
-  {
-    "receivedAt": "2026-06-29T19:09:16.230Z",
-    "type": "test",
-    "data": {
-      "action": "test",
-      "message": "Worker is live"
     }
   }
 ]
