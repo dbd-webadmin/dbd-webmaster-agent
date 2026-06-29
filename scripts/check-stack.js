@@ -5,31 +5,33 @@ const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
 
-const { sites } = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'sites.json'), 'utf8'));
+const SITES_PATH = path.join(__dirname, '..', 'sites.json');
+const OUT_PATH = path.join(__dirname, '..', 'stack-results.json');
+
+const { sites } = JSON.parse(fs.readFileSync(SITES_PATH, 'utf8'));
+
+const httpAgent = new http.Agent({ keepAlive: false });
+const httpsAgent = new https.Agent({ keepAlive: false });
 
 function getDnsTtl(siteUrl) {
-  return new Promise(async (resolve) => {
-    try {
-      const hostname = new URL(siteUrl).hostname;
-      const records = await dns.resolve4(hostname, { ttl: true });
-      resolve(records[0]?.ttl ?? null);
-    } catch {
-      resolve(null);
-    }
-  });
+  return dns.resolve4(new URL(siteUrl).hostname, { ttl: true })
+    .then(records => records[0]?.ttl ?? null)
+    .catch(() => null);
 }
 
 function fetchBody(siteUrl) {
   return new Promise((resolve) => {
     let url;
     try { url = new URL(siteUrl); } catch { return resolve(null); }
-    const lib = url.protocol === 'https:' ? https : http;
+    const isHttps = url.protocol === 'https:';
+    const lib = isHttps ? https : http;
     const options = {
       hostname: url.hostname,
-      port: url.protocol === 'https:' ? 443 : 80,
+      port: isHttps ? 443 : 80,
       path: url.pathname || '/',
       method: 'GET',
-      timeout: 15000,
+      timeout: 12000,
+      agent: isHttps ? httpsAgent : httpAgent,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       },
@@ -41,6 +43,7 @@ function fetchBody(siteUrl) {
         if (body.length > 75000) req.destroy();
       });
       res.on('end', () => resolve(body));
+      res.on('error', () => resolve(body || null));
     });
     req.on('error', () => resolve(null));
     req.on('timeout', () => { req.destroy(); resolve(null); });
@@ -80,11 +83,8 @@ async function run() {
     const builder = r.builder || (r.wordpress ? 'WordPress (unknown builder)' : 'unknown');
     console.log(`${r.name} — TTL: ${r.dnsTtl}s — ${builder}${r.wpVersion ? ` ${r.wpVersion}` : ''}`);
   });
-  fs.writeFileSync(
-    path.join(__dirname, '..', 'stack-results.json'),
-    JSON.stringify({ updatedAt: new Date().toISOString(), sites: results }, null, 2)
-  );
+  fs.writeFileSync(OUT_PATH, JSON.stringify({ updatedAt: new Date().toISOString(), sites: results }, null, 2));
   console.log('Saved stack-results.json');
 }
 
-run().catch(err => { console.error(err); process.exit(1); });
+run().then(() => process.exit(0)).catch(err => { console.error(err); process.exit(1); });
