@@ -54,4 +54,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git add audit-results/
           git diff --staged --quiet || git commit -m "Audit results $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
