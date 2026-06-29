@@ -29,7 +29,7 @@ function fetchUrl(rawUrl, getBody = false, timeoutMs = 12000) {
       if (getBody) {
         res.on('data', chunk => {
           body += chunk.toString();
-          if (body.length > 200000) req.destroy();
+          if (body.length > 2000000) req.destroy();
         });
         res.on('end', () => resolve({ ok: res.statusCode < 400, status: res.statusCode, body }));
         res.on('error', () => resolve({ ok: false, status: 0, body: null }));
