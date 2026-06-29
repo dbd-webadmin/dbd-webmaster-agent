@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-06-29T13:07:59.952Z",
+  "sites": [
+    {
+      "name": "Destination by Design",
+      "url": "https://destinationbydesign.com",
+      "client": "Internal",
+      "clientEmail": "accounts@dbdplanning.com",
+      "checkedAt": "2026-06-29T13:07:59.952Z",
+      "up": false,
+      "statusCode": 403,
+      "responseTime": 98,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": true,
+        "xContentType": true,
+        "csp": true
+      },
+      "ssl": {
+        "valid": true,
+        "expiry": "2026-08-22T20:34:57.000Z",
+        "daysLeft": 54
+      }
+    }
+  ]
+}
