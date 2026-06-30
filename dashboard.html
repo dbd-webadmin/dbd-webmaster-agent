@@ -159,7 +159,7 @@
     const WEBHOOK_SECRET = 'dbd-webhook-2026';
 
     // Global data store
-    let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {};
+    let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {}, registrarMap = {};
     let activeSort = 'alpha';
     let activeStack = null;
     let activeType = null;
@@ -346,6 +346,22 @@
         // Site type tag
         const typeHtml = meta.siteType ? `<div class="type-tag">${meta.siteType}</div>` : '';
 
+        // Registrar
+        const reg = registrarMap[s.url] || null;
+        let registrarHtml = '';
+        if (reg) {
+          const cfBadge = reg.inCloudflare
+            ? `<span style="display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;background:#f6821f;color:white;font-weight:700;margin-left:5px">CF</span>`
+            : '';
+          const expiry = reg.expiresAt ? new Date(reg.expiresAt) : null;
+          const daysLeft = expiry ? Math.ceil((expiry - Date.now()) / 86400000) : null;
+          const expiryColor = daysLeft !== null && daysLeft <= 30 ? '#e53e3e' : daysLeft <= 90 ? '#d69e2e' : '#aaa';
+          const expiryStr = daysLeft !== null
+            ? `<span style="color:${expiryColor};font-size:11px"> · Exp ${expiry.toLocaleDateString('en-US',{month:'short',year:'numeric'})}</span>`
+            : '';
+          registrarHtml = `<div class="sub" style="margin-top:3px">${reg.registrar || 'Unknown registrar'}${cfBadge}${expiryStr}</div>`;
+        }
+
         return `<tr>
           <td>
             <div style="display:flex;align-items:center;gap:8px">
@@ -353,6 +369,7 @@
               <div>
                 <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
                 ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
+                ${registrarHtml}
                 ${typeHtml}
                 ${s.slug ? `<button class="snippet-btn" onclick="copySnippet('${s.slug}')">Copy WP Snippet</button>` : ''}
               </div>
@@ -372,14 +389,17 @@
     }
 
     async function load() {
-      const [monRes, stackRes, sitesRes] = await Promise.all([
+      const [monRes, stackRes, sitesRes, regRes] = await Promise.all([
         fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
         fetch('stack-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
         fetch('sites.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+        fetch('registrar-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ domains: {} })),
       ]);
 
       stackMap = {};
       (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
+
+      registrarMap = regRes.domains || {};
 
       siteMetaMap = {};
       (sitesRes.sites || []).forEach(s => { if (s.url) siteMetaMap[s.url] = s; });
