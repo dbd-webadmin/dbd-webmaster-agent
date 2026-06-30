@@ -1,0 +1,24 @@
+{
+  "slug": "tourtalbot-org",
+  "url": "https://tourtalbot.org/",
+  "checkedAt": "2026-06-30T19:12:41.473Z",
+  "currentWpVersion": "7.0",
+  "wordpressUpdate": null,
+  "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "8.8.5",
+      "update_version": "8.8.6"
+    },
+    {
+      "name": "better-search-replace",
+      "version": "1.4.10",
+      "update_version": "1.4.11"
+    },
+    {
+      "name": "popup-maker",
+      "version": "1.22.0",
+      "update_version": "1.23.0"
+    }
+  ]
+}
