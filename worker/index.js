@@ -1,6 +1,16 @@
 const REPO_OWNER = 'dbd-webadmin';
 const REPO_NAME = 'dbd-webmaster-agent';
 const MAX_EVENTS = 50;
+const SECURITY_RATE_LIMIT_MS = 15 * 60 * 1000;
+
+// These events indicate a possible compromise — always commit immediately
+const SECURITY_IMMEDIATE = new Set([
+  'login_success', 'user_registered', 'user_role_changed',
+  'plugin_installed', 'plugin_activated',
+]);
+
+// These are aggregated and rate-limited to avoid Pages build spam
+const SECURITY_AGGREGATE = new Set(['login_failed']);
 
 const CORS = {
   'Access-Control-Allow-Origin': 'https://status.dbdplanning.com',
@@ -15,11 +25,39 @@ function json(data, status = 200) {
   });
 }
 
+function ghHeaders(token) {
+  return {
+    'Authorization': `token ${token}`,
+    'Accept': 'application/vnd.github.v3+json',
+    'User-Agent': 'DBD-Webmaster-Worker',
+    'Content-Type': 'application/json',
+  };
+}
+
+async function githubGet(apiUrl, headers) {
+  const res = await fetch(apiUrl, { headers });
+  if (!res.ok) return { data: null, sha: null };
+  const file = await res.json();
+  let data = null;
+  try { data = JSON.parse(atob(file.content.replace(/\n/g, ''))); } catch {}
+  return { data, sha: file.sha };
+}
+
+async function githubPut(apiUrl, headers, message, data, sha) {
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+  const res = await fetch(apiUrl, {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify({ message, content, ...(sha ? { sha } : {}) }),
+  });
+  if (!res.ok) console.error('GitHub write failed:', await res.text());
+  return res.ok;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // CORS preflight
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: CORS });
     }
@@ -73,43 +111,55 @@ export default {
     let payload;
     try { payload = await request.json(); } catch { return new Response('Invalid JSON', { status: 400 }); }
 
-    const event = {
-      receivedAt: new Date().toISOString(),
-      type: payload.action || payload.hook || payload.event || 'unknown',
-      data: payload,
-    };
+    const eventType = payload.action || payload.hook || payload.event || 'unknown';
+    const now = new Date().toISOString();
+    const headers = ghHeaders(env.GITHUB_TOKEN);
 
-    const filePath = `events/${siteSlug}/events.json`;
-    const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`;
-    const headers = {
-      'Authorization': `token ${env.GITHUB_TOKEN}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'User-Agent': 'DBD-Webmaster-Worker',
-      'Content-Type': 'application/json',
-    };
+    if (SECURITY_IMMEDIATE.has(eventType) || SECURITY_AGGREGATE.has(eventType)) {
+      // Security event path — write to security.json with aggregation
+      const isImmediate = SECURITY_IMMEDIATE.has(eventType);
+      const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/events/${siteSlug}/security.json`;
 
-    let existingEvents = [];
-    let fileSha = null;
+      const { data: existing, sha } = await githubGet(apiUrl, headers);
+      const sec = existing || { loginFailed: null, loginSuccess: null, recentEvents: [], lastCommitAt: null };
 
-    const readRes = await fetch(apiUrl, { headers });
-    if (readRes.ok) {
-      const fileData = await readRes.json();
-      fileSha = fileData.sha;
-      try { existingEvents = JSON.parse(atob(fileData.content.replace(/\n/g, ''))); } catch {}
-    }
+      if (eventType === 'login_failed') {
+        sec.loginFailed = sec.loginFailed || { count: 0, firstSeen: now };
+        sec.loginFailed.count++;
+        sec.loginFailed.lastSeen = now;
+      } else if (eventType === 'login_success') {
+        sec.loginSuccess = sec.loginSuccess || { count: 0 };
+        sec.loginSuccess.count++;
+        sec.loginSuccess.lastSeen = now;
+        sec.loginSuccess.lastUser = payload.user || null;
+      }
 
-    const events = [event, ...existingEvents].slice(0, MAX_EVENTS);
-    const writeBody = {
-      message: `WP event [${event.type}] from ${siteSlug}`,
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(events, null, 2)))),
-      ...(fileSha ? { sha: fileSha } : {}),
-    };
+      // High-priority events always get logged in detail
+      if (isImmediate) {
+        sec.recentEvents = [
+          { type: eventType, time: now, data: payload },
+          ...(sec.recentEvents || []),
+        ].slice(0, 20);
+      }
 
-    const writeRes = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(writeBody) });
-    if (!writeRes.ok) {
-      const err = await writeRes.text();
-      console.error('GitHub write failed:', err);
-      return new Response('Write failed', { status: 500 });
+      // Rate-limit low-priority events to avoid triggering Pages on every attack
+      const lastCommit = sec.lastCommitAt ? Date.parse(sec.lastCommitAt) : 0;
+      if (!isImmediate && Date.now() - lastCommit < SECURITY_RATE_LIMIT_MS) {
+        return new Response('OK', { status: 200 });
+      }
+
+      sec.lastCommitAt = now;
+      await githubPut(apiUrl, headers, `Security [${eventType}] from ${siteSlug}`, sec, sha);
+
+    } else {
+      // Operational event path (plugin_update, core_update, etc.) — write to events.json
+      const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/events/${siteSlug}/events.json`;
+      const { data: existingEvents, sha } = await githubGet(apiUrl, headers);
+
+      const event = { receivedAt: now, type: eventType, data: payload };
+      const events = [event, ...(existingEvents || [])].slice(0, MAX_EVENTS);
+
+      await githubPut(apiUrl, headers, `WP event [${eventType}] from ${siteSlug}`, events, sha);
     }
 
     return new Response('OK', { status: 200 });

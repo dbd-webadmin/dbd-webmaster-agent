@@ -82,6 +82,10 @@
     .update-all-btn { font-size: 13px; padding: 8px 16px; border-radius: 6px; background: #1a1a2e; color: white; border: none; cursor: pointer; }
     .update-all-btn:hover { background: #2d2d4e; }
     .modal-hint { font-size: 12px; color: #aaa; flex: 1; }
+
+    /* Security */
+    .sec-events { margin-top: 4px; }
+    .sec-events-item { font-size: 11px; background: #fff5f5; border-radius: 4px; padding: 3px 7px; margin-top: 3px; color: #9b2c2c; }
   </style>
 </head>
 <body>
@@ -96,6 +100,7 @@
     <div class="stat" id="stat-down"><div class="number" id="count-down">—</div><div class="label">Down</div></div>
     <div class="stat" id="stat-ssl"><div class="number" id="count-ssl">—</div><div class="label">SSL expiring soon</div></div>
     <div class="stat" id="stat-updates"><div class="number" id="count-updates">—</div><div class="label">Sites with updates</div></div>
+    <div class="stat" id="stat-security"><div class="number" id="count-security">—</div><div class="label">Security alerts</div></div>
   </div>
 
   <div class="alerts" id="alerts"></div>
@@ -132,6 +137,7 @@
           <th>Updates<div class="th-sub">Plugins &amp; WordPress</div></th>
           <th>PageSpeed<div class="th-sub">Mobile / Desktop (0–100)</div></th>
           <th>Broken Links<div class="th-sub">Dead links on this site</div></th>
+          <th>Security<div class="th-sub">Login &amp; account events</div></th>
         </tr>
       </thead>
       <tbody id="tbody"><tr><td colspan="10" class="loading">Loading results...</td></tr></tbody>
@@ -159,11 +165,56 @@
     const WEBHOOK_SECRET = 'dbd-webhook-2026';
 
     // Global data store
-    let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {}, registrarMap = {};
+    let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {}, registrarMap = {}, securityMap = {};
     let activeSort = 'alpha';
     let activeStack = null;
     let activeType = null;
     let currentDomain = '', currentHost = '', currentInstallName = '';
+
+    function timeAgo(isoStr) {
+      if (!isoStr) return null;
+      const diff = Date.now() - new Date(isoStr).getTime();
+      const min = Math.floor(diff / 60000);
+      if (min < 60) return `${min}m ago`;
+      const hr = Math.floor(min / 60);
+      if (hr < 24) return `${hr}h ago`;
+      return `${Math.floor(hr / 24)}d ago`;
+    }
+
+    function buildSecurityCell(sec) {
+      if (!sec) return '<span style="color:#ccc">—</span>';
+
+      const suspicious = sec.recentEvents?.filter(e =>
+        ['user_registered','user_role_changed','plugin_installed','plugin_activated'].includes(e.type)
+      ) || [];
+
+      const loginAfterAttack = sec.recentEvents?.some(e => e.type === 'login_success') &&
+        sec.loginFailed?.count > 5;
+
+      if (suspicious.length > 0 || loginAfterAttack) {
+        const items = suspicious.map(e => {
+          const label = { user_registered: 'New user registered', user_role_changed: 'Role changed',
+            plugin_installed: 'Plugin installed', plugin_activated: 'Plugin activated' }[e.type] || e.type;
+          return `<div class="sec-events-item">⚠ ${label} · ${timeAgo(e.time)}</div>`;
+        });
+        if (loginAfterAttack) {
+          items.unshift(`<div class="sec-events-item">⚠ Login succeeded after ${sec.loginFailed.count} failures</div>`);
+        }
+        return `<span class="dot red"></span><strong style="color:#e53e3e">Suspicious</strong><div class="sec-events">${items.join('')}</div>`;
+      }
+
+      if (sec.loginFailed?.count) {
+        const ago = timeAgo(sec.loginFailed.lastSeen);
+        return `<span class="dot yellow"></span><span style="color:#d69e2e">${sec.loginFailed.count} failed login${sec.loginFailed.count > 1 ? 's' : ''}</span>
+          <div class="sub">last: ${ago}</div>`;
+      }
+
+      if (sec.loginSuccess) {
+        return `<span class="dot green"></span>Clean<div class="sub">${timeAgo(sec.loginSuccess.lastSeen)}</div>`;
+      }
+
+      return '<span class="dot green"></span>Clean';
+    }
 
     function parseCacheControl(cc) {
       if (!cc) return { label: 'None', cls: 'yellow' };
@@ -328,6 +379,10 @@
             </div>`
           : '<span style="color:#ccc">—</span>';
 
+        // Security
+        const sec = securityMap[s.url] || null;
+        const secHtml = buildSecurityCell(sec);
+
         // Broken links
         const brokenCount = audit && !audit.crawlBlocked ? (audit.brokenLinks.length + audit.brokenImages.length) : null;
         const brokenHtml = !audit
@@ -384,6 +439,7 @@
           <td>${updatesHtml}</td>
           <td>${psHtml}</td>
           <td>${brokenHtml}</td>
+          <td>${secHtml}</td>
         </tr>`;
       }).join('');
     }
@@ -406,14 +462,18 @@
 
       auditMap = {};
       updateMap = {};
+      securityMap = {};
       await Promise.all((sitesRes.sites || []).map(async s => {
         if (!s.slug) return;
-        const [auditRes, updateRes] = await Promise.all([
-          fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
-          fetch(`update-status/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
+        const t = Date.now();
+        const [auditRes, updateRes, secRes] = await Promise.all([
+          fetch(`audit-results/${s.slug}/latest.json?t=` + t).catch(() => null),
+          fetch(`update-status/${s.slug}/latest.json?t=` + t).catch(() => null),
+          fetch(`events/${s.slug}/security.json?t=` + t).catch(() => null),
         ]);
         if (auditRes && auditRes.ok) { try { auditMap[s.url] = await auditRes.json(); } catch {} }
         if (updateRes && updateRes.ok) { try { updateMap[s.url] = await updateRes.json(); } catch {} }
+        if (secRes && secRes.ok) { try { securityMap[s.url] = await secRes.json(); } catch {} }
       }));
 
       allSites = monRes.sites || [];
@@ -433,6 +493,21 @@
       document.getElementById('stat-ssl').className = 'stat ' + (sslWarn.length > 0 ? 'yellow' : 'green');
       document.getElementById('stat-updates').className = 'stat ' + (withUpdates.length > 0 ? 'yellow' : 'green');
 
+      // Security summary
+      const securityAlerts = allSites.filter(s => {
+        const sec = securityMap[s.url];
+        if (!sec) return false;
+        const suspicious = sec.recentEvents?.some(e =>
+          ['user_registered','user_role_changed','plugin_installed','plugin_activated'].includes(e.type)
+        );
+        const loginAfterAttack = sec.recentEvents?.some(e => e.type === 'login_success') && sec.loginFailed?.count > 5;
+        return suspicious || loginAfterAttack;
+      });
+      const underAttack = allSites.filter(s => securityMap[s.url]?.loginFailed?.count > 0);
+      const secCount = securityAlerts.length || underAttack.length;
+      document.getElementById('count-security').textContent = secCount;
+      document.getElementById('stat-security').className = 'stat ' + (securityAlerts.length > 0 ? 'red' : underAttack.length > 0 ? 'yellow' : 'green');
+
       const alerts = document.getElementById('alerts');
       alerts.innerHTML = '';
       down.forEach(s => {
@@ -440,6 +515,23 @@
       });
       sslWarn.forEach(s => {
         alerts.innerHTML += `<div class="alert warn">🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days</div>`;
+      });
+      securityAlerts.forEach(s => {
+        const sec = securityMap[s.url];
+        const events = (sec.recentEvents || []).filter(e =>
+          ['user_registered','user_role_changed','plugin_installed','plugin_activated'].includes(e.type)
+        );
+        const loginAfterAttack = sec.recentEvents?.some(e => e.type === 'login_success') && sec.loginFailed?.count > 5;
+        const details = [
+          ...events.map(e => ({ user_registered: 'new user registered', user_role_changed: 'user role changed',
+            plugin_installed: 'plugin installed', plugin_activated: 'plugin activated' }[e.type] || e.type)),
+          ...(loginAfterAttack ? ['login succeeded after repeated failures'] : []),
+        ].join(', ');
+        alerts.innerHTML += `<div class="alert">🚨 <strong>${s.name}</strong> — suspicious activity: ${details}</div>`;
+      });
+      underAttack.filter(s => !securityAlerts.includes(s)).forEach(s => {
+        const sec = securityMap[s.url];
+        alerts.innerHTML += `<div class="alert warn">🔐 <strong>${s.name}</strong> — ${sec.loginFailed.count} failed login attempt${sec.loginFailed.count > 1 ? 's' : ''} (last: ${timeAgo(sec.loginFailed.lastSeen)})</div>`;
       });
 
       buildFilters();
@@ -560,12 +652,22 @@ add_action('_core_updated_successfully', function($wp_version) {
 });
 
 add_action('wp_login', function($user_login) {
-    dbd_send_webhook('user_login', ['user' => $user_login]);
+    dbd_send_webhook('login_success', ['user' => $user_login]);
 });
 
 add_action('wp_login_failed', function($username) {
     dbd_send_webhook('login_failed', ['user' => $username]);
-});`;
+});
+
+add_action('user_register', function($user_id) {
+    $user = get_userdata($user_id);
+    dbd_send_webhook('user_registered', ['user' => $user->user_login, 'email' => $user->user_email, 'roles' => $user->roles]);
+});
+
+add_action('set_user_role', function($user_id, $role, $old_roles) {
+    $user = get_userdata($user_id);
+    dbd_send_webhook('user_role_changed', ['user' => $user->user_login, 'new_role' => $role, 'old_roles' => $old_roles]);
+}, 10, 3);`;
       navigator.clipboard.writeText(snippet).then(() => {
         alert('Snippet copied! Paste into Fluent Snippets on ' + slug);
       });
