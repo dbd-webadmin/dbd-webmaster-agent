@@ -13,6 +13,10 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: npm install
+      - name: Show service account email
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: echo "$GOOGLE_CREDENTIALS" | python3 -c "import sys,json; d=json.load(sys.stdin); print('Service account:', d.get('client_email','not found'))"
       - name: Set up Sheet headers and dropdowns
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
