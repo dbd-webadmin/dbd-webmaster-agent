@@ -1,12 +1,19 @@
 {
-  "updatedAt": "2026-06-30T13:21:53.761Z",
+  "updatedAt": "2026-06-30T13:36:04.676Z",
   "domains": {
     "https://destinationbydesign.com": {
       "domain": "destinationbydesign.com",
       "registrar": "Cloudflare, Inc.",
       "expiresAt": "2027-03-13T17:02:09Z",
       "inCloudflare": true,
-      "checkedAt": "2026-06-30T13:21:53.761Z"
+      "checkedAt": "2026-06-30T13:36:04.167Z"
+    },
+    "https://jedco.org/": {
+      "domain": "jedco.org",
+      "registrar": "Advanced Internet Technologies, Inc. (AIT)",
+      "expiresAt": "2028-03-08T05:00:00Z",
+      "inCloudflare": false,
+      "checkedAt": "2026-06-30T13:36:04.676Z"
     }
   }
 }
