@@ -181,9 +181,10 @@
 
     function formatTtl(ttl) {
       if (ttl === null || ttl === undefined) return { label: '—', cls: 'grey' };
-      if (ttl <= 300) return { label: `${ttl}s`, cls: 'yellow' };
+      if (ttl < 60) return { label: `${ttl}s`, cls: 'yellow' };
+      if (ttl < 3600) return { label: `${Math.round(ttl/60)}m`, cls: 'yellow' };
       if (ttl >= 86400) return { label: `${Math.round(ttl/3600)}h`, cls: 'green' };
-      return { label: `${Math.round(ttl/60)}m`, cls: 'green' };
+      return { label: `${Math.round(ttl/3600)}h`, cls: 'green' };
     }
 
     function siteHasUpdates(s) {
