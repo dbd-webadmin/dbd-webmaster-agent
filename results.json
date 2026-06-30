@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T13:25:16.807Z",
+  "updatedAt": "2026-06-30T17:28:09.687Z",
   "sites": [
     {
       "name": "Destination by Design",
@@ -9,10 +9,10 @@
       "sshAccess": true,
       "clientEmail": "accounts@dbdplanning.com",
       "notes": null,
-      "checkedAt": "2026-06-30T13:25:16.170Z",
+      "checkedAt": "2026-06-30T17:28:09.059Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 150,
+      "responseTime": 312,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -36,10 +36,10 @@
       "sshAccess": true,
       "clientEmail": "kscram@jedco.org",
       "notes": null,
-      "checkedAt": "2026-06-30T13:25:16.807Z",
+      "checkedAt": "2026-06-30T17:28:09.687Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 754,
+      "responseTime": 905,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
