@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T10:44:18.628Z",
+  "updatedAt": "2026-06-30T13:25:16.807Z",
   "sites": [
     {
       "name": "Destination by Design",
@@ -9,10 +9,10 @@
       "sshAccess": true,
       "clientEmail": "accounts@dbdplanning.com",
       "notes": null,
-      "checkedAt": "2026-06-30T10:44:18.627Z",
+      "checkedAt": "2026-06-30T13:25:16.170Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 107,
+      "responseTime": 150,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -26,6 +26,33 @@
         "valid": true,
         "expiry": "2026-08-22T20:34:57.000Z",
         "daysLeft": 53
+      }
+    },
+    {
+      "name": "JEDCO",
+      "url": "https://jedco.org/",
+      "host": "Hostinger",
+      "managedByDbd": true,
+      "sshAccess": true,
+      "clientEmail": "kscram@jedco.org",
+      "notes": null,
+      "checkedAt": "2026-06-30T13:25:16.807Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 754,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
+      "ssl": {
+        "valid": true,
+        "expiry": "2026-08-09T19:14:06.000Z",
+        "daysLeft": 40
       }
     }
   ]
