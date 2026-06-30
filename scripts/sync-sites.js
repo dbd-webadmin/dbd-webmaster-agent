@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SHEET_ID = '1qqW-pdyTbdCCek3w0pfLcahTLbK0jrh_FiuHEAFU_sM';
-const SHEET_RANGE = 'Sheet1!A2:I1000';
+const SHEET_RANGE = 'Sheet1!A2:J1000';
 
 function toBool(val) {
   if (!val) return false;
@@ -50,6 +50,7 @@ async function syncSites() {
         notes: row[6]?.trim() || '',
         active: row[7] === undefined ? true : toBool(row[7]),
         sshInstallName: row[8]?.trim() || '',
+        siteType: row[9]?.trim() || '',
       };
     })
     .filter(site => site.active);

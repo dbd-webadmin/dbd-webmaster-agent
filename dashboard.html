@@ -20,6 +20,16 @@
     .alerts { margin: 0 32px 16px; }
     .alert { background: #fff5f5; border-left: 4px solid #e53e3e; border-radius: 4px; padding: 12px 16px; margin-bottom: 8px; font-size: 14px; }
     .alert.warn { background: #fffbeb; border-color: #d69e2e; }
+
+    /* Filter bar */
+    .filters { padding: 0 32px 16px; display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
+    .filter-group { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .filter-label { font-size: 11px; color: #aaa; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; margin-right: 2px; }
+    .chip { font-size: 12px; padding: 4px 12px; border-radius: 20px; border: 1px solid #e0e0e0; background: white; color: #666; cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+    .chip:hover { border-color: #1a1a2e; color: #1a1a2e; }
+    .chip.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
+    .filter-count { font-size: 12px; color: #aaa; margin-left: auto; align-self: center; white-space: nowrap; }
+
     .sites { padding: 0 32px 32px; overflow-x: auto; }
     .sites table { width: 100%; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-collapse: collapse; overflow: hidden; }
     th { text-align: left; padding: 12px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; border-bottom: 1px solid #eee; white-space: nowrap; }
@@ -29,18 +39,16 @@
     .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
     .badge.up { background: #c6f6d5; color: #276749; }
     .badge.down { background: #fed7d7; color: #9b2c2c; }
-    .badge.warn { background: #fefcbf; color: #744210; }
     .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
     .dot.green { background: #38a169; }
     .dot.red { background: #e53e3e; }
     .dot.yellow { background: #d69e2e; }
     .dot.grey { background: #ccc; }
-    .headers { display: flex; gap: 4px; flex-wrap: wrap; }
-    .header-tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #eee; color: #666; }
-    .header-tag.ok { background: #c6f6d5; color: #276749; }
     .sub { font-size: 12px; color: #aaa; margin-top: 2px; }
     .stack-tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #ebf8ff; color: #2b6cb0; display: inline-block; margin-bottom: 2px; }
+    .type-tag { font-size: 11px; padding: 2px 7px; border-radius: 4px; background: #f0fff4; color: #276749; display: inline-block; margin-top: 2px; }
     .loading { text-align: center; padding: 80px; color: #888; }
+    .no-results { text-align: center; padding: 48px; color: #aaa; font-size: 14px; }
     .snippet-btn { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #1a1a2e; color: white; border: none; cursor: pointer; margin-top: 4px; display: inline-block; }
     .snippet-btn:hover { background: #2d2d4e; }
     .update-btn { font-size: 12px; padding: 4px 10px; border-radius: 4px; background: #fff; border: 1px solid #d69e2e; color: #d69e2e; cursor: pointer; white-space: nowrap; }
@@ -48,18 +56,18 @@
     .update-btn.core { border-color: #e53e3e; color: #e53e3e; }
     .update-btn.core:hover { background: #fff5f5; }
     .update-btn.success { border-color: #38a169; color: #38a169; background: #f0fff4; }
+    .updates-cell-btn { background: none; border: none; cursor: pointer; text-align: left; padding: 0; font-size: 14px; }
 
     /* Modal */
     .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
     .modal-overlay.open { display: flex; }
     .modal { background: white; border-radius: 12px; width: 640px; max-width: 95vw; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
-    .modal-header { padding: 20px 24px 16px; border-bottom: 1px solid #eee; }
+    .modal-header { padding: 20px 24px 16px; border-bottom: 1px solid #eee; position: relative; }
     .modal-header h2 { font-size: 17px; font-weight: 600; }
     .modal-header .modal-domain { font-size: 13px; color: #888; margin-top: 3px; }
     .modal-body { padding: 8px 0; overflow-y: auto; flex: 1; }
     .modal-footer { padding: 16px 24px; border-top: 1px solid #eee; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .modal-close { position: absolute; top: 0; right: 0; padding: 20px 24px; background: none; border: none; font-size: 20px; cursor: pointer; color: #888; line-height: 1; }
-    .modal-header { position: relative; }
     .update-row { display: grid; grid-template-columns: 1fr 90px 16px 90px auto; gap: 12px; align-items: center; padding: 12px 24px; border-bottom: 1px solid #f5f5f5; }
     .update-row:last-child { border-bottom: none; }
     .update-row:hover { background: #fafafa; }
@@ -73,9 +81,6 @@
     .update-all-btn { font-size: 13px; padding: 8px 16px; border-radius: 6px; background: #1a1a2e; color: white; border: none; cursor: pointer; }
     .update-all-btn:hover { background: #2d2d4e; }
     .modal-hint { font-size: 12px; color: #aaa; flex: 1; }
-    .trigger-link { font-size: 12px; color: #4a90d9; text-decoration: none; }
-    .trigger-link:hover { text-decoration: underline; }
-    .updates-cell-btn { background: none; border: none; cursor: pointer; text-align: left; padding: 0; font-size: 14px; }
   </style>
 </head>
 <body>
@@ -94,6 +99,24 @@
 
   <div class="alerts" id="alerts"></div>
 
+  <div class="filters" id="filters" style="display:none">
+    <div class="filter-group">
+      <span class="filter-label">Sort</span>
+      <button class="chip active" onclick="setSort('alpha', this)">A–Z</button>
+      <button class="chip" onclick="setSort('updates', this)">Updates first</button>
+      <button class="chip" onclick="setSort('down', this)">Down first</button>
+    </div>
+    <div class="filter-group" id="fg-stack" style="display:none">
+      <span class="filter-label">Stack</span>
+      <div id="chips-stack" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <div class="filter-group" id="fg-type" style="display:none">
+      <span class="filter-label">Type</span>
+      <div id="chips-type" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <span class="filter-count" id="filter-count"></span>
+  </div>
+
   <div class="sites">
     <table>
       <thead>
@@ -108,10 +131,9 @@
           <th>Updates</th>
           <th>PageSpeed</th>
           <th>Broken</th>
-          <th>Security Headers</th>
         </tr>
       </thead>
-      <tbody id="tbody"><tr><td colspan="11" class="loading">Loading results...</td></tr></tbody>
+      <tbody id="tbody"><tr><td colspan="10" class="loading">Loading results...</td></tr></tbody>
     </table>
   </div>
 
@@ -125,8 +147,8 @@
       </div>
       <div class="modal-body" id="modal-body"></div>
       <div class="modal-footer">
-        <button class="update-all-btn" id="update-all-btn" onclick="triggerUpdate(null, 'all', this)">Update All Plugins</button>
-        <span class="modal-hint">Clicking Update copies the slug &amp; opens GitHub Actions → paste it in the "plugin" field → Run workflow</span>
+        <button class="update-all-btn" id="update-all-btn">Update All Plugins</button>
+        <span class="modal-hint">Clicking Update triggers the workflow in the background — takes about 1 min</span>
       </div>
     </div>
   </div>
@@ -134,7 +156,13 @@
   <script>
     const WORKER_URL = 'https://dbd-webhook-relay.accounts-a21.workers.dev';
     const WEBHOOK_SECRET = 'dbd-webhook-2026';
-    let currentDomain = '';
+
+    // Global data store
+    let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {};
+    let activeSort = 'alpha';
+    let activeStack = null;
+    let activeType = null;
+    let currentDomain = '', currentHost = '', currentInstallName = '';
 
     function parseCacheControl(cc) {
       if (!cc) return { label: 'None', cls: 'yellow' };
@@ -157,9 +185,242 @@
       return { label: `${Math.round(ttl/60)}m`, cls: 'green' };
     }
 
-    let currentHost = '';
-    let currentInstallName = '';
+    function siteHasUpdates(s) {
+      const u = updateMap[s.url];
+      return u && (u.pluginUpdates?.length > 0 || u.wordpressUpdate);
+    }
 
+    function siteStack(s) {
+      const stack = stackMap[s.url] || {};
+      return stack.builder || (stack.wordpress ? 'WordPress' : null);
+    }
+
+    function setSort(val, btn) {
+      activeSort = val;
+      document.querySelectorAll('.filter-group:first-child .chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      renderTable();
+    }
+
+    function setStackFilter(val, btn) {
+      activeStack = activeStack === val ? null : val;
+      document.querySelectorAll('#chips-stack .chip').forEach(c => c.classList.remove('active'));
+      if (activeStack) btn.classList.add('active');
+      renderTable();
+    }
+
+    function setTypeFilter(val, btn) {
+      activeType = activeType === val ? null : val;
+      document.querySelectorAll('#chips-type .chip').forEach(c => c.classList.remove('active'));
+      if (activeType) btn.classList.add('active');
+      renderTable();
+    }
+
+    function buildFilters() {
+      // Stack chips
+      const stacks = [...new Set(allSites.map(s => siteStack(s)).filter(Boolean))].sort();
+      if (stacks.length > 1) {
+        const container = document.getElementById('chips-stack');
+        container.innerHTML = `<button class="chip active" onclick="setStackFilter(null, this)">All</button>` +
+          stacks.map(s => `<button class="chip" onclick="setStackFilter('${s}', this)">${s}</button>`).join('');
+        document.getElementById('fg-stack').style.display = '';
+      }
+
+      // Type chips
+      const types = [...new Set(allSites.map(s => siteMetaMap[s.url]?.siteType).filter(Boolean))].sort();
+      if (types.length > 1) {
+        const container = document.getElementById('chips-type');
+        container.innerHTML = `<button class="chip active" onclick="setTypeFilter(null, this)">All</button>` +
+          types.map(t => `<button class="chip" onclick="setTypeFilter('${t}', this)">${t}</button>`).join('');
+        document.getElementById('fg-type').style.display = '';
+      }
+
+      document.getElementById('filters').style.display = '';
+    }
+
+    function renderTable() {
+      let sites = [...allSites];
+
+      // Filter by stack
+      if (activeStack) {
+        sites = sites.filter(s => siteStack(s) === activeStack);
+      }
+
+      // Filter by type
+      if (activeType) {
+        sites = sites.filter(s => siteMetaMap[s.url]?.siteType === activeType);
+      }
+
+      // Sort
+      if (activeSort === 'alpha') {
+        sites.sort((a, b) => a.name.localeCompare(b.name));
+      } else if (activeSort === 'updates') {
+        sites.sort((a, b) => {
+          const au = siteHasUpdates(a) ? 0 : 1;
+          const bu = siteHasUpdates(b) ? 0 : 1;
+          return au - bu || a.name.localeCompare(b.name);
+        });
+      } else if (activeSort === 'down') {
+        sites.sort((a, b) => {
+          const ad = a.up ? 1 : 0;
+          const bd = b.up ? 1 : 0;
+          return ad - bd || a.name.localeCompare(b.name);
+        });
+      }
+
+      // Update count label
+      const total = allSites.length;
+      const showing = sites.length;
+      document.getElementById('filter-count').textContent = showing < total ? `Showing ${showing} of ${total} sites` : '';
+
+      const tbody = document.getElementById('tbody');
+      if (sites.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="10" class="no-results">No sites match the current filters</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = sites.map(s => {
+        const sslText = s.ssl ? (s.ssl.valid ? `${s.ssl.daysLeft}d` : 'Invalid') : 'N/A';
+        const sslClass = !s.ssl ? 'grey' : s.ssl.daysLeft <= 14 ? 'red' : s.ssl.daysLeft <= 30 ? 'yellow' : 'green';
+        const speed = s.responseTime < 800 ? 'green' : s.responseTime < 2000 ? 'yellow' : 'red';
+        const h = s.headers || {};
+        const cache = parseCacheControl(h.cacheControl);
+        const stack = stackMap[s.url] || {};
+        const audit = auditMap[s.url] || null;
+        const ttl = formatTtl(stack.dnsTtl);
+        const meta = siteMetaMap[s.url] || {};
+
+        const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '').split('/')[0];
+        const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+
+        const hostType = (s.host || '').toLowerCase().includes('wp engine') ? 'wpengine' : 'hostinger';
+        const installName = meta.sshInstallName || '';
+        const safeData = JSON.stringify({ siteName: s.name, domain, updates: updateMap[s.url] || null, host: hostType, installName }).replace(/'/g, '&#39;');
+
+        // Updates cell
+        const updates = updateMap[s.url] || null;
+        const pluginCount = updates?.pluginUpdates?.length || 0;
+        const hasWpUpdate = !!updates?.wordpressUpdate;
+        let updatesHtml;
+        if (!updates) {
+          updatesHtml = '<span style="color:#ccc">—</span>';
+        } else if (pluginCount === 0 && !hasWpUpdate) {
+          updatesHtml = '<span class="dot green"></span>Up to date';
+        } else {
+          const label = [
+            pluginCount > 0 ? `${pluginCount} plugin${pluginCount > 1 ? 's' : ''}` : '',
+            hasWpUpdate ? `WP ${updates.wordpressUpdate.version}` : '',
+          ].filter(Boolean).join(' · ');
+          const dot = hasWpUpdate ? 'red' : 'yellow';
+          updatesHtml = `<button class="updates-cell-btn" onclick='openUpdates(${safeData})'>
+            <span class="dot ${dot}"></span><span style="color:${hasWpUpdate ? '#e53e3e' : '#d69e2e'};font-weight:600">${label}</span>
+          </button>`;
+        }
+
+        // PageSpeed
+        const psHtml = audit && audit.pageSpeed && (audit.pageSpeed.mobile !== null || audit.pageSpeed.desktop !== null)
+          ? `<span class="dot ${audit.pageSpeed.mobile >= 80 ? 'green' : audit.pageSpeed.mobile >= 50 ? 'yellow' : 'red'}"></span>${audit.pageSpeed.mobile ?? '—'}<span style="color:#ccc;margin:0 3px">/</span>${audit.pageSpeed.desktop ?? '—'}`
+          : '<span style="color:#ccc">—</span>';
+
+        // Broken links
+        const brokenCount = audit && !audit.crawlBlocked ? (audit.brokenLinks.length + audit.brokenImages.length) : null;
+        const brokenHtml = !audit
+          ? '<span style="color:#ccc">—</span>'
+          : audit.crawlBlocked
+            ? '<span style="color:#aaa;font-size:12px">Protected</span>'
+            : `<span class="dot ${brokenCount === 0 ? 'green' : 'red'}"></span>${brokenCount === 0 ? 'None' : brokenCount + ' found'}`;
+
+        // Stack
+        const stackHtml = stack.builder
+          ? `<span class="stack-tag">${stack.builder}</span>${stack.wpVersion ? `<div class="sub">WP ${stack.wpVersion}</div>` : ''}${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
+          : stack.wordpress
+            ? `<span class="stack-tag">WordPress</span>${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
+            : '<span style="color:#ccc">—</span>';
+
+        // Site type tag
+        const typeHtml = meta.siteType ? `<div class="type-tag">${meta.siteType}</div>` : '';
+
+        return `<tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:8px">
+              <img src="${faviconUrl}" width="16" height="16" style="border-radius:3px;flex-shrink:0" onerror="this.style.display='none'">
+              <div>
+                <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
+                ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
+                ${typeHtml}
+                ${s.slug ? `<button class="snippet-btn" onclick="copySnippet('${s.slug}')">Copy WP Snippet</button>` : ''}
+              </div>
+            </div>
+          </td>
+          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span></td>
+          <td><span class="dot ${speed}"></span>${s.responseTime}ms</td>
+          <td><span class="dot ${sslClass}"></span>${sslText}</td>
+          <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
+          <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
+          <td>${stackHtml}</td>
+          <td>${updatesHtml}</td>
+          <td>${psHtml}</td>
+          <td>${brokenHtml}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function load() {
+      const [monRes, stackRes, sitesRes] = await Promise.all([
+        fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+        fetch('stack-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+        fetch('sites.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
+      ]);
+
+      stackMap = {};
+      (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
+
+      siteMetaMap = {};
+      (sitesRes.sites || []).forEach(s => { if (s.url) siteMetaMap[s.url] = s; });
+
+      auditMap = {};
+      updateMap = {};
+      await Promise.all((sitesRes.sites || []).map(async s => {
+        if (!s.slug) return;
+        const [auditRes, updateRes] = await Promise.all([
+          fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
+          fetch(`update-status/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
+        ]);
+        if (auditRes && auditRes.ok) { try { auditMap[s.url] = await auditRes.json(); } catch {} }
+        if (updateRes && updateRes.ok) { try { updateMap[s.url] = await updateRes.json(); } catch {} }
+      }));
+
+      allSites = monRes.sites || [];
+      document.getElementById('updated').textContent = 'Last checked: ' + new Date(monRes.updatedAt).toLocaleString();
+      document.getElementById('total').textContent = allSites.length;
+
+      const down = allSites.filter(s => !s.up);
+      const sslWarn = allSites.filter(s => s.ssl && s.ssl.daysLeft <= 30);
+      const up = allSites.filter(s => s.up);
+      const withUpdates = allSites.filter(s => siteHasUpdates(s));
+
+      document.getElementById('count-up').textContent = up.length;
+      document.getElementById('count-down').textContent = down.length;
+      document.getElementById('count-ssl').textContent = sslWarn.length;
+      document.getElementById('count-updates').textContent = withUpdates.length;
+      document.getElementById('stat-down').className = 'stat ' + (down.length > 0 ? 'red' : 'green');
+      document.getElementById('stat-ssl').className = 'stat ' + (sslWarn.length > 0 ? 'yellow' : 'green');
+      document.getElementById('stat-updates').className = 'stat ' + (withUpdates.length > 0 ? 'yellow' : 'green');
+
+      const alerts = document.getElementById('alerts');
+      alerts.innerHTML = '';
+      down.forEach(s => {
+        alerts.innerHTML += `<div class="alert">⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}</div>`;
+      });
+      sslWarn.forEach(s => {
+        alerts.innerHTML += `<div class="alert warn">🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days</div>`;
+      });
+
+      buildFilters();
+      renderTable();
+    }
+
+    // Modal
     function showUpdatesModal(siteName, domain, updates, host, installName) {
       currentDomain = domain;
       currentHost = host || 'hostinger';
@@ -167,9 +428,7 @@
       document.getElementById('modal-title').textContent = 'Available Updates';
       document.getElementById('modal-domain').textContent = siteName + ' — ' + domain;
 
-      const body = document.getElementById('modal-body');
       let html = '';
-
       if (updates.wordpressUpdate) {
         const u = updates.wordpressUpdate;
         html += `<div class="section-label">WordPress Core</div>
@@ -181,8 +440,7 @@
           <button class="update-btn core" onclick="triggerUpdate('${domain}', 'core', this)">Update Core</button>
         </div>`;
       }
-
-      if (updates.pluginUpdates && updates.pluginUpdates.length > 0) {
+      if (updates.pluginUpdates?.length > 0) {
         html += `<div class="section-label">Plugins (${updates.pluginUpdates.length})</div>`;
         updates.pluginUpdates.forEach(p => {
           html += `<div class="update-row">
@@ -194,13 +452,11 @@
           </div>`;
         });
       }
-
-      body.innerHTML = html;
+      document.getElementById('modal-body').innerHTML = html;
 
       const allBtn = document.getElementById('update-all-btn');
       allBtn.onclick = () => triggerUpdate(domain, 'all', allBtn);
       allBtn.style.display = (updates.pluginUpdates?.length > 0) ? '' : 'none';
-
       document.getElementById('modal-overlay').classList.add('open');
     }
 
@@ -208,17 +464,18 @@
       document.getElementById('modal-overlay').classList.remove('open');
     }
 
+    function openUpdates(data) {
+      showUpdatesModal(data.siteName, data.domain, data.updates, data.host, data.installName);
+    }
+
     async function triggerUpdate(domain, plugin, btn) {
       const d = domain || currentDomain;
-      const h = currentHost;
-      const n = currentInstallName;
       const orig = btn.textContent;
       btn.disabled = true;
       btn.textContent = 'Queuing…';
-
       try {
         const res = await fetch(
-          `${WORKER_URL}/trigger?domain=${encodeURIComponent(d)}&plugin=${encodeURIComponent(plugin)}&host=${encodeURIComponent(h)}&install_name=${encodeURIComponent(n)}&secret=${WEBHOOK_SECRET}`,
+          `${WORKER_URL}/trigger?domain=${encodeURIComponent(d)}&plugin=${encodeURIComponent(plugin)}&host=${encodeURIComponent(currentHost)}&install_name=${encodeURIComponent(currentInstallName)}&secret=${WEBHOOK_SECRET}`,
           { method: 'POST' }
         );
         const data = await res.json();
@@ -229,14 +486,12 @@
           setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 4000);
         } else {
           btn.textContent = '✗ Failed';
-          btn.style.borderColor = '#e53e3e';
-          btn.style.color = '#e53e3e';
-          showToast('Error: ' + (data.error || 'Unknown error'), true);
-          setTimeout(() => { btn.textContent = orig; btn.style.borderColor = ''; btn.style.color = ''; btn.disabled = false; }, 4000);
+          showToast('Error: ' + (data.error || 'Unknown'), true);
+          setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 4000);
         }
-      } catch (e) {
+      } catch {
         btn.textContent = '✗ Error';
-        showToast('Could not reach the worker. Check your connection.', true);
+        showToast('Could not reach the worker.', true);
         setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3000);
       }
     }
@@ -254,148 +509,6 @@
       t.style.opacity = '1';
       clearTimeout(t._timer);
       t._timer = setTimeout(() => { t.style.opacity = '0'; }, 4000);
-    }
-
-    async function load() {
-      const [monRes, stackRes, sitesRes] = await Promise.all([
-        fetch('results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
-        fetch('stack-results.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
-        fetch('sites.json?t=' + Date.now()).then(r => r.json()).catch(() => ({ sites: [] })),
-      ]);
-
-      const stackMap = {};
-      (stackRes.sites || []).forEach(s => { stackMap[s.url] = s; });
-
-      const siteMetaMap = {};
-      (sitesRes.sites || []).forEach(s => { if (s.url) siteMetaMap[s.url] = s; });
-
-      const auditMap = {};
-      const updateMap = {};
-      await Promise.all((sitesRes.sites || []).map(async s => {
-        if (!s.slug) return;
-        const [auditRes, updateRes] = await Promise.all([
-          fetch(`audit-results/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
-          fetch(`update-status/${s.slug}/latest.json?t=` + Date.now()).catch(() => null),
-        ]);
-        if (auditRes && auditRes.ok) { try { auditMap[s.url] = await auditRes.json(); } catch {} }
-        if (updateRes && updateRes.ok) { try { updateMap[s.url] = await updateRes.json(); } catch {} }
-      }));
-
-      const sites = monRes.sites || [];
-      document.getElementById('updated').textContent = 'Last checked: ' + new Date(monRes.updatedAt).toLocaleString();
-      document.getElementById('total').textContent = sites.length;
-
-      const down = sites.filter(s => !s.up);
-      const sslWarn = sites.filter(s => s.ssl && s.ssl.daysLeft <= 30);
-      const up = sites.filter(s => s.up);
-
-      document.getElementById('count-up').textContent = up.length;
-      document.getElementById('count-down').textContent = down.length;
-      document.getElementById('count-ssl').textContent = sslWarn.length;
-      document.getElementById('stat-down').className = 'stat ' + (down.length > 0 ? 'red' : 'green');
-      document.getElementById('stat-ssl').className = 'stat ' + (sslWarn.length > 0 ? 'yellow' : 'green');
-
-      const sitesWithUpdates = sites.filter(s => {
-        const u = updateMap[s.url];
-        return u && (u.pluginUpdates?.length > 0 || u.wordpressUpdate);
-      });
-      document.getElementById('count-updates').textContent = sitesWithUpdates.length;
-      document.getElementById('stat-updates').className = 'stat ' + (sitesWithUpdates.length > 0 ? 'yellow' : 'green');
-
-      const alerts = document.getElementById('alerts');
-      alerts.innerHTML = '';
-      down.forEach(s => {
-        alerts.innerHTML += `<div class="alert">⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}</div>`;
-      });
-      sslWarn.forEach(s => {
-        alerts.innerHTML += `<div class="alert warn">🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days</div>`;
-      });
-
-      const tbody = document.getElementById('tbody');
-      tbody.innerHTML = sites.map(s => {
-        const sslText = s.ssl ? (s.ssl.valid ? `${s.ssl.daysLeft}d` : 'Invalid') : 'N/A';
-        const sslClass = !s.ssl ? 'grey' : s.ssl.daysLeft <= 14 ? 'red' : s.ssl.daysLeft <= 30 ? 'yellow' : 'green';
-        const speed = s.responseTime < 800 ? 'green' : s.responseTime < 2000 ? 'yellow' : 'red';
-        const h = s.headers || {};
-        const cache = parseCacheControl(h.cacheControl);
-        const stack = stackMap[s.url] || {};
-        const audit = auditMap[s.url] || null;
-        const ttl = formatTtl(stack.dnsTtl);
-
-        const updates = updateMap[s.url] || null;
-        const pluginCount = updates?.pluginUpdates?.length || 0;
-        const hasWpUpdate = !!updates?.wordpressUpdate;
-        const domain = s.url.replace(/^https?:\/\//, '').replace(/\/$/, '').split('/')[0];
-        const siteMeta = siteMetaMap[s.url] || {};
-        const hostType = (s.host || '').toLowerCase().includes('wp engine') ? 'wpengine' : 'hostinger';
-        const installName = siteMeta.sshInstallName || '';
-        const safeData = JSON.stringify({ siteName: s.name, domain, updates, host: hostType, installName }).replace(/'/g, '&#39;');
-
-        let updatesHtml;
-        if (!updates) {
-          updatesHtml = '<span style="color:#ccc">—</span>';
-        } else if (pluginCount === 0 && !hasWpUpdate) {
-          updatesHtml = '<span class="dot green"></span>Up to date';
-        } else {
-          const label = [
-            pluginCount > 0 ? `${pluginCount} plugin${pluginCount > 1 ? 's' : ''}` : '',
-            hasWpUpdate ? `WP ${updates.wordpressUpdate.version}` : '',
-          ].filter(Boolean).join(' · ');
-          const dot = hasWpUpdate ? 'red' : 'yellow';
-          updatesHtml = `<button class="updates-cell-btn" onclick='openUpdates(${safeData})'>
-            <span class="dot ${dot}"></span><span style="color:${hasWpUpdate ? '#e53e3e' : '#d69e2e'};font-weight:600">${label}</span>
-          </button>`;
-        }
-
-        const psHtml = audit && audit.pageSpeed
-          ? `<span class="dot ${audit.pageSpeed.mobile >= 80 ? 'green' : audit.pageSpeed.mobile >= 50 ? 'yellow' : 'red'}"></span>${audit.pageSpeed.mobile}<span style="color:#ccc;margin:0 3px">/</span>${audit.pageSpeed.desktop}`
-          : '<span style="color:#ccc">—</span>';
-
-        const brokenCount = audit && !audit.crawlBlocked ? (audit.brokenLinks.length + audit.brokenImages.length) : null;
-        const brokenHtml = !audit
-          ? '<span style="color:#ccc">—</span>'
-          : audit.crawlBlocked
-            ? '<span style="color:#aaa;font-size:12px">Protected</span>'
-            : `<span class="dot ${brokenCount === 0 ? 'green' : 'red'}"></span>${brokenCount === 0 ? 'None' : brokenCount + ' found'}`;
-
-        const stackHtml = stack.builder
-          ? `<span class="stack-tag">${stack.builder}</span>${stack.wpVersion ? `<div class="sub">WP ${stack.wpVersion}</div>` : ''}${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
-          : stack.wordpress
-            ? `<span class="stack-tag">WordPress</span>${stack.theme ? `<div class="sub">${stack.theme}</div>` : ''}`
-            : '<span style="color:#ccc">—</span>';
-
-        const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
-
-        return `<tr>
-          <td>
-            <div style="display:flex;align-items:center;gap:8px">
-              <img src="${faviconUrl}" width="16" height="16" style="border-radius:3px;flex-shrink:0" onerror="this.style.display='none'">
-              <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
-            </div>
-            ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
-            ${s.slug ? `<button class="snippet-btn" onclick="copySnippet('${s.slug}')">Copy WP Snippet</button>` : ''}
-          </td>
-          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span></td>
-          <td><span class="dot ${speed}"></span>${s.responseTime}ms</td>
-          <td><span class="dot ${sslClass}"></span>${sslText}</td>
-          <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
-          <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
-          <td>${stackHtml}</td>
-          <td>${updatesHtml}</td>
-          <td>${psHtml}</td>
-          <td>${brokenHtml}</td>
-          <td><div class="headers">
-            <span class="header-tag ${h.hsts ? 'ok' : ''}">HSTS</span>
-            <span class="header-tag ${h.xFrameOptions ? 'ok' : ''}">X-Frame</span>
-            <span class="header-tag ${h.xContentType ? 'ok' : ''}">X-Content</span>
-            <span class="header-tag ${h.csp ? 'ok' : ''}">CSP</span>
-          </div></td>
-        </tr>`;
-      }).join('');
-    }
-
-    function openUpdates(data) {
-      showUpdatesModal(data.siteName, data.domain, data.updates, data.host, data.installName);
     }
 
     function copySnippet(slug) {
