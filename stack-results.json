@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T18:31:14.376Z",
+  "updatedAt": "2026-06-30T13:30:16.341Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -9,6 +9,15 @@
       "wpVersion": null,
       "builder": "Gutenberg",
       "theme": "dbd24"
+    },
+    {
+      "url": "https://jedco.org/",
+      "name": "JEDCO",
+      "dnsTtl": 1800,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "jedco25"
     }
   ]
 }
