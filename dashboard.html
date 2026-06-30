@@ -32,7 +32,8 @@
 
     .sites { padding: 0 32px 32px; overflow-x: auto; }
     .sites table { width: 100%; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-collapse: collapse; overflow: hidden; }
-    th { text-align: left; padding: 12px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; border-bottom: 1px solid #eee; white-space: nowrap; }
+    th { text-align: left; padding: 12px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #888; border-bottom: 1px solid #eee; white-space: nowrap; vertical-align: top; }
+    .th-sub { font-size: 10px; text-transform: none; letter-spacing: 0; color: #bbb; font-weight: 400; margin-top: 2px; }
     td { padding: 14px 16px; font-size: 14px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #fafafa; }
@@ -123,14 +124,14 @@
         <tr>
           <th>Site</th>
           <th>Status</th>
-          <th>Response</th>
-          <th>SSL</th>
-          <th>Cache</th>
-          <th>DNS TTL</th>
-          <th>Stack</th>
-          <th>Updates</th>
-          <th>PageSpeed</th>
-          <th>Broken</th>
+          <th>Response<div class="th-sub">Load time</div></th>
+          <th>SSL<div class="th-sub">Certificate</div></th>
+          <th>Cache<div class="th-sub">Browser caching</div></th>
+          <th>DNS TTL<div class="th-sub">How fast DNS changes</div></th>
+          <th>Stack<div class="th-sub">Builder &amp; platform</div></th>
+          <th>Updates<div class="th-sub">Plugins &amp; WordPress</div></th>
+          <th>PageSpeed<div class="th-sub">Mobile / Desktop (0–100)</div></th>
+          <th>Broken Links<div class="th-sub">Dead links on this site</div></th>
         </tr>
       </thead>
       <tbody id="tbody"><tr><td colspan="10" class="loading">Loading results...</td></tr></tbody>
@@ -280,7 +281,7 @@
       }
 
       tbody.innerHTML = sites.map(s => {
-        const sslText = s.ssl ? (s.ssl.valid ? `${s.ssl.daysLeft}d` : 'Invalid') : 'N/A';
+        const sslText = s.ssl ? (s.ssl.valid ? `Expires in ${s.ssl.daysLeft}d` : 'Invalid') : 'N/A';
         const sslClass = !s.ssl ? 'grey' : s.ssl.daysLeft <= 14 ? 'red' : s.ssl.daysLeft <= 30 ? 'yellow' : 'green';
         const speed = s.responseTime < 800 ? 'green' : s.responseTime < 2000 ? 'yellow' : 'red';
         const h = s.headers || {};
@@ -318,8 +319,13 @@
         }
 
         // PageSpeed
-        const psHtml = audit && audit.pageSpeed && (audit.pageSpeed.mobile !== null || audit.pageSpeed.desktop !== null)
-          ? `<span class="dot ${audit.pageSpeed.mobile >= 80 ? 'green' : audit.pageSpeed.mobile >= 50 ? 'yellow' : 'red'}"></span>${audit.pageSpeed.mobile ?? '—'}<span style="color:#ccc;margin:0 3px">/</span>${audit.pageSpeed.desktop ?? '—'}`
+        const psMobile = audit?.pageSpeed?.mobile ?? null;
+        const psDesktop = audit?.pageSpeed?.desktop ?? null;
+        const psHtml = audit && audit.pageSpeed && (psMobile !== null || psDesktop !== null)
+          ? `<div style="display:flex;flex-direction:column;gap:3px">
+              <span><span style="font-size:11px;color:#aaa;margin-right:4px">📱</span><span class="dot ${psMobile >= 80 ? 'green' : psMobile >= 50 ? 'yellow' : 'red'}"></span>${psMobile ?? '—'}</span>
+              <span><span style="font-size:11px;color:#aaa;margin-right:4px">🖥</span><span class="dot ${psDesktop >= 80 ? 'green' : psDesktop >= 50 ? 'yellow' : 'red'}"></span>${psDesktop ?? '—'}</span>
+            </div>`
           : '<span style="color:#ccc">—</span>';
 
         // Broken links
@@ -328,7 +334,7 @@
           ? '<span style="color:#ccc">—</span>'
           : audit.crawlBlocked
             ? '<span style="color:#aaa;font-size:12px">Protected</span>'
-            : `<span class="dot ${brokenCount === 0 ? 'green' : 'red'}"></span>${brokenCount === 0 ? 'None' : brokenCount + ' found'}`;
+            : `<span class="dot ${brokenCount === 0 ? 'green' : 'red'}"></span>${brokenCount === 0 ? 'None found' : brokenCount + ' broken link' + (brokenCount > 1 ? 's' : '')}`;
 
         // Stack
         const stackHtml = stack.builder
