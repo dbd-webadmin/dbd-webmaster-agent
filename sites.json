@@ -10,7 +10,21 @@
       "sshAccess": true,
       "notes": "",
       "active": true,
-      "sshInstallName": "dbds"
+      "sshInstallName": "dbds",
+      "siteType": ""
+    },
+    {
+      "name": "JEDCO",
+      "url": "https://jedco.org/",
+      "slug": "jedco-org",
+      "clientEmail": "kscram@jedco.org",
+      "host": "Hostinger",
+      "managedByDbd": true,
+      "sshAccess": true,
+      "notes": "",
+      "active": true,
+      "sshInstallName": "",
+      "siteType": ""
     }
   ]
 }
