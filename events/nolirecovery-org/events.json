@@ -1,0 +1,10 @@
+[
+  {
+    "receivedAt": "2026-07-01T23:44:37.949Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "admin@dbdplanning.com"
+    }
+  }
+]
