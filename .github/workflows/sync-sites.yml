@@ -2,7 +2,7 @@ name: Sync Sites from Google Sheets
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '6 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -32,5 +32,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git add sites.json
           git diff --staged --quiet || git commit -m "Sync sites from Google Sheets $(date -u +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            git push && break
+            echo "Push rejected (attempt $i), retrying..."
+            sleep $(( (RANDOM % 10) + 1 ))
+          done

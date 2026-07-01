@@ -2,7 +2,7 @@ name: Check Plugin & Core Updates
 
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '23 9 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,5 +38,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git add update-status/
           git diff --staged --quiet || git commit -m "Update status check $(date -u +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            git push && break
+            echo "Push rejected (attempt $i), retrying..."
+            sleep $(( (RANDOM % 10) + 1 ))
+          done
