@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T00:12:03.238Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "benflyingpebble-com"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T00:12:00.320Z",
     "type": "login_failed",
     "data": {
