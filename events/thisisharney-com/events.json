@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T02:12:24.154Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "dylandbdplanning-com"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T02:07:27.206Z",
     "type": "login_failed",
     "data": {
@@ -389,14 +397,6 @@
     "data": {
       "event": "login_failed",
       "user": "dylandbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-01T23:15:21.834Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "harneyor"
     }
   }
 ]
