@@ -100,6 +100,7 @@
     <div class="stat" id="stat-down"><div class="number" id="count-down">—</div><div class="label">Down</div></div>
     <div class="stat" id="stat-ssl"><div class="number" id="count-ssl">—</div><div class="label">SSL expiring soon</div></div>
     <div class="stat" id="stat-updates"><div class="number" id="count-updates">—</div><div class="label">Sites with updates</div></div>
+    <div class="stat" id="stat-php"><div class="number" id="count-php">—</div><div class="label">Outdated PHP</div></div>
     <div class="stat" id="stat-security"><div class="number" id="count-security">—</div><div class="label">Security alerts</div></div>
   </div>
 
@@ -135,12 +136,13 @@
           <th>DNS TTL<div class="th-sub">How fast DNS changes</div></th>
           <th>Stack<div class="th-sub">Builder &amp; platform</div></th>
           <th>Updates<div class="th-sub">Plugins &amp; WordPress</div></th>
+          <th>PHP<div class="th-sub">Server version</div></th>
           <th>PageSpeed<div class="th-sub">Mobile / Desktop (0–100)</div></th>
           <th>Broken Links<div class="th-sub">Dead links on this site</div></th>
           <th>Security<div class="th-sub">Login &amp; account events</div></th>
         </tr>
       </thead>
-      <tbody id="tbody"><tr><td colspan="10" class="loading">Loading results...</td></tr></tbody>
+      <tbody id="tbody"><tr><td colspan="11" class="loading">Loading results...</td></tr></tbody>
     </table>
   </div>
 
@@ -235,6 +237,33 @@
       const label = ttl < 60 ? `${ttl}s` : ttl < 3600 ? `${Math.round(ttl/60)}m` : `${Math.round(ttl/3600)}h`;
       if (inCloudflare) return { label, cls: 'green' };
       return { label, cls: ttl < 3600 ? 'yellow' : 'green' };
+    }
+
+    // Anything below 8.0 is unambiguously end-of-life; 8.0/8.1 are old enough to
+    // flag for planning; 8.2+ is treated as current. Adjust here if the bar moves.
+    const PHP_OUTDATED_BELOW = '8.0';
+    const PHP_AGING_BELOW = '8.2';
+
+    function phpVersionCmp(a, b) {
+      const [aMaj, aMin] = a.split('.').map(Number);
+      const [bMaj, bMin] = b.split('.').map(Number);
+      return aMaj !== bMaj ? aMaj - bMaj : aMin - bMin;
+    }
+
+    function phpStatus(version) {
+      if (!version) return null;
+      const short = version.split('.').slice(0, 2).join('.');
+      if (phpVersionCmp(short, PHP_OUTDATED_BELOW) < 0) return 'red';
+      if (phpVersionCmp(short, PHP_AGING_BELOW) < 0) return 'yellow';
+      return 'green';
+    }
+
+    function phpVersionHtml(version) {
+      if (!version) return '<span style="color:#ccc">—</span>';
+      const short = version.split('.').slice(0, 2).join('.');
+      const status = phpStatus(version);
+      const label = status === 'red' ? 'Outdated' : status === 'yellow' ? 'Aging' : 'Current';
+      return `<span class="dot ${status}"></span>PHP ${short}<div class="sub">${label}</div>`;
     }
 
     function siteHasUpdates(s) {
@@ -369,6 +398,10 @@
           </button>`;
         }
 
+        // PHP version
+        const phpVersion = updates?.phpVersion || null;
+        const phpHtml = phpVersionHtml(phpVersion);
+
         // PageSpeed
         const psMobile = audit?.pageSpeed?.mobile ?? null;
         const psDesktop = audit?.pageSpeed?.desktop ?? null;
@@ -437,6 +470,7 @@
           <td><span class="dot ${ttl.cls}"></span>${ttl.label}</td>
           <td>${stackHtml}</td>
           <td>${updatesHtml}</td>
+          <td>${phpHtml}</td>
           <td>${psHtml}</td>
           <td>${brokenHtml}</td>
           <td>${secHtml}</td>
@@ -489,6 +523,10 @@
       document.getElementById('count-down').textContent = down.length;
       document.getElementById('count-ssl').textContent = sslWarn.length;
       document.getElementById('count-updates').textContent = withUpdates.length;
+
+      const phpOutdated = allSites.filter(s => phpStatus(updateMap[s.url]?.phpVersion) === 'red');
+      document.getElementById('count-php').textContent = phpOutdated.length;
+      document.getElementById('stat-php').className = 'stat ' + (phpOutdated.length > 0 ? 'red' : 'green');
       document.getElementById('stat-down').className = 'stat ' + (down.length > 0 ? 'red' : 'green');
       document.getElementById('stat-ssl').className = 'stat ' + (sslWarn.length > 0 ? 'yellow' : 'green');
       document.getElementById('stat-updates').className = 'stat ' + (withUpdates.length > 0 ? 'yellow' : 'green');

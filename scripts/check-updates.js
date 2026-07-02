@@ -64,11 +64,14 @@ for (const site of sites) {
   const pluginJson = ssh(cfg, `wp plugin list --path='${cfg.wpPath}' --update=available --fields=name,version,update_version --format=json 2>/dev/null || echo '[]'`);
   const coreJson = ssh(cfg, `wp core check-update --path='${cfg.wpPath}' --format=json 2>/dev/null || echo '[]'`);
   const wpVersion = ssh(cfg, `wp core version --path='${cfg.wpPath}' 2>/dev/null`);
+  const cliInfoJson = ssh(cfg, `wp cli info --path='${cfg.wpPath}' --format=json 2>/dev/null`);
 
   let pluginUpdates = [];
   let coreUpdates = [];
+  let phpVersion = null;
   try { pluginUpdates = JSON.parse(pluginJson || '[]'); } catch {}
   try { coreUpdates = JSON.parse(coreJson || '[]'); } catch {}
+  try { phpVersion = JSON.parse(cliInfoJson || '{}').php_version || null; } catch {}
 
   const result = {
     slug: site.slug,
@@ -77,12 +80,13 @@ for (const site of sites) {
     currentWpVersion: wpVersion || null,
     wordpressUpdate: coreUpdates.length > 0 ? coreUpdates[0] : null,
     pluginUpdates,
+    phpVersion,
   };
 
   const dir = `update-status/${site.slug}`;
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(`${dir}/latest.json`, JSON.stringify(result, null, 2));
-  console.log(`${site.url} [${site.host}]: ${pluginUpdates.length} plugin updates, WP ${wpVersion}${coreUpdates.length > 0 ? ` → ${coreUpdates[0].version} available` : ' is current'}`);
+  console.log(`${site.url} [${site.host}]: ${pluginUpdates.length} plugin updates, WP ${wpVersion}${coreUpdates.length > 0 ? ` → ${coreUpdates[0].version} available` : ' is current'}, PHP ${phpVersion || 'unknown'}`);
 }
 
 console.log('Done.');
