@@ -1,0 +1,10 @@
+[
+  {
+    "receivedAt": "2026-07-02T04:27:37.038Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "admin@wordpress.com"
+    }
+  }
+]
