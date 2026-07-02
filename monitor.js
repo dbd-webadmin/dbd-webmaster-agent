@@ -6,7 +6,7 @@ const { URL } = require('url');
 
 const { sites } = JSON.parse(fs.readFileSync('sites.json', 'utf8'));
 
-function checkUptime(siteUrl) {
+function attemptUptime(siteUrl) {
   return new Promise((resolve) => {
     const start = Date.now();
     let url;
@@ -23,6 +23,9 @@ function checkUptime(siteUrl) {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Upgrade-Insecure-Requests': '1',
       }
     };
     const req = lib.request(options, (res) => {
@@ -46,6 +49,21 @@ function checkUptime(siteUrl) {
     req.on('timeout', () => { req.destroy(); resolve({ up: false, responseTime: 10000, error: 'Timeout' }); });
     req.end();
   });
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// A single blocked/reset connection (e.g. a host's bot-protection dropping our
+// request) shouldn't read as a real outage — retry before calling it down.
+async function checkUptime(siteUrl, retries = 2, delayMs = 4000) {
+  let result = await attemptUptime(siteUrl);
+  for (let attempt = 0; attempt < retries && !result.up; attempt++) {
+    await sleep(delayMs);
+    result = await attemptUptime(siteUrl);
+  }
+  return result;
 }
 
 function checkSSL(siteUrl) {
