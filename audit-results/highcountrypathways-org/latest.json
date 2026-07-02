@@ -1,0 +1,26 @@
+{
+  "url": "https://highcountrypathways.org/",
+  "name": "High Country Pathways",
+  "auditedAt": "2026-07-02T16:16:38.053Z",
+  "durationMs": 23702,
+  "pagesChecked": 7,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://highcountrypathways.org/xmlrpc.php",
+      "status": 403,
+      "ok": false
+    }
+  ],
+  "brokenImages": [
+    {
+      "url": "https://highcountrypathways.org/wp-content/uploads/2024/04/highcountrypathwayslogo_logo.webp",
+      "status": 0,
+      "ok": false
+    }
+  ],
+  "pageSpeed": {
+    "mobile": 91,
+    "desktop": 99
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://neckofthewoodsnc.com/",
+  "name": "Neck of the Woods",
+  "auditedAt": "2026-07-02T16:16:14.350Z",
+  "durationMs": 51831,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://neckofthewoodsnc.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 71,
+    "desktop": 92
+  }
+}

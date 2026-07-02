@@ -1,0 +1,25 @@
+{
+  "url": "https://uniontourismplan.com/",
+  "name": "Union County Tourism Plan",
+  "auditedAt": "2026-07-02T16:17:18.720Z",
+  "durationMs": 40666,
+  "pagesChecked": 14,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://uniontourismplan.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://uniontourismplan.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 69,
+    "desktop": 87
+  }
+}
