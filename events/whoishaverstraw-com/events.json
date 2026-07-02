@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T12:26:51.771Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "admindbdplanning-com"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T12:26:41.246Z",
     "type": "login_failed",
     "data": {
