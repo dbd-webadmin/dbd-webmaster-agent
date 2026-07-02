@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T00:12:00.320Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "dylandbdplanning-com"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T00:07:28.676Z",
     "type": "login_failed",
     "data": {
