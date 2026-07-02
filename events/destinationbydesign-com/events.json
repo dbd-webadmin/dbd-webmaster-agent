@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-02T17:50:34.070Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-02T17:50:20.915Z",
     "type": "plugin_update",
     "data": {
@@ -395,14 +405,6 @@
     "data": {
       "event": "login_failed",
       "user": "sunny"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:00:18.333Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": ""
     }
   }
 ]
