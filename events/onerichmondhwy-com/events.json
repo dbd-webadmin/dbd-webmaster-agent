@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-02T16:18:42.771Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "webp-uploads/load.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-02T16:18:41.016Z",
     "type": "plugin_update",
     "data": {
