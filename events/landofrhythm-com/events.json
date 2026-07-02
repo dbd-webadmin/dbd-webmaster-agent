@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T07:28:41.311Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "bailey"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T07:28:28.117Z",
     "type": "login_failed",
     "data": {
@@ -385,14 +393,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:16:01.413Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:15:46.907Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
