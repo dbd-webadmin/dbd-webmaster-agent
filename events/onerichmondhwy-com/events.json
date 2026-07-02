@@ -1,0 +1,12 @@
+[
+  {
+    "receivedAt": "2026-07-02T16:18:35.976Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  }
+]
