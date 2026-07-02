@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T13:08:44.509Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "matt"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T13:07:48.567Z",
     "type": "login_failed",
     "data": {
@@ -389,14 +397,6 @@
     "data": {
       "event": "login_failed",
       "user": "matt"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T10:36:23.404Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "dylan"
     }
   }
 ]
