@@ -1,7 +1,7 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-07-02T16:20:37.151Z",
+  "checkedAt": "2026-07-02T18:18:42.145Z",
   "currentWpVersion": "7.0",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -15,5 +15,6 @@
       "version": "1.3.9.3",
       "update_version": "1.4.0"
     }
-  ]
+  ],
+  "phpVersion": "8.3.30"
 }

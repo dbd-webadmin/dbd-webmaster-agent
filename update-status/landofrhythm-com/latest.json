@@ -1,7 +1,7 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-07-02T16:20:46.856Z",
+  "checkedAt": "2026-07-02T18:18:59.864Z",
   "currentWpVersion": "7.0",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -10,5 +10,6 @@
       "version": "6.3.1.2",
       "update_version": "6.8.5"
     }
-  ]
+  ],
+  "phpVersion": "8.3.30"
 }

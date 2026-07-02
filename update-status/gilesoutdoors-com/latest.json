@@ -1,7 +1,7 @@
 {
   "slug": "gilesoutdoors-com",
   "url": "https://gilesoutdoors.com/",
-  "checkedAt": "2026-07-02T16:21:00.717Z",
+  "checkedAt": "2026-07-02T18:19:30.229Z",
   "currentWpVersion": "7.0",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -30,5 +30,6 @@
       "version": "1.181.0",
       "update_version": "1.182.0"
     }
-  ]
+  ],
+  "phpVersion": "8.3.30"
 }
