@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T18:03:31.587Z",
+  "updatedAt": "2026-07-02T13:21:46.835Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -18,6 +18,276 @@
       "wpVersion": null,
       "builder": "Gutenberg",
       "theme": "jedco25"
+    },
+    {
+      "url": "https://onerichmondhwy.com/",
+      "name": "One Richmond Hwy",
+      "dnsTtl": 1800,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
+    },
+    {
+      "url": "https://landofrhythm.com/",
+      "name": "Land of Rhythm",
+      "dnsTtl": 600,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "cleveland"
+    },
+    {
+      "url": "https://destinationswva.org/",
+      "name": "Destination SWVA",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "dbd24"
+    },
+    {
+      "url": "https://visitridgwayco.com/",
+      "name": "Visit Ridgway Colorado",
+      "dnsTtl": 600,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
+    },
+    {
+      "url": "https://tellingourpendletonstory.org/",
+      "name": "Discovering Our Pendleton Story",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "dbd24"
+    },
+    {
+      "url": "https://gilesoutdoors.com/",
+      "name": "Giles Outdoors",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "dbd24"
+    },
+    {
+      "url": "https://henrico.com/",
+      "name": "Henrico EDA",
+      "dnsTtl": 1800,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
+    },
+    {
+      "url": "https://thisisharney.com/",
+      "name": "Harney County",
+      "dnsTtl": 1800,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "hello-elementor"
+    },
+    {
+      "url": "https://discoverfortmill.org/",
+      "name": "Discover Fort Mill",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Elementor",
+      "theme": "hello-elementor"
+    },
+    {
+      "url": "https://tourtalbot.org/",
+      "name": "Talbot County",
+      "dnsTtl": 1800,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "talbot"
+    },
+    {
+      "url": "https://elevatemitchell.com/",
+      "name": "Elevate Mitchell",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "dbd24"
+    },
+    {
+      "url": "https://nolirecovery.org/",
+      "name": "Nolichucky Recovery Initiative",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "dbd24"
+    },
+    {
+      "url": "https://adventuremeadowriver.com/",
+      "name": "Adventure Meadow River",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://whoishaverstraw.com/",
+      "name": "Who is Haverstraw?",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://www.raisetherock.com/",
+      "name": "Raise the Rock",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfive"
+    },
+    {
+      "url": "https://swvaoutdoors.org/",
+      "name": "Friends of SWVA",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://movingtogetherm-mrec.com/",
+      "name": "Moving Together Madison - Mayodan",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://imaginewatauga.com/",
+      "name": "Imagine Watauga",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://winklercreek.com/",
+      "name": "Winklers Creek Park",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://www.rutherfordbound.com/",
+      "name": "Rutherford Bound",
+      "dnsTtl": 219,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
+    },
+    {
+      "url": "https://wilkesoutdooractionplan.com/",
+      "name": "Wilkes Outdoor Action Plan",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": null
+    },
+    {
+      "url": "https://cortlandfoodmap.org/",
+      "name": "Cortland County Food Map",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
+    },
+    {
+      "url": "https://wilcoresources.org/",
+      "name": "Wilkes County Food Guide",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "wilks"
+    },
+    {
+      "url": "https://legacysoccerpark.org/",
+      "name": "Legacy Soccer Park",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://shelbyonthemove.com/",
+      "name": "Shelby on the Move",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Divi",
+      "theme": "Divi"
+    },
+    {
+      "url": "https://beckleyoutdoors.com/",
+      "name": "Beckley Outdoors Action Plan",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/",
+      "name": "Neck of the Woods",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Divi",
+      "theme": "Divi"
+    },
+    {
+      "url": "https://highcountrypathways.org/",
+      "name": "High Country Pathways",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
+    },
+    {
+      "url": "https://uniontourismplan.com/",
+      "name": "Union County Tourism Plan",
+      "dnsTtl": 300,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
+    },
+    {
+      "url": "https://deepgaprecreationarea.org/",
+      "name": "Deep Gap Recreation Area",
+      "dnsTtl": 300,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     }
   ]
 }
