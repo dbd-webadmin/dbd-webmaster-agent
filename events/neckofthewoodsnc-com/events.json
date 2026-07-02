@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-02T04:27:48.463Z",
+    "type": "login_failed",
+    "data": {
+      "event": "login_failed",
+      "user": "XMC.pl-System"
+    }
+  },
+  {
     "receivedAt": "2026-07-02T04:27:46.073Z",
     "type": "login_failed",
     "data": {
