@@ -12,7 +12,8 @@ const HOSTINGER = {
 
 function getSshConfig(site) {
   const isWpEngine = site.host?.toLowerCase().includes('wp engine');
-  if (isWpEngine && site.sshInstallName) {
+  if (isWpEngine) {
+    if (!site.sshInstallName) return null; // no install name on file — can't build the right SSH target
     const name = site.sshInstallName;
     return {
       user: name,
