@@ -2,9 +2,13 @@ const https = require('https');
 const http = require('http');
 const tls = require('tls');
 const fs = require('fs');
+const os = require('os');
+const { execFile } = require('child_process');
 const { URL } = require('url');
+const { getSshConfig } = require('./scripts/ssh-config');
 
 const { sites } = JSON.parse(fs.readFileSync('sites.json', 'utf8'));
+const SSH_KEY = process.env.SSH_KEY_PATH || `${os.homedir()}/.ssh/dbd_webmaster`;
 
 function attemptUptime(siteUrl) {
   return new Promise((resolve) => {
@@ -82,8 +86,52 @@ function checkSSL(siteUrl) {
   });
 }
 
+// A public check can fail because a host is blocking our checker's IP (bot
+// protection) rather than the site actually being down. When that happens
+// and we have SSH access, ask WordPress itself whether it's healthy —
+// confirms the app and database are working without going back out over
+// the same network path that just got blocked (which, on shared hosts,
+// can itself reject requests that spoof a Host header over loopback).
+function sshAttempt(cfg) {
+  return new Promise((resolve) => {
+    const remoteCmd = `wp option get siteurl --path='${cfg.wpPath}' 2>/dev/null`;
+    execFile('ssh', [
+      '-i', SSH_KEY, '-p', cfg.port, '-o', 'StrictHostKeyChecking=no', '-o', 'ConnectTimeout=10',
+      `${cfg.user}@${cfg.host}`, remoteCmd,
+    ], { timeout: 20000 }, (err, stdout) => {
+      // ssh itself exits 255 on a connection failure (couldn't reach the box at
+      // all) — that's inconclusive, not a confirmed WordPress problem. Any other
+      // non-zero exit means we connected fine but the remote command failed.
+      if (err && err.code === 255) return resolve(null);
+      if (err) return resolve(false);
+      resolve(String(stdout).trim().startsWith('http'));
+    });
+  });
+}
+
+async function sshVerify(site) {
+  const cfg = getSshConfig(site);
+  if (!cfg) return null;
+  const first = await sshAttempt(cfg);
+  if (first !== null) return first;
+  await sleep(3000);
+  return sshAttempt(cfg); // one retry — WP Engine's SSH occasionally drops a connection attempt
+}
+
 async function checkSite(site) {
   const [uptime, ssl] = await Promise.all([checkUptime(site.url), checkSSL(site.url)]);
+
+  let result = uptime;
+  if (!uptime.up && site.sshAccess) {
+    const wpHealthy = await sshVerify(site);
+    if (wpHealthy === true) {
+      result = { ...uptime, up: true, sshVerified: true };
+    } else if (wpHealthy === false) {
+      result = { ...uptime, sshVerified: true };
+    }
+    // wpHealthy === null (no SSH config, e.g. missing WP Engine install name) — leave as-is, unverified
+  }
+
   return {
     name: site.name,
     url: site.url,
@@ -93,7 +141,7 @@ async function checkSite(site) {
     clientEmail: site.clientEmail || null,
     notes: site.notes || null,
     checkedAt: new Date().toISOString(),
-    ...uptime,
+    ...result,
     ssl,
   };
 }
@@ -103,7 +151,8 @@ async function run() {
   const results = await Promise.all(sites.map(checkSite));
   results.forEach(r => {
     const ssl = r.ssl ? `SSL: ${r.ssl.daysLeft} days` : 'no SSL';
-    console.log(`${r.up ? '✓' : '✗'} ${r.name} — ${r.responseTime}ms — ${ssl}`);
+    const sshNote = r.sshVerified ? (r.up ? ' [SSH-verified after public check blocked]' : ' [SSH check also failed]') : '';
+    console.log(`${r.up ? '✓' : '✗'} ${r.name} — ${r.responseTime}ms — ${ssl}${sshNote}`);
   });
   fs.writeFileSync('results.json', JSON.stringify({ updatedAt: new Date().toISOString(), sites: results }, null, 2));
   console.log('Saved results.json');

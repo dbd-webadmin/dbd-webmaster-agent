@@ -463,7 +463,7 @@
               </div>
             </div>
           </td>
-          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span></td>
+          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span>${s.sshVerified ? `<div class="sub" title="Public check failed/blocked; confirmed via SSH instead">${s.up ? '✓ SSH-verified' : '✗ SSH check also failed'}</div>` : ''}</td>
           <td><span class="dot ${speed}"></span>${s.responseTime}ms</td>
           <td><span class="dot ${sslClass}"></span>${sslText}</td>
           <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
@@ -549,7 +549,8 @@
       const alerts = document.getElementById('alerts');
       alerts.innerHTML = '';
       down.forEach(s => {
-        alerts.innerHTML += `<div class="alert">⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}</div>`;
+        const sshNote = s.sshVerified ? ' (confirmed via SSH — not just a blocked public check)' : '';
+        alerts.innerHTML += `<div class="alert">⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}${sshNote}</div>`;
       });
       sslWarn.forEach(s => {
         alerts.innerHTML += `<div class="alert warn">🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days</div>`;

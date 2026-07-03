@@ -1,36 +1,9 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const os = require('os');
+const { getSshConfig } = require('./ssh-config');
 
 const SSH_KEY = process.env.SSH_KEY_PATH || `${os.homedir()}/.ssh/dbd_webmaster`;
-
-const HOSTINGER = {
-  user: 'u995288748',
-  host: '93.127.218.76',
-  port: '65002',
-};
-
-function getSshConfig(site) {
-  const isWpEngine = site.host?.toLowerCase().includes('wp engine');
-  if (isWpEngine) {
-    if (!site.sshInstallName) return null; // no install name on file — can't build the right SSH target
-    const name = site.sshInstallName;
-    return {
-      user: name,
-      host: `${name}.ssh.wpengine.net`,
-      port: '22',
-      wpPath: `/home/wpe-user/sites/${name}`,
-    };
-  }
-  let hostname;
-  try { hostname = new URL(site.url).hostname.replace(/^www\./, ''); } catch { return null; }
-  return {
-    user: HOSTINGER.user,
-    host: HOSTINGER.host,
-    port: HOSTINGER.port,
-    wpPath: `/home/${HOSTINGER.user}/domains/${hostname}/public_html`,
-  };
-}
 
 function ssh(cfg, cmd, timeoutMs = 60000) {
   try {
