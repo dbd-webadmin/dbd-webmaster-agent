@@ -1,5 +1,9 @@
 {
-  "loginFailed": null,
+  "loginFailed": {
+    "count": 1,
+    "firstSeen": "2026-07-03T01:33:45.613Z",
+    "lastSeen": "2026-07-03T01:33:45.613Z"
+  },
   "loginSuccess": {
     "count": 1,
     "lastSeen": "2026-07-02T15:36:09.127Z",
@@ -15,5 +19,5 @@
       }
     }
   ],
-  "lastCommitAt": "2026-07-02T15:36:09.127Z"
+  "lastCommitAt": "2026-07-03T01:33:45.613Z"
 }
