@@ -92,6 +92,13 @@ function checkSSL(siteUrl) {
 // confirms the app and database are working without going back out over
 // the same network path that just got blocked (which, on shared hosts,
 // can itself reject requests that spoof a Host header over loopback).
+//
+// This only ever rescues a false "down" — it can't reliably confirm a real
+// outage. A failed wp-cli call could mean the WP install is genuinely
+// broken, or just as easily that the path is wrong, or (as found on
+// visitridgwayco.com) the site isn't WordPress at all. None of those let us
+// assert "confirmed down" with confidence, so a failed check here just
+// leaves the original public-check result as-is.
 function sshAttempt(cfg) {
   return new Promise((resolve) => {
     const remoteCmd = `wp option get siteurl --path='${cfg.wpPath}' 2>/dev/null`;
@@ -99,10 +106,6 @@ function sshAttempt(cfg) {
       '-i', SSH_KEY, '-p', cfg.port, '-o', 'StrictHostKeyChecking=no', '-o', 'ConnectTimeout=10',
       `${cfg.user}@${cfg.host}`, remoteCmd,
     ], { timeout: 20000 }, (err, stdout) => {
-      // ssh itself exits 255 on a connection failure (couldn't reach the box at
-      // all) — that's inconclusive, not a confirmed WordPress problem. Any other
-      // non-zero exit means we connected fine but the remote command failed.
-      if (err && err.code === 255) return resolve(null);
       if (err) return resolve(false);
       resolve(String(stdout).trim().startsWith('http'));
     });
@@ -111,9 +114,9 @@ function sshAttempt(cfg) {
 
 async function sshVerify(site) {
   const cfg = getSshConfig(site);
-  if (!cfg) return null;
+  if (!cfg) return false;
   const first = await sshAttempt(cfg);
-  if (first !== null) return first;
+  if (first) return true;
   await sleep(3000);
   return sshAttempt(cfg); // one retry — WP Engine's SSH occasionally drops a connection attempt
 }
@@ -124,12 +127,10 @@ async function checkSite(site) {
   let result = uptime;
   if (!uptime.up && site.sshAccess) {
     const wpHealthy = await sshVerify(site);
-    if (wpHealthy === true) {
+    if (wpHealthy) {
       result = { ...uptime, up: true, sshVerified: true };
-    } else if (wpHealthy === false) {
-      result = { ...uptime, sshVerified: true };
     }
-    // wpHealthy === null (no SSH config, e.g. missing WP Engine install name) — leave as-is, unverified
+    // wp-cli check failed or unavailable — leave the public-check result as-is, unverified
   }
 
   return {

@@ -481,7 +481,7 @@
               </div>
             </div>
           </td>
-          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span>${s.sshVerified ? `<div class="sub" title="Public check failed/blocked; confirmed via SSH instead">${s.up ? '✓ SSH-verified' : '✗ SSH check also failed'}</div>` : ''}</td>
+          <td><span class="badge ${s.up ? 'up' : 'down'}">${s.up ? 'Online' : 'Down'}</span>${s.sshVerified ? `<div class="sub" title="Public check failed/blocked; confirmed via SSH instead">✓ SSH-verified</div>` : ''}</td>
           <td><span class="dot ${speed}"></span>${s.responseTime}ms</td>
           <td><span class="dot ${sslClass}"></span>${sslText}</td>
           <td><span class="dot ${cache.cls}"></span>${cache.label}</td>
@@ -568,9 +568,8 @@
       const alertItems = [];
 
       down.forEach(s => {
-        const sshNote = s.sshVerified ? ' (confirmed via SSH — not just a blocked public check)' : '';
         alertItems.push({ id: `down:${siteSlug(s)}`, warn: false,
-          text: `⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}${sshNote}` });
+          text: `⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}` });
       });
       sslWarn.forEach(s => {
         alertItems.push({ id: `ssl:${siteSlug(s)}`, warn: true,
