@@ -18,8 +18,19 @@
     .stat.yellow .number { color: #d69e2e; }
     .stat.green .number { color: #38a169; }
     .alerts { margin: 0 32px 16px; }
-    .alert { background: #fff5f5; border-left: 4px solid #e53e3e; border-radius: 4px; padding: 12px 16px; margin-bottom: 8px; font-size: 14px; }
+    .alerts-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; cursor: pointer; user-select: none; }
+    .alerts-header:hover .alerts-title { color: #1a1a2e; }
+    .alerts-title { font-size: 13px; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
+    .alerts-chevron { font-size: 11px; color: #aaa; transition: transform 0.15s; }
+    .alerts-chevron.collapsed { transform: rotate(-90deg); }
+    .alerts-clear { font-size: 12px; color: #aaa; text-decoration: underline; cursor: pointer; margin-left: auto; }
+    .alerts-clear:hover { color: #1a1a2e; }
+    .alerts-list.collapsed { display: none; }
+    .alert { background: #fff5f5; border-left: 4px solid #e53e3e; border-radius: 4px; padding: 12px 16px; margin-bottom: 8px; font-size: 14px; display: flex; align-items: center; gap: 8px; }
     .alert.warn { background: #fffbeb; border-color: #d69e2e; }
+    .alert-text { flex: 1; }
+    .alert-dismiss { flex-shrink: 0; background: none; border: none; cursor: pointer; font-size: 16px; color: #999; line-height: 1; padding: 2px 4px; }
+    .alert-dismiss:hover { color: #1a1a2e; }
 
     /* Filter bar */
     .filters { padding: 0 32px 16px; display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
@@ -104,7 +115,14 @@
     <div class="stat" id="stat-security"><div class="number" id="count-security">—</div><div class="label">Security alerts</div></div>
   </div>
 
-  <div class="alerts" id="alerts"></div>
+  <div class="alerts" id="alerts-wrap" style="display:none">
+    <div class="alerts-header" id="alerts-header" onclick="toggleAlertsCollapsed()">
+      <span class="alerts-chevron" id="alerts-chevron">▾</span>
+      <span class="alerts-title" id="alerts-title">Alerts</span>
+      <span class="alerts-clear" id="alerts-clear" style="display:none" onclick="event.stopPropagation(); clearDismissedAlerts()"></span>
+    </div>
+    <div class="alerts-list" id="alerts"></div>
+  </div>
 
   <div class="filters" id="filters" style="display:none">
     <div class="filter-group">
@@ -546,14 +564,17 @@
       document.getElementById('count-security').textContent = secCount;
       document.getElementById('stat-security').className = 'stat ' + (securityAlerts.length > 0 ? 'red' : underAttack.length > 0 ? 'yellow' : 'green');
 
-      const alerts = document.getElementById('alerts');
-      alerts.innerHTML = '';
+      const siteSlug = s => siteMetaMap[s.url]?.slug || s.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const alertItems = [];
+
       down.forEach(s => {
         const sshNote = s.sshVerified ? ' (confirmed via SSH — not just a blocked public check)' : '';
-        alerts.innerHTML += `<div class="alert">⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}${sshNote}</div>`;
+        alertItems.push({ id: `down:${siteSlug(s)}`, warn: false,
+          text: `⚠️ <strong>${s.name}</strong> is down — responded with ${s.statusCode || 'no response'}${sshNote}` });
       });
       sslWarn.forEach(s => {
-        alerts.innerHTML += `<div class="alert warn">🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days</div>`;
+        alertItems.push({ id: `ssl:${siteSlug(s)}`, warn: true,
+          text: `🔒 <strong>${s.name}</strong> SSL certificate expires in ${s.ssl.daysLeft} days` });
       });
       securityAlerts.forEach(s => {
         const sec = securityMap[s.url];
@@ -566,15 +587,78 @@
             plugin_installed: 'plugin installed', plugin_activated: 'plugin activated' }[e.type] || e.type)),
           ...(loginAfterAttack ? ['login succeeded after repeated failures'] : []),
         ].join(', ');
-        alerts.innerHTML += `<div class="alert">🚨 <strong>${s.name}</strong> — suspicious activity: ${details}</div>`;
+        alertItems.push({ id: `suspicious:${siteSlug(s)}`, warn: false,
+          text: `🚨 <strong>${s.name}</strong> — suspicious activity: ${details}` });
       });
       underAttack.filter(s => !securityAlerts.includes(s)).forEach(s => {
         const sec = securityMap[s.url];
-        alerts.innerHTML += `<div class="alert warn">🔐 <strong>${s.name}</strong> — ${sec.loginFailed.count} failed login attempt${sec.loginFailed.count > 1 ? 's' : ''} (last: ${timeAgo(sec.loginFailed.lastSeen)})</div>`;
+        alertItems.push({ id: `attack:${siteSlug(s)}`, warn: true,
+          text: `🔐 <strong>${s.name}</strong> — ${sec.loginFailed.count} failed login attempt${sec.loginFailed.count > 1 ? 's' : ''} (last: ${timeAgo(sec.loginFailed.lastSeen)})` });
       });
 
+      renderAlerts(alertItems);
       buildFilters();
       renderTable();
+    }
+
+    const DISMISSED_KEY = 'dbd_dismissed_alerts';
+    const COLLAPSED_KEY = 'dbd_alerts_collapsed';
+
+    function getDismissedAlerts() {
+      try { return new Set(JSON.parse(localStorage.getItem(DISMISSED_KEY) || '[]')); } catch { return new Set(); }
+    }
+    function setDismissedAlerts(set) {
+      localStorage.setItem(DISMISSED_KEY, JSON.stringify([...set]));
+    }
+    function dismissAlert(id) {
+      const dismissed = getDismissedAlerts();
+      dismissed.add(id);
+      setDismissedAlerts(dismissed);
+      renderAlerts(lastAlertItems);
+    }
+    function clearDismissedAlerts() {
+      setDismissedAlerts(new Set());
+      renderAlerts(lastAlertItems);
+    }
+    function toggleAlertsCollapsed() {
+      const collapsed = localStorage.getItem(COLLAPSED_KEY) === 'true';
+      localStorage.setItem(COLLAPSED_KEY, (!collapsed).toString());
+      applyAlertsCollapsedState();
+    }
+    function applyAlertsCollapsedState() {
+      const collapsed = localStorage.getItem(COLLAPSED_KEY) === 'true';
+      document.getElementById('alerts').classList.toggle('collapsed', collapsed);
+      document.getElementById('alerts-chevron').classList.toggle('collapsed', collapsed);
+    }
+
+    let lastAlertItems = [];
+
+    function renderAlerts(items) {
+      lastAlertItems = items;
+      const wrap = document.getElementById('alerts-wrap');
+      const list = document.getElementById('alerts');
+      const clearLink = document.getElementById('alerts-clear');
+      const dismissed = getDismissedAlerts();
+
+      const visible = items.filter(a => !dismissed.has(a.id));
+      const hiddenCount = items.length - visible.length;
+
+      if (items.length === 0) { wrap.style.display = 'none'; return; }
+      wrap.style.display = '';
+
+      document.getElementById('alerts-title').textContent = `Alerts (${visible.length})`;
+      list.innerHTML = visible.map(a =>
+        `<div class="alert ${a.warn ? 'warn' : ''}"><span class="alert-text">${a.text}</span><button class="alert-dismiss" title="Dismiss" onclick="event.stopPropagation(); dismissAlert('${a.id}')">✕</button></div>`
+      ).join('');
+
+      if (hiddenCount > 0) {
+        clearLink.style.display = '';
+        clearLink.textContent = `Show ${hiddenCount} dismissed`;
+      } else {
+        clearLink.style.display = 'none';
+      }
+
+      applyAlertsCollapsedState();
     }
 
     // Modal
