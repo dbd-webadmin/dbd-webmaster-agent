@@ -1,0 +1,25 @@
+{
+  "url": "https://destinationswva.org/",
+  "name": "Destination SWVA",
+  "auditedAt": "2026-07-04T12:16:45.182Z",
+  "durationMs": 15387,
+  "pagesChecked": 20,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://destinationswva.org/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 61,
+    "desktop": null
+  }
+}

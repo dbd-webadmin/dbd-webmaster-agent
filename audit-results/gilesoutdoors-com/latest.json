@@ -1,0 +1,25 @@
+{
+  "url": "https://gilesoutdoors.com/",
+  "name": "Giles Outdoors",
+  "auditedAt": "2026-07-04T12:20:00.872Z",
+  "durationMs": 60471,
+  "pagesChecked": 19,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://gilesoutdoors.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://gilesoutdoors.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 73,
+    "desktop": null
+  }
+}
