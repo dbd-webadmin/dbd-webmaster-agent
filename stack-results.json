@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T11:54:19.250Z",
+  "updatedAt": "2026-07-05T12:05:59.746Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -23,19 +23,19 @@
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": true,
-      "wpVersion": "7.0",
-      "builder": "Gutenberg",
-      "theme": "cleveland"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://destinationswva.org/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 180,
+      "dnsTtl": 108,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
