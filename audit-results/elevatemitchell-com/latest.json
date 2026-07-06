@@ -1,0 +1,25 @@
+{
+  "url": "https://elevatemitchell.com/",
+  "name": "Elevate Mitchell",
+  "auditedAt": "2026-07-06T17:57:25.197Z",
+  "durationMs": 29896,
+  "pagesChecked": 15,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://elevatemitchell.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://elevatemitchell.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 89,
+    "desktop": 99
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://whoishaverstraw.com/",
+  "name": "Who is Haverstraw?",
+  "auditedAt": "2026-07-06T18:01:14.434Z",
+  "durationMs": 92619,
+  "pagesChecked": 15,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://whoishaverstraw.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": null,
+    "desktop": null
+  }
+}
