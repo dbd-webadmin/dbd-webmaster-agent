@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T12:05:59.746Z",
+  "updatedAt": "2026-07-06T17:30:44.300Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -22,7 +22,7 @@
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -32,10 +32,10 @@
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0",
+      "builder": "Gutenberg",
+      "theme": "cleveland"
     },
     {
       "url": "https://destinationswva.org/",
@@ -112,7 +112,7 @@
     {
       "url": "https://elevatemitchell.com/",
       "name": "Elevate Mitchell",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 108,
+      "dnsTtl": 70,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -257,10 +257,10 @@
       "url": "https://neckofthewoodsnc.com/",
       "name": "Neck of the Woods",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://highcountrypathways.org/",
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.0",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://deepgaprecreationarea.org/",
