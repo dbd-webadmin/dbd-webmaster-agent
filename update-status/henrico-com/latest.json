@@ -1,10 +1,15 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-07-06T18:02:01.048Z",
+  "checkedAt": "2026-07-07T17:31:54.011Z",
   "currentWpVersion": "7.0",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "8.8.6",
+      "update_version": "8.8.7"
+    },
     {
       "name": "webp-uploads",
       "version": "2.7.0",
