@@ -1,0 +1,86 @@
+{
+  "url": "https://www.raisetherock.com/",
+  "name": "Raise the Rock",
+  "auditedAt": "2026-07-07T17:01:34.727Z",
+  "durationMs": 100252,
+  "pagesChecked": 20,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://www.raisetherock.com/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/feed/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/comments/feed/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-json/oembed/1.0/embed",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-json/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-json/wp/v2/pages/135",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/xmlrpc.php",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-content/uploads/oxygen/css/135.css",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-content/uploads/oxygen/css/universal.css",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/task-force/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.css",
+      "status": 403,
+      "ok": false
+    }
+  ],
+  "brokenImages": [
+    {
+      "url": "https://www.raisetherock.com/wp-content/uploads/2025/02/241010_ChimneyRock_0197_Panorama-scaled.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.raisetherock.com/wp-content/uploads/2025/10/UNC-Charlotte-SoA-Chimney-Rock-Final-scaled.webp",
+      "status": 403,
+      "ok": false
+    }
+  ],
+  "pageSpeed": {
+    "mobile": 53,
+    "desktop": null
+  }
+}
