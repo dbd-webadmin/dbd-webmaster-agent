@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-08T16:46:03.356Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "ultimate-elementor/ultimate-elementor.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-08T16:45:55.545Z",
     "type": "plugin_update",
     "data": {
@@ -399,14 +409,6 @@
     "data": {
       "event": "login_failed",
       "user": "kellygiles3"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T11:29:54.119Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "Nectho"
     }
   }
 ]
