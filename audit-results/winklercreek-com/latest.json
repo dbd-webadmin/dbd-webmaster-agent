@@ -1,0 +1,25 @@
+{
+  "url": "https://winklercreek.com/",
+  "name": "Winklers Creek Park",
+  "auditedAt": "2026-07-08T16:06:10.343Z",
+  "durationMs": 45647,
+  "pagesChecked": 26,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://winklercreek.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://winklercreek.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 61,
+    "desktop": 65
+  }
+}

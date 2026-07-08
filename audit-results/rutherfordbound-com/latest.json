@@ -1,0 +1,25 @@
+{
+  "url": "https://www.rutherfordbound.com/",
+  "name": "Rutherford Bound",
+  "auditedAt": "2026-07-08T16:07:03.310Z",
+  "durationMs": 52967,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://www.rutherfordbound.com/$%7Bcity.linkUrl%7D",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.rutherfordbound.com/communities/$%7Bcity.linkUrl%7D",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 33,
+    "desktop": 62
+  }
+}
