@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-08T16:44:20.613Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "hostinger/hostinger.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-08T04:07:54.490Z",
     "type": "plugin_update",
     "data": {
@@ -397,14 +407,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:20:34.795Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:20:19.627Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
