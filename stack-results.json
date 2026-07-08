@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T16:13:26.934Z",
+  "updatedAt": "2026-07-08T12:08:19.589Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 71,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -238,7 +238,7 @@
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
