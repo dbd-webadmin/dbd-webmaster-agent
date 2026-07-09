@@ -1,0 +1,25 @@
+{
+  "url": "https://shelbyonthemove.com/",
+  "name": "Shelby on the Move",
+  "auditedAt": "2026-07-09T17:10:31.289Z",
+  "durationMs": 42396,
+  "pagesChecked": 26,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://shelbyonthemove.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://shelbyonthemove.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 53,
+    "desktop": 46
+  }
+}

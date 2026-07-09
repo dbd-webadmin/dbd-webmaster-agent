@@ -1,0 +1,25 @@
+{
+  "url": "https://legacysoccerpark.org/",
+  "name": "Legacy Soccer Park",
+  "auditedAt": "2026-07-09T17:09:48.892Z",
+  "durationMs": 41618,
+  "pagesChecked": 24,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://legacysoccerpark.org/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://legacysoccerpark.org/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
+  "pageSpeed": {
+    "mobile": 62,
+    "desktop": 68
+  }
+}
