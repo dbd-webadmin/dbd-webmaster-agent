@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T12:08:19.589Z",
+  "updatedAt": "2026-07-09T16:38:32.406Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -23,10 +23,10 @@
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://landofrhythm.com/",
@@ -238,7 +238,7 @@
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
