@@ -1,9 +1,13 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-07-08T16:16:22.638Z",
+  "checkedAt": "2026-07-09T17:30:24.139Z",
   "currentWpVersion": "7.0",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.0.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
+  },
   "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }

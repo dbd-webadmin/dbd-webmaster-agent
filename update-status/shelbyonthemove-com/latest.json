@@ -1,9 +1,13 @@
 {
   "slug": "shelbyonthemove-com",
   "url": "https://shelbyonthemove.com/",
-  "checkedAt": "2026-07-08T16:18:54.209Z",
+  "checkedAt": "2026-07-09T17:32:29.113Z",
   "currentWpVersion": "7.0",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.0.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
+  },
   "pluginUpdates": [
     {
       "name": "coming-soon",
@@ -18,7 +22,7 @@
     {
       "name": "jetpack",
       "version": "15.8",
-      "update_version": "15.9.1"
+      "update_version": "16.0"
     },
     {
       "name": "seo-by-rank-math",

@@ -1,9 +1,13 @@
 {
   "slug": "gilesoutdoors-com",
   "url": "https://gilesoutdoors.com/",
-  "checkedAt": "2026-07-08T16:16:13.289Z",
+  "checkedAt": "2026-07-09T17:30:18.565Z",
   "currentWpVersion": "7.0",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.0.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
+  },
   "pluginUpdates": [
     {
       "name": "hostinger",
