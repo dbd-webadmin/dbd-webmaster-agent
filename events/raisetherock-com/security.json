@@ -5,11 +5,19 @@
     "lastSeen": "2026-07-09T15:18:02.274Z"
   },
   "loginSuccess": {
-    "count": 1,
-    "lastSeen": "2026-07-08T16:49:13.358Z",
+    "count": 2,
+    "lastSeen": "2026-07-09T19:12:54.471Z",
     "lastUser": "dylan@dbdplanning.com"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-07-09T19:12:54.471Z",
+      "data": {
+        "event": "login_success",
+        "user": "dylan@dbdplanning.com"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-07-08T16:49:13.358Z",
@@ -19,5 +27,5 @@
       }
     }
   ],
-  "lastCommitAt": "2026-07-09T15:18:02.274Z"
+  "lastCommitAt": "2026-07-09T19:12:54.471Z"
 }
