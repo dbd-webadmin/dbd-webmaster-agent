@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-10T18:26:20.119Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "formidable/formidable.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-10T18:26:14.679Z",
     "type": "plugin_update",
     "data": {
