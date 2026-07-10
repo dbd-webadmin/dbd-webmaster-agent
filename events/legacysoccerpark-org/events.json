@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-10T18:23:53.924Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "cryout-serious-slider/cryout-serious-slider.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-09T18:42:46.678Z",
     "type": "core_update",
     "data": {
