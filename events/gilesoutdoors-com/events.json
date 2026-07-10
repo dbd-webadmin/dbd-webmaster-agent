@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-10T18:08:35.958Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "hostinger/hostinger.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-02T03:39:36.329Z",
     "type": "login_failed",
     "data": {
