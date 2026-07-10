@@ -4,7 +4,20 @@
     "firstSeen": "2026-07-03T21:22:12.530Z",
     "lastSeen": "2026-07-09T14:32:55.257Z"
   },
-  "loginSuccess": null,
-  "recentEvents": [],
-  "lastCommitAt": "2026-07-09T14:32:55.257Z"
+  "loginSuccess": {
+    "count": 1,
+    "lastSeen": "2026-07-10T18:12:16.597Z",
+    "lastUser": "admin@dbdplanning.com"
+  },
+  "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-07-10T18:12:16.597Z",
+      "data": {
+        "event": "login_success",
+        "user": "admin@dbdplanning.com"
+      }
+    }
+  ],
+  "lastCommitAt": "2026-07-10T18:12:16.597Z"
 }
