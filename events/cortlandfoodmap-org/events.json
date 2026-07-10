@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-10T18:21:27.091Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-10T18:21:23.588Z",
     "type": "plugin_update",
     "data": {
