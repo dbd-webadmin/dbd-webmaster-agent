@@ -1,12 +1,12 @@
 {
   "slug": "rutherfordbound-com",
   "url": "https://www.rutherfordbound.com/",
-  "checkedAt": "2026-07-09T17:31:54.361Z",
+  "checkedAt": "2026-07-10T16:53:15.571Z",
   "currentWpVersion": "6.6.2",
   "wordpressUpdate": {
-    "version": "7.0.1",
-    "update_type": "major",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1.zip"
+    "version": "6.6.5",
+    "update_type": "minor",
+    "package_url": "https://downloads.w.org/release/wordpress-6.6.5-partial-2.zip"
   },
   "pluginUpdates": [
     {
@@ -52,7 +52,7 @@
     {
       "name": "sg-security",
       "version": "1.5.5",
-      "update_version": "1.6.4"
+      "update_version": "1.6.5"
     },
     {
       "name": "google-site-kit",

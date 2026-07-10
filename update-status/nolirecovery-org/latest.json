@@ -1,13 +1,9 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-07-09T17:30:43.667Z",
-  "currentWpVersion": "7.0",
-  "wordpressUpdate": {
-    "version": "7.0.1",
-    "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
-  },
+  "checkedAt": "2026-07-10T16:52:17.793Z",
+  "currentWpVersion": "7.0.1",
+  "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "webp-uploads",

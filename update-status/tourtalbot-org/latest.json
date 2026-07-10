@@ -1,13 +1,9 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-07-09T17:30:30.180Z",
-  "currentWpVersion": "7.0",
-  "wordpressUpdate": {
-    "version": "7.0.1",
-    "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
-  },
+  "checkedAt": "2026-07-10T16:52:01.402Z",
+  "currentWpVersion": "7.0.1",
+  "wordpressUpdate": null,
   "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }

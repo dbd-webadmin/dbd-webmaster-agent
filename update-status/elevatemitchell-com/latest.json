@@ -1,13 +1,9 @@
 {
   "slug": "elevatemitchell-com",
   "url": "https://elevatemitchell.com/",
-  "checkedAt": "2026-07-09T17:30:38.125Z",
-  "currentWpVersion": "7.0",
-  "wordpressUpdate": {
-    "version": "7.0.1",
-    "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.1-partial-0.zip"
-  },
+  "checkedAt": "2026-07-10T16:52:11.334Z",
+  "currentWpVersion": "7.0.1",
+  "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "hostinger",

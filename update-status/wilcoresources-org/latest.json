@@ -1,7 +1,7 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-07-09T17:32:17.235Z",
+  "checkedAt": "2026-07-10T16:53:38.374Z",
   "currentWpVersion": "7.0",
   "wordpressUpdate": {
     "version": "7.0.1",
@@ -13,6 +13,11 @@
       "name": "seo-by-rank-math",
       "version": "1.0.271.1",
       "update_version": "1.0.273"
+    },
+    {
+      "name": "sg-security",
+      "version": "1.6.4",
+      "update_version": "1.6.5"
     },
     {
       "name": "google-site-kit",
