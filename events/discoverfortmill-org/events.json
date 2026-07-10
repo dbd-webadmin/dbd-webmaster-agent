@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-10T15:47:55.435Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "essential-addons-for-elementor-lite/essential_adons_elementor.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-09T15:15:17.008Z",
     "type": "plugin_update",
     "data": {
@@ -407,14 +417,6 @@
     "data": {
       "event": "login_failed",
       "user": "erin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T11:44:32.635Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "dylan"
     }
   }
 ]
