@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T16:08:04.698Z",
+  "updatedAt": "2026-07-11T10:46:03.149Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -186,14 +186,14 @@
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0",
+      "wpVersion": "7.0.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 10,
+      "dnsTtl": 254,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -204,7 +204,7 @@
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0",
+      "wpVersion": "7.0.1",
       "builder": "Gutenberg",
       "theme": null
     },
@@ -213,14 +213,14 @@
       "name": "Cortland County Food Map",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0",
+      "wpVersion": "7.0.1",
       "builder": "Gutenberg",
       "theme": "twentytwentyfour"
     },
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
