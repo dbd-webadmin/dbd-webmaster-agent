@@ -1,34 +1,14 @@
 {
   "slug": "tellingourpendletonstory-org",
   "url": "https://tellingourpendletonstory.org/",
-  "checkedAt": "2026-07-10T16:51:41.684Z",
+  "checkedAt": "2026-07-11T12:12:53.142Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "hostinger",
-      "version": "3.0.68",
-      "update_version": "3.0.72"
-    },
-    {
-      "name": "webp-uploads",
-      "version": "2.6.1",
-      "update_version": "2.7.1"
-    },
-    {
-      "name": "popup-maker",
-      "version": "1.22.0",
-      "update_version": "1.23.0"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.272",
-      "update_version": "1.0.273"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.181.0",
-      "update_version": "1.182.0"
+      "name": "fluentform",
+      "version": "6.2.5",
+      "update_version": "6.2.6"
     }
   ],
   "phpVersion": "8.3.30"
