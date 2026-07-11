@@ -1,14 +1,20 @@
 {
   "url": "https://onerichmondhwy.com/",
   "name": "One Richmond Hwy",
-  "auditedAt": "2026-07-03T15:39:47.477Z",
-  "durationMs": 69403,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-07-11T11:37:10.983Z",
+  "durationMs": 61317,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://onerichmondhwy.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 72,
-    "desktop": 97
+    "mobile": 49,
+    "desktop": 76
   }
 }

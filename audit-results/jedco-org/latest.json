@@ -1,14 +1,26 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-07-03T15:38:38.074Z",
-  "durationMs": 55564,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-07-11T11:36:09.666Z",
+  "durationMs": 58491,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://jedco.org/events/$store.calendarEngine.eventUrl",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [
+    {
+      "url": "https://jedco.org/wp-content/uploads/2025/10/brand-bottom.svg",
+      "status": 404,
+      "ok": false
+    }
+  ],
   "pageSpeed": {
-    "mobile": 65,
-    "desktop": 62
+    "mobile": 68,
+    "desktop": 70
   }
 }
