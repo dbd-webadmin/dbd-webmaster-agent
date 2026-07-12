@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T10:46:03.149Z",
+  "updatedAt": "2026-07-12T11:35:20.920Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -23,10 +23,10 @@
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://landofrhythm.com/",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "henrico"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://thisisharney.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 254,
+      "dnsTtl": 73,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
