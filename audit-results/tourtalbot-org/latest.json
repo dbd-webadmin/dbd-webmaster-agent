@@ -1,14 +1,20 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-07-05T12:54:52.659Z",
-  "durationMs": 74495,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-07-13T17:02:55.846Z",
+  "durationMs": 64112,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://tourtalbot.org/state.currentTownUrl",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 44,
-    "desktop": 43
+    "mobile": 58,
+    "desktop": 45
   }
 }

@@ -1,14 +1,14 @@
 {
   "url": "https://henrico.com/",
   "name": "Henrico EDA",
-  "auditedAt": "2026-07-05T12:52:11.217Z",
-  "durationMs": 58184,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-07-13T17:00:19.123Z",
+  "durationMs": 61813,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [],
+  "brokenImages": [],
   "pageSpeed": {
     "mobile": 63,
-    "desktop": 86
+    "desktop": 85
   }
 }
