@@ -1,10 +1,15 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-07-13T17:26:56.501Z",
+  "checkedAt": "2026-07-14T15:12:48.066Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "8.8.7",
+      "update_version": "8.8.8"
+    },
     {
       "name": "fluentform",
       "version": "6.2.5",

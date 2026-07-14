@@ -1,10 +1,15 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-07-13T17:26:17.321Z",
+  "checkedAt": "2026-07-14T15:12:00.603Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "8.8.7",
+      "update_version": "8.8.8"
+    },
     {
       "name": "fluentform",
       "version": "6.2.5",
