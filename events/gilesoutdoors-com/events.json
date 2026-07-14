@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-14T20:53:03.038Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluentform/fluentform.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-10T18:08:48.507Z",
     "type": "plugin_update",
     "data": {
