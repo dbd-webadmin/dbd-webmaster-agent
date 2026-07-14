@@ -1,8 +1,8 @@
 {
   "url": "https://whoishaverstraw.com/",
   "name": "Who is Haverstraw?",
-  "auditedAt": "2026-07-06T18:01:14.434Z",
-  "durationMs": 92619,
+  "auditedAt": "2026-07-14T12:53:23.675Z",
+  "durationMs": 28991,
   "pagesChecked": 15,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -14,7 +14,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": null
+    "mobile": 66,
+    "desktop": 93
   }
 }

@@ -1,8 +1,8 @@
 {
   "url": "https://adventuremeadowriver.com/",
   "name": "Adventure Meadow River",
-  "auditedAt": "2026-07-06T17:59:41.814Z",
-  "durationMs": 67516,
+  "auditedAt": "2026-07-14T12:52:54.684Z",
+  "durationMs": 34113,
   "pagesChecked": 17,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 96
+    "mobile": 51,
+    "desktop": 79
   }
 }
