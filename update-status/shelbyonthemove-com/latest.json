@@ -1,9 +1,20 @@
 {
   "slug": "shelbyonthemove-com",
   "url": "https://shelbyonthemove.com/",
-  "checkedAt": "2026-07-14T15:14:24.842Z",
+  "checkedAt": "2026-07-15T15:14:51.284Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "coming-soon",
+      "version": "6.20.4",
+      "update_version": "6.20.5"
+    },
+    {
+      "name": "google-site-kit",
+      "version": "1.182.0",
+      "update_version": "1.183.0"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
