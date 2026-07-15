@@ -1,14 +1,25 @@
 {
   "url": "https://swvaoutdoors.org/",
   "name": "Friends of SWVA",
-  "auditedAt": "2026-07-07T17:02:20.458Z",
-  "durationMs": 45730,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-07-15T12:58:41.656Z",
+  "durationMs": 33970,
+  "pagesChecked": 20,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://swvaoutdoors.org/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://swvaoutdoors.org/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": null
+    "mobile": 80,
+    "desktop": 94
   }
 }
