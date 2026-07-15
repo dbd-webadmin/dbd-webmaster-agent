@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T12:01:58.601Z",
+  "updatedAt": "2026-07-15T12:06:37.592Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -23,19 +23,19 @@
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 599,
-      "wordpress": true,
-      "wpVersion": "7.0.1",
-      "builder": "Gutenberg",
-      "theme": "cleveland"
+      "dnsTtl": 600,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://destinationswva.org/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 53,
+      "dnsTtl": 225,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -202,7 +202,7 @@
     {
       "url": "https://wilkesoutdooractionplan.com/",
       "name": "Wilkes Outdoor Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.1",
       "builder": "Gutenberg",
@@ -247,7 +247,7 @@
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.1",
       "builder": "Gutenberg",
