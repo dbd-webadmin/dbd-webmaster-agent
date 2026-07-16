@@ -1,7 +1,7 @@
 {
   "slug": "rutherfordbound-com",
   "url": "https://www.rutherfordbound.com/",
-  "checkedAt": "2026-07-15T15:14:19.808Z",
+  "checkedAt": "2026-07-16T15:25:17.111Z",
   "currentWpVersion": "6.6.2",
   "wordpressUpdate": {
     "version": "6.6.5",
@@ -12,7 +12,7 @@
     {
       "name": "advanced-custom-fields-pro",
       "version": "6.3.6",
-      "update_version": "6.8.5"
+      "update_version": "6.8.6"
     },
     {
       "name": "all-in-one-wp-migration",
@@ -27,12 +27,12 @@
     {
       "name": "custom-post-type-ui",
       "version": "1.17.1",
-      "update_version": "1.19.2"
+      "update_version": "1.19.3"
     },
     {
       "name": "formidable",
       "version": "6.15",
-      "update_version": "6.32.1"
+      "update_version": "6.33"
     },
     {
       "name": "lightbox-photoswipe",

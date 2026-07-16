@@ -1,10 +1,15 @@
 {
   "slug": "movingtogetherm-mrec-com",
   "url": "https://movingtogetherm-mrec.com/",
-  "checkedAt": "2026-07-15T15:13:55.789Z",
+  "checkedAt": "2026-07-16T15:24:46.986Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.273",
+      "update_version": "1.0.274.1"
+    },
     {
       "name": "google-site-kit",
       "version": "1.182.0",

@@ -1,7 +1,7 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-07-15T15:11:53.325Z",
+  "checkedAt": "2026-07-16T15:22:41.235Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,21 @@
       "name": "admin-site-enhancements",
       "version": "8.8.7",
       "update_version": "8.8.8"
+    },
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.5",
+      "update_version": "6.8.6"
+    },
+    {
+      "name": "formidable",
+      "version": "6.32.1",
+      "update_version": "6.33"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.273",
+      "update_version": "1.0.274.1"
     }
   ],
   "phpVersion": "8.4.22"
