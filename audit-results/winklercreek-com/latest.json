@@ -1,9 +1,9 @@
 {
   "url": "https://winklercreek.com/",
   "name": "Winklers Creek Park",
-  "auditedAt": "2026-07-08T16:06:10.343Z",
-  "durationMs": 45647,
-  "pagesChecked": 26,
+  "auditedAt": "2026-07-16T13:07:46.801Z",
+  "durationMs": 21305,
+  "pagesChecked": 27,
   "crawlBlocked": false,
   "brokenLinks": [
     {
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 61,
+    "mobile": null,
     "desktop": 65
   }
 }
