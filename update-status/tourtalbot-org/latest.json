@@ -1,7 +1,7 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-07-16T15:23:47.150Z",
+  "checkedAt": "2026-07-17T14:59:06.504Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -18,12 +18,22 @@
     {
       "name": "fluentform",
       "version": "6.2.5",
-      "update_version": "6.2.6"
+      "update_version": "6.2.7"
+    },
+    {
+      "name": "fluentformpro",
+      "version": "6.2.4",
+      "update_version": "6.2.7"
     },
     {
       "name": "seo-by-rank-math",
       "version": "1.0.273",
       "update_version": "1.0.274.1"
+    },
+    {
+      "name": "relevanssi",
+      "version": "4.27.1",
+      "update_version": "4.27.2"
     },
     {
       "name": "google-site-kit",

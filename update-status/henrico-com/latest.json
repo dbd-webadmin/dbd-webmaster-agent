@@ -1,7 +1,7 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-07-16T15:23:39.931Z",
+  "checkedAt": "2026-07-17T14:58:56.086Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -14,6 +14,16 @@
       "name": "advanced-custom-fields-pro",
       "version": "6.8.5",
       "update_version": "6.8.6"
+    },
+    {
+      "name": "fluentform",
+      "version": "6.2.6",
+      "update_version": "6.2.7"
+    },
+    {
+      "name": "fluentformpro",
+      "version": "6.2.4",
+      "update_version": "6.2.7"
     },
     {
       "name": "seo-by-rank-math",

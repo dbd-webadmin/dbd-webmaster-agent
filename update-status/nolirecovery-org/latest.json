@@ -1,9 +1,15 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-07-16T15:24:01.633Z",
+  "checkedAt": "2026-07-17T14:59:21.877Z",
   "currentWpVersion": "7.0.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "fluentform",
+      "version": "6.2.6",
+      "update_version": "6.2.7"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
