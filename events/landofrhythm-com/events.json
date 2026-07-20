@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-20T18:06:21.031Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-20T17:45:02.191Z",
     "type": "plugin_update",
     "data": {
@@ -429,14 +439,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:25:01.840Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:24:47.262Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
