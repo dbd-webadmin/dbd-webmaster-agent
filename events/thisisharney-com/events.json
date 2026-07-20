@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-20T18:11:31.481Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "jet-engine/jet-engine.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-20T18:11:25.660Z",
     "type": "plugin_update",
     "data": {
@@ -405,14 +415,6 @@
     "data": {
       "event": "login_failed",
       "user": "benflyingpebble-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T08:54:40.271Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "dylandbdplanning-com"
     }
   }
 ]
