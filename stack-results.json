@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T11:34:19.102Z",
+  "updatedAt": "2026-07-20T13:30:46.520Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -58,7 +58,7 @@
     {
       "url": "https://tellingourpendletonstory.org/",
       "name": "Discovering Our Pendleton Story",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 96,
+      "dnsTtl": 145,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
