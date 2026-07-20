@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-20T17:42:06.696Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "relevanssi/relevanssi.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-20T17:42:03.200Z",
     "type": "plugin_update",
     "data": {
@@ -415,14 +425,6 @@
     "data": {
       "event": "login_failed",
       "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:04:51.207Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "sunny"
     }
   }
 ]
