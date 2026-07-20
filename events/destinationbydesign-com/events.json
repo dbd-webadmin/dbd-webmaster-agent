@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-20T17:41:52.883Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "formidable/formidable.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-20T17:41:43.381Z",
     "type": "plugin_update",
     "data": {
@@ -405,14 +415,6 @@
   },
   {
     "receivedAt": "2026-07-02T13:00:39.534Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:00:37.897Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
