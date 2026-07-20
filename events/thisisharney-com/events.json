@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-07-20T18:11:41.388Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-07-20T18:11:31.481Z",
     "type": "plugin_update",
     "data": {
@@ -407,14 +415,6 @@
     "data": {
       "event": "login_failed",
       "user": "harneyor"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T08:56:35.389Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "benflyingpebble-com"
     }
   }
 ]
