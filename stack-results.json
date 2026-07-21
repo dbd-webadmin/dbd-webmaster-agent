@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T13:30:46.520Z",
+  "updatedAt": "2026-07-21T12:15:28.684Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -58,7 +58,7 @@
     {
       "url": "https://tellingourpendletonstory.org/",
       "name": "Discovering Our Pendleton Story",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 145,
+      "dnsTtl": 217,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -229,7 +229,7 @@
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
