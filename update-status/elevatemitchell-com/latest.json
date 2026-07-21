@@ -1,7 +1,7 @@
 {
   "slug": "elevatemitchell-com",
   "url": "https://elevatemitchell.com/",
-  "checkedAt": "2026-07-20T16:05:17.667Z",
+  "checkedAt": "2026-07-21T15:28:52.287Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -14,11 +14,6 @@
       "name": "google-site-kit",
       "version": "1.182.0",
       "update_version": "1.183.0"
-    },
-    {
-      "name": "svg-support",
-      "version": "2.5.16",
-      "update_version": "2.5.17"
     }
   ],
   "phpVersion": "8.3.30"
