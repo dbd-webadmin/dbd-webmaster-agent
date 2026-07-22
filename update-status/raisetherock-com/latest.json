@@ -1,7 +1,7 @@
 {
   "slug": "raisetherock-com",
   "url": "https://www.raisetherock.com/",
-  "checkedAt": "2026-07-21T15:29:29.887Z",
+  "checkedAt": "2026-07-22T15:27:09.385Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -24,6 +24,11 @@
       "name": "google-site-kit",
       "version": "1.182.0",
       "update_version": "1.183.0"
+    },
+    {
+      "name": "svg-support",
+      "version": "2.5.16",
+      "update_version": "2.6.0"
     }
   ],
   "phpVersion": "8.3.30"
