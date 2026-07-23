@@ -1,9 +1,20 @@
 {
   "slug": "onerichmondhwy-com",
   "url": "https://onerichmondhwy.com/",
-  "checkedAt": "2026-07-22T15:25:01.945Z",
+  "checkedAt": "2026-07-23T16:03:29.621Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "fluentform",
+      "version": "6.2.7",
+      "update_version": "6.2.8"
+    },
+    {
+      "name": "instagram-feed",
+      "version": "6.11.3",
+      "update_version": "6.11.4"
+    }
+  ],
   "phpVersion": "8.3.30"
 }

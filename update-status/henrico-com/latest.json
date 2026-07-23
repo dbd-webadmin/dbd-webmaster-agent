@@ -1,9 +1,15 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-07-22T15:25:52.197Z",
+  "checkedAt": "2026-07-23T16:04:07.045Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "fluentform",
+      "version": "6.2.7",
+      "update_version": "6.2.8"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
