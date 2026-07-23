@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T12:48:00.560Z",
+  "updatedAt": "2026-07-23T12:16:08.043Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Elementor",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -148,7 +148,7 @@
     {
       "url": "https://www.raisetherock.com/",
       "name": "Raise the Rock",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -166,7 +166,7 @@
     {
       "url": "https://movingtogetherm-mrec.com/",
       "name": "Moving Together Madison - Mayodan",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 41,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -229,7 +229,7 @@
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -238,7 +238,7 @@
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
