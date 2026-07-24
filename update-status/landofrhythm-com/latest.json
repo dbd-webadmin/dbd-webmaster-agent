@@ -1,9 +1,15 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-07-23T16:03:36.710Z",
+  "checkedAt": "2026-07-24T15:16:46.043Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "insert-headers-and-footers",
+      "version": "2.3.7",
+      "update_version": "2.3.8"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
