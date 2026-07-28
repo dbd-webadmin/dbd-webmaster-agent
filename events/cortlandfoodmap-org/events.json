@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-28T20:30:08.302Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "svg-support/svg-support.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-28T20:30:05.531Z",
     "type": "plugin_update",
     "data": {
