@@ -4,7 +4,20 @@
     "firstSeen": "2026-07-02T22:51:06.728Z",
     "lastSeen": "2026-07-28T18:10:31.282Z"
   },
-  "loginSuccess": null,
-  "recentEvents": [],
-  "lastCommitAt": "2026-07-28T18:10:31.282Z"
+  "loginSuccess": {
+    "count": 1,
+    "lastSeen": "2026-07-28T20:21:14.156Z",
+    "lastUser": "admin"
+  },
+  "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-07-28T20:21:14.156Z",
+      "data": {
+        "event": "login_success",
+        "user": "admin"
+      }
+    }
+  ],
+  "lastCommitAt": "2026-07-28T20:21:14.156Z"
 }
