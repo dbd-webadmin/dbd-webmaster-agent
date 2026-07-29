@@ -1,8 +1,8 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-07-21T13:09:12.361Z",
-  "durationMs": 63219,
+  "auditedAt": "2026-07-29T10:52:22.109Z",
+  "durationMs": 54729,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -10,11 +10,36 @@
       "url": "https://tourtalbot.org/state.currentTownUrl",
       "status": 404,
       "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/event/log-canoe-races/",
+      "status": 410,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/event/chesapeake-bay-maritime-museum-annual-charity-boat-auction/",
+      "status": 410,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/event/plein-air-easton/",
+      "status": 410,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/event/waterfowl-festival/",
+      "status": 410,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/event/holiday-events/",
+      "status": 410,
+      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 49,
-    "desktop": 42
+    "mobile": 52,
+    "desktop": 63
   }
 }
