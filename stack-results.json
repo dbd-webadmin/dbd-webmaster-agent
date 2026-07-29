@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-28T09:43:25.362Z",
+  "updatedAt": "2026-07-29T09:46:42.872Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
       "name": "Destination by Design",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -139,7 +139,7 @@
     {
       "url": "https://whoishaverstraw.com/",
       "name": "Who is Haverstraw?",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -166,7 +166,7 @@
     {
       "url": "https://movingtogetherm-mrec.com/",
       "name": "Moving Together Madison - Mayodan",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 80,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -230,10 +230,10 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
@@ -247,7 +247,7 @@
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -274,7 +274,7 @@
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 282,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
