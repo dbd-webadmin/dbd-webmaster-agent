@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-07-30T20:39:32.162Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "jet-engine/jet-engine.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-30T14:05:00.967Z",
     "type": "plugin_update",
     "data": {
@@ -437,14 +447,6 @@
     "data": {
       "event": "login_failed",
       "user": "victor"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T10:20:35.514Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "christin"
     }
   }
 ]
