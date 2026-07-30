@@ -100,9 +100,12 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>DBD Site Monitor</h1>
-    <p id="updated">Loading...</p>
+  <header style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <div>
+      <h1>DBD Site Monitor</h1>
+      <p id="updated">Loading...</p>
+    </div>
+    <button id="refresh-btn" onclick="refreshAll()" style="background:rgba(255,255,255,0.12);color:white;border:1px solid rgba(255,255,255,0.3);border-radius:6px;padding:8px 14px;font-size:13px;cursor:pointer;white-space:nowrap">↻ Refresh</button>
   </header>
 
   <div class="summary">
@@ -186,6 +189,7 @@
 
     // Global data store
     let allSites = [], stackMap = {}, auditMap = {}, updateMap = {}, siteMetaMap = {}, registrarMap = {}, securityMap = {};
+    let lastCheckedAt = null;
     let activeSort = 'alpha';
     let activeStack = null;
     let activeType = null;
@@ -395,6 +399,7 @@
         const hostType = (s.host || '').toLowerCase().includes('wp engine') ? 'wpengine' : 'hostinger';
         const installName = meta.sshInstallName || '';
         const safeData = JSON.stringify({ siteName: s.name, domain, updates: updateMap[s.url] || null, host: hostType, installName }).replace(/'/g, '&#39;');
+        const refreshData = JSON.stringify({ url: s.url, slug: meta.slug || '' }).replace(/'/g, '&#39;');
 
         // Updates cell
         const updates = updateMap[s.url] || null;
@@ -474,6 +479,7 @@
               <img src="${faviconUrl}" width="16" height="16" style="border-radius:3px;flex-shrink:0" onerror="this.style.display='none'">
               <div>
                 <a href="${s.url}" target="_blank" style="color:#1a1a2e;font-weight:500">${s.name}</a>
+                <button title="Refresh this site" onclick='refreshSite(${refreshData}, this)' style="border:none;background:none;color:#aaa;cursor:pointer;font-size:12px;padding:0 0 0 4px;vertical-align:middle">↻</button>
                 ${s.host ? `<div class="sub">${s.host}${s.managedByDbd ? ' · DBD' : ''}</div>` : ''}
                 ${registrarHtml}
                 ${typeHtml}
@@ -529,7 +535,12 @@
       }));
 
       allSites = monRes.sites || [];
-      document.getElementById('updated').textContent = 'Last checked: ' + new Date(monRes.updatedAt).toLocaleString();
+      lastCheckedAt = monRes.updatedAt;
+      renderAll();
+    }
+
+    function renderAll() {
+      document.getElementById('updated').textContent = lastCheckedAt ? 'Last checked: ' + new Date(lastCheckedAt).toLocaleString() : 'Last checked: —';
       document.getElementById('total').textContent = allSites.length;
 
       const down = allSites.filter(s => !s.up);
@@ -598,6 +609,76 @@
       renderAlerts(alertItems);
       buildFilters();
       renderTable();
+    }
+
+    async function refreshAll() {
+      const btn = document.getElementById('refresh-btn');
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Refreshing…';
+      try {
+        await load();
+      } finally {
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    // Re-fetches only one site's data (the combined files still have to be pulled since
+    // status/stack/registrar aren't split per-site, but the audit/update/security files are)
+    // and merges it into the existing in-memory state instead of re-checking every site.
+    async function refreshSite(dataStr, btn) {
+      const { url, slug } = JSON.parse(dataStr.replace(/&#39;/g, "'"));
+      const origHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '⏳';
+      try {
+        const t = Date.now();
+        const [monRes, stackRes, sitesRes, regRes] = await Promise.all([
+          fetch('results.json?t=' + t).then(r => r.json()).catch(() => null),
+          fetch('stack-results.json?t=' + t).then(r => r.json()).catch(() => null),
+          fetch('sites.json?t=' + t).then(r => r.json()).catch(() => null),
+          fetch('registrar-results.json?t=' + t).then(r => r.json()).catch(() => null),
+        ]);
+
+        if (monRes) {
+          const fresh = (monRes.sites || []).find(x => x.url === url);
+          if (fresh) {
+            const idx = allSites.findIndex(x => x.url === url);
+            if (idx >= 0) allSites[idx] = fresh; else allSites.push(fresh);
+          }
+          lastCheckedAt = monRes.updatedAt;
+        }
+        if (stackRes) {
+          const freshStack = (stackRes.sites || []).find(x => x.url === url);
+          if (freshStack) stackMap[url] = freshStack;
+        }
+        if (sitesRes) {
+          const freshMeta = (sitesRes.sites || []).find(x => x.url === url);
+          if (freshMeta) siteMetaMap[url] = freshMeta;
+        }
+        if (regRes && regRes.domains && regRes.domains[url]) {
+          registrarMap[url] = regRes.domains[url];
+        }
+
+        if (slug) {
+          const [auditRes, updateRes, secRes] = await Promise.all([
+            fetch(`audit-results/${slug}/latest.json?t=` + t).catch(() => null),
+            fetch(`update-status/${slug}/latest.json?t=` + t).catch(() => null),
+            fetch(`events/${slug}/security.json?t=` + t).catch(() => null),
+          ]);
+          if (auditRes && auditRes.ok) { try { auditMap[url] = await auditRes.json(); } catch {} }
+          if (updateRes && updateRes.ok) { try { updateMap[url] = await updateRes.json(); } catch {} }
+          if (secRes && secRes.ok) { try { securityMap[url] = await secRes.json(); } catch {} }
+        }
+
+        renderAll();
+        showToast('Refreshed ' + (siteMetaMap[url]?.name || url));
+      } catch {
+        showToast('Could not refresh that site.', true);
+        btn.disabled = false;
+        btn.innerHTML = origHtml;
+      }
     }
 
     const DISMISSED_KEY = 'dbd_dismissed_alerts';

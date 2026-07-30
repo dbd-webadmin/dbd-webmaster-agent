@@ -18,7 +18,18 @@ function ssh(cfg, cmd, timeoutMs = 60000) {
   }
 }
 
-const sites = JSON.parse(fs.readFileSync('sites.json', 'utf8')).sites || [];
+const allSites = JSON.parse(fs.readFileSync('sites.json', 'utf8')).sites || [];
+
+// SITE_DOMAIN scopes the check to a single site (e.g. right after an on-demand
+// update) instead of the full daily sweep — matched against each site's hostname.
+const SITE_DOMAIN = process.env.SITE_DOMAIN ? process.env.SITE_DOMAIN.replace(/^www\./, '') : null;
+const sites = SITE_DOMAIN
+  ? allSites.filter(s => { try { return new URL(s.url).hostname.replace(/^www\./, '') === SITE_DOMAIN; } catch { return false; } })
+  : allSites;
+
+if (SITE_DOMAIN && sites.length === 0) {
+  console.error(`SITE_DOMAIN=${SITE_DOMAIN} did not match any site in sites.json`);
+}
 
 for (const site of sites) {
   if (!site.sshAccess || !site.slug) continue;

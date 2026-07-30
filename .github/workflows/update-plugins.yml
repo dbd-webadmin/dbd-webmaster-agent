@@ -20,10 +20,19 @@ on:
         required: false
         default: ''
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -82,8 +91,18 @@ jobs:
             ssh $SSH_ARGS "wp plugin update '${PLUGIN}' --path='${WP_PATH}' 2>&1"
           fi
 
-      - name: Confirm updated versions (after)
+      - name: Refresh status for this site
+        run: SSH_KEY_PATH=~/.ssh/id_ed25519 SITE_DOMAIN="${{ github.event.inputs.domain }}" node scripts/check-updates.js
+
+      - name: Commit status
         run: |
-          ssh -i ~/.ssh/id_ed25519 -p ${{ steps.target.outputs.ssh_port }} \
-            ${{ steps.target.outputs.ssh_user }}@${{ steps.target.outputs.ssh_host }} \
-            "wp plugin list --path='${{ steps.target.outputs.wp_path }}' --fields=name,version,status --format=table 2>/dev/null" || true
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add update-status/
+          git diff --staged --quiet || git commit -m "Update status refresh for ${{ github.event.inputs.domain }} (${{ github.event.inputs.plugin }})"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            git push && break
+            echo "Push rejected (attempt $i), retrying..."
+            sleep $(( (RANDOM % 10) + 1 ))
+          done
