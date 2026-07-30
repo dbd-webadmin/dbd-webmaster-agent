@@ -618,6 +618,9 @@
       btn.textContent = 'Refreshing…';
       try {
         await load();
+        showToast('Dashboard refreshed');
+      } catch {
+        showToast('Refresh failed — check your connection.', true);
       } finally {
         btn.disabled = false;
         btn.textContent = orig;
@@ -627,8 +630,8 @@
     // Re-fetches only one site's data (the combined files still have to be pulled since
     // status/stack/registrar aren't split per-site, but the audit/update/security files are)
     // and merges it into the existing in-memory state instead of re-checking every site.
-    async function refreshSite(dataStr, btn) {
-      const { url, slug } = JSON.parse(dataStr.replace(/&#39;/g, "'"));
+    async function refreshSite(data, btn) {
+      const { url, slug } = data;
       const origHtml = btn.innerHTML;
       btn.disabled = true;
       btn.innerHTML = '⏳';
