@@ -1,8 +1,8 @@
 {
   "url": "https://imaginewatauga.com/",
   "name": "Imagine Watauga",
-  "auditedAt": "2026-07-23T15:38:09.986Z",
-  "durationMs": 41655,
+  "auditedAt": "2026-07-31T11:04:27.245Z",
+  "durationMs": 93062,
   "pagesChecked": 18,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 48,
-    "desktop": 89
+    "mobile": null,
+    "desktop": null
   }
 }
