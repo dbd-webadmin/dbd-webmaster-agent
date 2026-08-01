@@ -1,8 +1,8 @@
 {
   "url": "https://www.rutherfordbound.com/",
   "name": "Rutherford Bound",
-  "auditedAt": "2026-07-24T13:10:16.886Z",
-  "durationMs": 69638,
+  "auditedAt": "2026-08-01T10:12:57.332Z",
+  "durationMs": 55470,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 41,
-    "desktop": null
+    "mobile": 44,
+    "desktop": 60
   }
 }
