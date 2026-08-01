@@ -1,9 +1,20 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-07-31T11:39:09.056Z",
+  "checkedAt": "2026-08-01T10:53:50.579Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "fluentformpro",
+      "version": "6.2.7",
+      "update_version": "6.2.8"
+    },
+    {
+      "name": "itidi-ai-events-places",
+      "version": "1.0.1",
+      "update_version": "1.0.2"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
