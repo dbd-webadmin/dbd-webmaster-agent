@@ -1,9 +1,15 @@
 {
   "slug": "tellingourpendletonstory-org",
   "url": "https://tellingourpendletonstory.org/",
-  "checkedAt": "2026-08-02T10:54:57.377Z",
+  "checkedAt": "2026-08-03T12:39:58.620Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "8.9.1",
+      "update_version": "8.9.2"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
