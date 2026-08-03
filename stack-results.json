@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T09:18:13.325Z",
+  "updatedAt": "2026-08-03T10:50:46.699Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -32,10 +32,10 @@
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0.2",
+      "builder": "Gutenberg",
+      "theme": "cleveland"
     },
     {
       "url": "https://destinationswva.org/",
@@ -49,7 +49,7 @@
     {
       "url": "https://visitridgwayco.com/",
       "name": "Visit Ridgway Colorado",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 72,
+      "dnsTtl": 47,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -202,7 +202,7 @@
     {
       "url": "https://wilkesoutdooractionplan.com/",
       "name": "Wilkes Outdoor Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -211,7 +211,7 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -238,7 +238,7 @@
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
