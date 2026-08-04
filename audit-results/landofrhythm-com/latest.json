@@ -1,20 +1,14 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-07-27T16:41:12.147Z",
-  "durationMs": 58572,
-  "pagesChecked": 30,
-  "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://landofrhythm.com/xmlrpc.php",
-      "status": 405,
-      "ok": false
-    }
-  ],
-  "brokenImages": [],
+  "auditedAt": "2026-08-04T10:59:53.907Z",
+  "durationMs": 29681,
+  "pagesChecked": 1,
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
   "pageSpeed": {
-    "mobile": 59,
-    "desktop": 57
+    "mobile": 100,
+    "desktop": 100
   }
 }
