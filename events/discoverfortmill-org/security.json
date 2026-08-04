@@ -5,11 +5,19 @@
     "lastSeen": "2026-08-04T18:07:35.014Z"
   },
   "loginSuccess": {
-    "count": 13,
-    "lastSeen": "2026-08-04T18:12:06.684Z",
-    "lastUser": "FMEPIntern"
+    "count": 14,
+    "lastSeen": "2026-08-04T18:22:42.114Z",
+    "lastUser": "dylan"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-08-04T18:22:42.114Z",
+      "data": {
+        "event": "login_success",
+        "user": "dylan"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-08-04T18:12:06.684Z",
@@ -115,5 +123,5 @@
       }
     }
   ],
-  "lastCommitAt": "2026-08-04T18:12:06.684Z"
+  "lastCommitAt": "2026-08-04T18:22:42.114Z"
 }
