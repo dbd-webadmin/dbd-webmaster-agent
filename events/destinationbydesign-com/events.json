@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-04T00:45:45.826Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-04T00:34:57.411Z",
     "type": "user_login",
     "data": {
@@ -421,14 +431,6 @@
   },
   {
     "receivedAt": "2026-07-02T14:05:30.204Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "zach"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T14:05:28.879Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
