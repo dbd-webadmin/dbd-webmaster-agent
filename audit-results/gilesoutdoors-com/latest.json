@@ -1,9 +1,9 @@
 {
   "url": "https://gilesoutdoors.com/",
   "name": "Giles Outdoors",
-  "auditedAt": "2026-07-28T10:48:18.864Z",
-  "durationMs": 9538,
-  "pagesChecked": 19,
+  "auditedAt": "2026-08-05T10:49:30.651Z",
+  "durationMs": 26016,
+  "pagesChecked": 17,
   "crawlBlocked": false,
   "brokenLinks": [
     {
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": null
+    "mobile": 72,
+    "desktop": 99
   }
 }
