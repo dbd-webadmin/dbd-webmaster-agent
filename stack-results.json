@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T09:47:00.824Z",
+  "updatedAt": "2026-08-05T09:44:44.812Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Elementor",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 193,
+      "dnsTtl": 142,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
