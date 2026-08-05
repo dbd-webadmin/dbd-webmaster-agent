@@ -1,9 +1,15 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-04T11:38:51.136Z",
+  "checkedAt": "2026-08-05T11:36:50.428Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "wpai-acf-add-on",
+      "version": "4.0.1",
+      "update_version": "4.0.2"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
