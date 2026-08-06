@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-06T20:02:30.065Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-07-30T20:39:32.162Z",
     "type": "plugin_update",
     "data": {
@@ -439,14 +449,6 @@
     "data": {
       "event": "login_failed",
       "user": "benflyingpebble-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T10:27:19.727Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "victor"
     }
   }
 ]
