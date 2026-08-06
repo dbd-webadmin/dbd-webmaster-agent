@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-06T19:08:02.437Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": {
+        "popup-maker/popup-maker.php": "popup-maker/popup-maker.php"
+      }
+    }
+  },
+  {
     "receivedAt": "2026-07-30T13:58:22.917Z",
     "type": "plugin_update",
     "data": {
