@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-06T20:05:29.160Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "litespeed-cache/litespeed-cache.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-06T20:05:26.976Z",
     "type": "plugin_update",
     "data": {
