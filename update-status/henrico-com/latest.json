@@ -1,7 +1,7 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-08-05T11:34:54.828Z",
+  "checkedAt": "2026-08-06T11:38:07.639Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,11 @@
       "name": "admin-site-enhancements",
       "version": "8.9.1",
       "update_version": "8.9.2"
+    },
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.6",
+      "update_version": "6.8.7"
     },
     {
       "name": "fluentform",
@@ -19,6 +24,11 @@
       "name": "fluentformpro",
       "version": "6.2.7",
       "update_version": "6.2.10"
+    },
+    {
+      "name": "fluent-smtp",
+      "version": "2.2.95",
+      "update_version": "2.3.0"
     }
   ],
   "phpVersion": "8.3.30"

@@ -1,24 +1,14 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-08-05T11:34:03.487Z",
+  "checkedAt": "2026-08-06T11:37:17.208Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "admin-site-enhancements",
-      "version": "8.9.1",
-      "update_version": "8.9.2"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.9",
-      "update_version": "6.2.11"
-    },
-    {
-      "name": "fluentformpro",
-      "version": "6.2.7",
-      "update_version": "6.2.10"
+      "name": "fluent-smtp",
+      "version": "2.2.95",
+      "update_version": "2.3.0"
     },
     {
       "name": "pie-calendar",
