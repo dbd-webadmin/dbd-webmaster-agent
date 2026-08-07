@@ -1,25 +1,14 @@
 {
   "url": "https://nolirecovery.org/",
   "name": "Nolichucky Recovery Initiative",
-  "auditedAt": "2026-07-30T10:35:32.936Z",
-  "durationMs": 38884,
-  "pagesChecked": 19,
-  "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://nolirecovery.org/xmlrpc.php",
-      "status": 405,
-      "ok": false
-    },
-    {
-      "url": "https://nolirecovery.org/cdn-cgi/l/email-protection",
-      "status": 404,
-      "ok": false
-    }
-  ],
-  "brokenImages": [],
+  "auditedAt": "2026-08-07T09:18:05.488Z",
+  "durationMs": 90867,
+  "pagesChecked": 1,
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
   "pageSpeed": {
-    "mobile": 55,
-    "desktop": 95
+    "mobile": 76,
+    "desktop": null
   }
 }
