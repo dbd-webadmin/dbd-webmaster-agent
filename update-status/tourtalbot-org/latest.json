@@ -1,44 +1,14 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-08-06T11:38:16.198Z",
-  "currentWpVersion": "7.0.2",
+  "checkedAt": "2026-08-07T10:16:06.863Z",
+  "currentWpVersion": "7.0.3",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "admin-site-enhancements",
-      "version": "8.9.1",
-      "update_version": "8.9.2"
-    },
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.6",
-      "update_version": "6.8.7"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.9",
-      "update_version": "6.2.11"
-    },
-    {
-      "name": "fluentformpro",
-      "version": "6.2.7",
-      "update_version": "6.2.10"
-    },
-    {
-      "name": "fluent-smtp",
-      "version": "2.2.95",
-      "update_version": "2.3.0"
-    },
-    {
-      "name": "itidi-ai-events-places",
-      "version": "1.0.1",
-      "update_version": "1.0.2"
-    },
-    {
-      "name": "popup-maker",
-      "version": "1.23.0",
-      "update_version": "1.24.0"
+      "name": "optimization-detective",
+      "version": "1.0.0-beta5",
+      "update_version": "1.0.0-beta6"
     }
   ],
   "phpVersion": "8.3.30"

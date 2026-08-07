@@ -1,8 +1,8 @@
 {
   "slug": "tellingourpendletonstory-org",
   "url": "https://tellingourpendletonstory.org/",
-  "checkedAt": "2026-08-06T11:37:50.551Z",
-  "currentWpVersion": "7.0.2",
+  "checkedAt": "2026-08-07T10:15:50.212Z",
+  "currentWpVersion": "7.0.3",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
@@ -21,14 +21,14 @@
       "update_version": "2.3.0"
     },
     {
+      "name": "hostinger",
+      "version": "3.0.73",
+      "update_version": "3.0.74"
+    },
+    {
       "name": "litespeed-cache",
       "version": "7.8.1",
       "update_version": "7.9"
-    },
-    {
-      "name": "popup-maker",
-      "version": "1.23.0",
-      "update_version": "1.24.0"
     }
   ],
   "phpVersion": "8.3.30"

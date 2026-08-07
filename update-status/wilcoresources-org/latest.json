@@ -1,9 +1,13 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-06T11:39:58.728Z",
+  "checkedAt": "2026-08-07T10:17:10.588Z",
   "currentWpVersion": "7.0.2",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.0.3",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.3-partial-2.zip"
+  },
   "pluginUpdates": [
     {
       "name": "wpai-acf-add-on",

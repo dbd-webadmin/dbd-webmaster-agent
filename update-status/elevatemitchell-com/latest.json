@@ -1,14 +1,19 @@
 {
   "slug": "elevatemitchell-com",
   "url": "https://elevatemitchell.com/",
-  "checkedAt": "2026-08-06T11:38:24.109Z",
-  "currentWpVersion": "7.0.2",
+  "checkedAt": "2026-08-07T10:16:11.591Z",
+  "currentWpVersion": "7.0.3",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "admin-site-enhancements",
       "version": "8.9.1",
       "update_version": "8.9.2"
+    },
+    {
+      "name": "hostinger",
+      "version": "3.0.73",
+      "update_version": "3.0.74"
     },
     {
       "name": "litespeed-cache",
