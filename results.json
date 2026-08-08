@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T18:25:17.491Z",
+  "updatedAt": "2026-08-08T19:05:59.990Z",
   "sites": [
     {
       "name": "Destination by Design",
@@ -9,10 +9,10 @@
       "sshAccess": true,
       "clientEmail": "accounts@dbdplanning.com",
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:37.910Z",
+      "checkedAt": "2026-08-08T19:05:53.053Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 158,
+      "responseTime": 223,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -36,12 +36,23 @@
       "sshAccess": true,
       "clientEmail": "kscram@jedco.org",
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.489Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:53.509Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 644,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-10-08T18:24:15.000Z",
+        "daysLeft": 60
       }
     },
     {
@@ -52,12 +63,23 @@
       "sshAccess": true,
       "clientEmail": "evan.kaufman@sfdc.org",
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.484Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:53.868Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 1001,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-11-06T16:53:59.000Z",
+        "daysLeft": 89
       }
     },
     {
@@ -68,12 +90,23 @@
       "sshAccess": true,
       "clientEmail": "Bailey.Jackson@clevelandcountync.gov",
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.489Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:53.741Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 872,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": "public, max-age=604800",
+        "expires": "Sat, 15 Aug 2026 19:05:53 GMT",
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-11-05T18:31:06.000Z",
+        "daysLeft": 88
       }
     },
     {
@@ -84,10 +117,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.630Z",
+      "checkedAt": "2026-08-08T19:05:53.510Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 1838,
+      "responseTime": 640,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -111,12 +144,23 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.490Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:56.184Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 3313,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": true,
+        "csp": true,
+        "cacheControl": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-10-23T14:46:45.000Z",
+        "daysLeft": 75
       }
     },
     {
@@ -127,10 +171,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:38.858Z",
+      "checkedAt": "2026-08-08T19:05:53.690Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 1064,
+      "responseTime": 818,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -154,10 +198,10 @@
       "sshAccess": true,
       "clientEmail": "jparker@gilescountychamber.com",
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.106Z",
+      "checkedAt": "2026-08-08T19:05:53.816Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2311,
+      "responseTime": 942,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -170,7 +214,7 @@
       "ssl": {
         "valid": true,
         "expiry": "2026-11-04T19:00:33.000Z",
-        "daysLeft": 88
+        "daysLeft": 87
       }
     },
     {
@@ -181,12 +225,23 @@
       "sshAccess": true,
       "clientEmail": "wendy@henrico.com",
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.486Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:54.798Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 1923,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-10-06T22:26:51.000Z",
+        "daysLeft": 59
       }
     },
     {
@@ -197,10 +252,10 @@
       "sshAccess": true,
       "clientEmail": "marla@highdesertpartnership.org",
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.887Z",
+      "checkedAt": "2026-08-08T19:05:53.963Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2088,
+      "responseTime": 1087,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -224,10 +279,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.232Z",
+      "checkedAt": "2026-08-08T19:05:54.089Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 1434,
+      "responseTime": 1212,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -251,12 +306,23 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.486Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:54.410Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 1532,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": false,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-09-24T13:44:00.000Z",
+        "daysLeft": 46
       }
     },
     {
@@ -267,10 +333,10 @@
       "sshAccess": true,
       "clientEmail": "TDA@mitchellcountync.gov",
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.675Z",
+      "checkedAt": "2026-08-08T19:05:54.266Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2875,
+      "responseTime": 1386,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -294,10 +360,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:41.851Z",
+      "checkedAt": "2026-08-08T19:05:54.473Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 4050,
+      "responseTime": 1593,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -321,10 +387,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.718Z",
+      "checkedAt": "2026-08-08T19:05:54.587Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 1915,
+      "responseTime": 1705,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -348,10 +414,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:41.815Z",
+      "checkedAt": "2026-08-08T19:05:54.626Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 4011,
+      "responseTime": 1743,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -375,10 +441,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.551Z",
+      "checkedAt": "2026-08-08T19:05:54.672Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 1747,
+      "responseTime": 1788,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -391,7 +457,7 @@
       "ssl": {
         "valid": true,
         "expiry": "2026-10-19T18:43:25.000Z",
-        "daysLeft": 72
+        "daysLeft": 71
       }
     },
     {
@@ -402,10 +468,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:42.101Z",
+      "checkedAt": "2026-08-08T19:05:54.832Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 4296,
+      "responseTime": 1948,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -429,10 +495,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:42.053Z",
+      "checkedAt": "2026-08-08T19:05:55.792Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 4247,
+      "responseTime": 2907,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -456,10 +522,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.952Z",
+      "checkedAt": "2026-08-08T19:05:55.003Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2145,
+      "responseTime": 2117,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -483,17 +549,17 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:42.440Z",
+      "checkedAt": "2026-08-08T19:05:55.978Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 4633,
+      "responseTime": 3091,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
         "xContentType": false,
         "csp": true,
         "cacheControl": "public, max-age=7200",
-        "expires": "Sat, 08 Aug 2026 20:22:42 GMT",
+        "expires": "Sat, 08 Aug 2026 21:05:55 GMT",
         "server": "cloudflare"
       },
       "ssl": {
@@ -510,10 +576,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:39.928Z",
+      "checkedAt": "2026-08-08T19:05:55.043Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2120,
+      "responseTime": 2156,
       "headers": {
         "hsts": true,
         "xFrameOptions": true,
@@ -537,10 +603,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.051Z",
+      "checkedAt": "2026-08-08T19:05:55.203Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2242,
+      "responseTime": 2315,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -564,10 +630,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:42.926Z",
+      "checkedAt": "2026-08-08T19:05:55.372Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 5117,
+      "responseTime": 2483,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -591,10 +657,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:43.325Z",
+      "checkedAt": "2026-08-08T19:05:55.384Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 5515,
+      "responseTime": 2494,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -607,7 +673,7 @@
       "ssl": {
         "valid": true,
         "expiry": "2026-09-24T18:41:36.000Z",
-        "daysLeft": 47
+        "daysLeft": 46
       }
     },
     {
@@ -618,10 +684,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.654Z",
+      "checkedAt": "2026-08-08T19:05:55.490Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2843,
+      "responseTime": 2600,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -645,10 +711,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.905Z",
+      "checkedAt": "2026-08-08T19:05:56.175Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 3093,
+      "responseTime": 3284,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -672,10 +738,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.729Z",
+      "checkedAt": "2026-08-08T19:05:56.553Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 2917,
+      "responseTime": 3661,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -699,10 +765,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.844Z",
+      "checkedAt": "2026-08-08T19:05:55.964Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 3031,
+      "responseTime": 3071,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -726,12 +792,23 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:25:17.473Z",
-      "up": false,
-      "responseTime": 10000,
-      "error": "Timeout",
+      "checkedAt": "2026-08-08T19:05:56.616Z",
+      "up": true,
+      "statusCode": 200,
+      "responseTime": 3722,
+      "headers": {
+        "hsts": false,
+        "xFrameOptions": false,
+        "xContentType": true,
+        "csp": true,
+        "cacheControl": null,
+        "expires": null,
+        "server": "LiteSpeed"
+      },
       "ssl": {
-        "valid": false
+        "valid": true,
+        "expiry": "2026-09-25T05:04:56.000Z",
+        "daysLeft": 47
       }
     },
     {
@@ -742,10 +819,10 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:42.955Z",
+      "checkedAt": "2026-08-08T19:05:55.880Z",
       "up": true,
       "statusCode": 200,
-      "responseTime": 5141,
+      "responseTime": 2984,
       "headers": {
         "hsts": false,
         "xFrameOptions": false,
@@ -769,23 +846,23 @@
       "sshAccess": true,
       "clientEmail": null,
       "notes": null,
-      "checkedAt": "2026-08-08T18:22:40.999Z",
+      "checkedAt": "2026-08-08T19:05:59.989Z",
       "up": true,
       "statusCode": 403,
-      "responseTime": 3184,
+      "responseTime": 85,
       "headers": {
         "hsts": false,
-        "xFrameOptions": true,
+        "xFrameOptions": false,
         "xContentType": false,
         "csp": false,
-        "cacheControl": "no-cache,no-store,private",
+        "cacheControl": "private, no-cache, no-store, must-revalidate, max-age=0",
         "expires": null,
         "server": "cloudflare"
       },
       "ssl": {
         "valid": true,
         "expiry": "2026-09-24T18:45:41.000Z",
-        "daysLeft": 47
+        "daysLeft": 46
       }
     }
   ]
