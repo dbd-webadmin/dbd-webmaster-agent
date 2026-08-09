@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T07:56:07.302Z",
+  "updatedAt": "2026-08-09T07:57:58.567Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,29 +13,29 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
-      "wordpress": true,
+      "dnsTtl": 1799,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "jedco25"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": true,
-      "wpVersion": "7.0.3",
-      "builder": "Gutenberg",
-      "theme": "cleveland"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://destinationswva.org/",
@@ -104,10 +104,10 @@
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "talbot"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://elevatemitchell.com/",
@@ -176,10 +176,10 @@
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://winklercreek.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 264,
+      "dnsTtl": 5,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -211,11 +211,11 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "dnsTtl": 299,
+      "wordpress": true,
+      "wpVersion": "7.0.2",
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://wilcoresources.org/",
@@ -230,10 +230,10 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
@@ -248,19 +248,19 @@
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.0.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://neckofthewoodsnc.com/",
       "name": "Neck of the Woods",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://highcountrypathways.org/",
