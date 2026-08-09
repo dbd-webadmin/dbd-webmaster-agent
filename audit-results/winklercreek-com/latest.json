@@ -1,16 +1,11 @@
 {
   "url": "https://winklercreek.com/",
   "name": "Winklers Creek Park",
-  "auditedAt": "2026-08-01T10:12:01.861Z",
-  "durationMs": 28300,
+  "auditedAt": "2026-08-09T09:04:02.865Z",
+  "durationMs": 31305,
   "pagesChecked": 26,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://winklercreek.com/comments/feed/",
-      "status": 0,
-      "ok": false
-    },
     {
       "url": "https://winklercreek.com/xmlrpc.php",
       "status": 405,
@@ -22,15 +17,9 @@
       "ok": false
     }
   ],
-  "brokenImages": [
-    {
-      "url": "https://winklercreek.com/wp-content/uploads/2023/11/Winklers-Creek-Public-Meeting_FINAL-1_Page_05.png",
-      "status": 0,
-      "ok": false
-    }
-  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 61,
-    "desktop": 73
+    "mobile": 60,
+    "desktop": 74
   }
 }
