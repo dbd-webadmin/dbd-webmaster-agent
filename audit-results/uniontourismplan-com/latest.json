@@ -1,16 +1,11 @@
 {
   "url": "https://uniontourismplan.com/",
   "name": "Union County Tourism Plan",
-  "auditedAt": "2026-08-03T11:46:59.604Z",
-  "durationMs": 24352,
+  "auditedAt": "2026-08-11T09:16:49.638Z",
+  "durationMs": 31380,
   "pagesChecked": 14,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://uniontourismplan.com/feed/",
-      "status": 502,
-      "ok": false
-    },
     {
       "url": "https://uniontourismplan.com/xmlrpc.php",
       "status": 405,
