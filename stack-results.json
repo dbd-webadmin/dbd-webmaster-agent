@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T08:48:11.106Z",
+  "updatedAt": "2026-08-11T08:13:47.088Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -58,7 +58,7 @@
     {
       "url": "https://tellingourpendletonstory.org/",
       "name": "Discovering Our Pendleton Story",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.3",
       "builder": "Gutenberg",
@@ -247,7 +247,7 @@
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.3",
       "builder": "Gutenberg",
@@ -265,11 +265,11 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 300,
-      "wordpress": false,
+      "dnsTtl": 299,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
