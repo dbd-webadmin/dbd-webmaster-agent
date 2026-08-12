@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T08:13:47.088Z",
+  "updatedAt": "2026-08-12T08:37:01.504Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "henrico"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://thisisharney.com/",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.3",
       "builder": "Gutenberg",
@@ -184,7 +184,7 @@
     {
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 143,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -247,7 +247,7 @@
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.3",
       "builder": "Gutenberg",
@@ -265,11 +265,11 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 299,
-      "wordpress": true,
+      "dnsTtl": 300,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
