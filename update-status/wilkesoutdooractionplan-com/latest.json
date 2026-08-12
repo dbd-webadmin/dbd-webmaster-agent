@@ -1,13 +1,19 @@
 {
   "slug": "wilkesoutdooractionplan-com",
   "url": "https://wilkesoutdooractionplan.com/",
-  "checkedAt": "2026-08-11T10:17:43.651Z",
+  "checkedAt": "2026-08-12T10:32:39.861Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": {
     "version": "7.0.3",
     "update_type": "minor",
     "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.3-partial-2.zip"
   },
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.275",
+      "update_version": "1.0.276"
+    }
+  ],
   "phpVersion": "8.3.30"
 }

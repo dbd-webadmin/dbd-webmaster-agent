@@ -1,9 +1,15 @@
 {
   "slug": "imaginewatauga-com",
   "url": "https://imaginewatauga.com/",
-  "checkedAt": "2026-08-11T10:17:31.060Z",
+  "checkedAt": "2026-08-12T10:32:28.839Z",
   "currentWpVersion": "7.0.3",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.275",
+      "update_version": "1.0.276"
+    }
+  ],
   "phpVersion": "8.3.30"
 }

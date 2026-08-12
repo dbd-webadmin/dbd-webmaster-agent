@@ -1,19 +1,24 @@
 {
   "slug": "adventuremeadowriver-com",
   "url": "https://adventuremeadowriver.com/",
-  "checkedAt": "2026-08-11T10:16:57.909Z",
+  "checkedAt": "2026-08-12T10:31:58.750Z",
   "currentWpVersion": "7.0.3",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "hostinger",
       "version": "3.0.72",
-      "update_version": "3.0.74"
+      "update_version": "3.0.75"
     },
     {
       "name": "litespeed-cache",
       "version": "7.8.1",
       "update_version": "7.9"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.275",
+      "update_version": "1.0.276"
     },
     {
       "name": "google-site-kit",
