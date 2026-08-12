@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-12T14:43:51.015Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "cameron"
+    }
+  },
+  {
     "receivedAt": "2026-08-11T11:43:24.789Z",
     "type": "plugin_update",
     "data": {
@@ -426,16 +434,6 @@
       "event": "plugin_update",
       "plugins": [
         "view-transitions/view-transitions.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T17:50:18.298Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "webp-uploads/load.php"
       ]
     }
   }
