@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-13T16:04:45.103Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor/elementor.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-13T16:04:40.706Z",
     "type": "plugin_update",
     "data": {
@@ -465,14 +475,6 @@
     "data": {
       "event": "login_failed",
       "user": "zach"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:38:11.808Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "ben"
     }
   }
 ]
