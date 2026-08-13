@@ -1,10 +1,15 @@
 {
   "slug": "uniontourismplan-com",
   "url": "https://uniontourismplan.com/",
-  "checkedAt": "2026-08-12T10:33:27.588Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:36:06.301Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
+    },
     {
       "name": "seo-by-rank-math",
       "version": "1.0.275",
@@ -14,6 +19,11 @@
       "name": "google-site-kit",
       "version": "1.184.0",
       "update_version": "1.185.0"
+    },
+    {
+      "name": "sg-cachepress",
+      "version": "7.8.0",
+      "update_version": "7.8.1"
     }
   ],
   "phpVersion": "8.3.30"

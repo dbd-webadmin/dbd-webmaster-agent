@@ -1,14 +1,24 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-08-12T10:31:52.614Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:33:25.693Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "fluentform",
       "version": "6.2.9",
       "update_version": "6.2.12"
+    },
+    {
+      "name": "fluent-smtp",
+      "version": "2.3.0",
+      "update_version": "2.3.1"
+    },
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
     },
     {
       "name": "litespeed-cache",

@@ -1,8 +1,8 @@
 {
   "slug": "onerichmondhwy-com",
   "url": "https://onerichmondhwy.com/",
-  "checkedAt": "2026-08-12T10:31:06.126Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:32:14.566Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
@@ -19,6 +19,11 @@
       "name": "fluentformpro",
       "version": "6.2.10",
       "update_version": "6.2.12"
+    },
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
     },
     {
       "name": "hostinger",

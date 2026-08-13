@@ -1,10 +1,15 @@
 {
   "slug": "whoishaverstraw-com",
   "url": "https://whoishaverstraw.com/",
-  "checkedAt": "2026-08-12T10:32:05.855Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:33:43.103Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
+    },
     {
       "name": "litespeed-cache",
       "version": "7.8.1",

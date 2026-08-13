@@ -1,8 +1,8 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-08-12T10:30:56.329Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:32:05.523Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
@@ -19,6 +19,16 @@
       "name": "fluentformpro",
       "version": "6.2.10",
       "update_version": "6.2.12"
+    },
+    {
+      "name": "fluent-smtp",
+      "version": "2.3.0",
+      "update_version": "2.3.1"
+    },
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
     },
     {
       "name": "pie-calendar",

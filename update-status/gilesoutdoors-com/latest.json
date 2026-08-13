@@ -1,8 +1,8 @@
 {
   "slug": "gilesoutdoors-com",
   "url": "https://gilesoutdoors.com/",
-  "checkedAt": "2026-08-12T10:31:29.358Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:32:49.396Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
@@ -14,6 +14,16 @@
       "name": "fluentform",
       "version": "6.2.9",
       "update_version": "6.2.12"
+    },
+    {
+      "name": "fluent-smtp",
+      "version": "2.3.0",
+      "update_version": "2.3.1"
+    },
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
     },
     {
       "name": "hostinger",

@@ -1,10 +1,15 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-08-12T10:31:12.240Z",
-  "currentWpVersion": "7.0.3",
+  "checkedAt": "2026-08-13T10:32:23.057Z",
+  "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
+    },
     {
       "name": "gravityforms",
       "version": "2.10.5",
