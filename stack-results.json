@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T08:37:01.504Z",
+  "updatedAt": "2026-08-13T08:40:39.458Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -31,16 +31,16 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "cleveland"
     },
     {
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -132,7 +132,7 @@
       "name": "Adventure Meadow River",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -141,7 +141,7 @@
       "name": "Who is Haverstraw?",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -150,16 +150,16 @@
       "name": "Raise the Rock",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "twentytwentyfive"
     },
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -168,7 +168,7 @@
       "name": "Moving Together Madison - Mayodan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -177,14 +177,14 @@
       "name": "Imagine Watauga",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 143,
+      "dnsTtl": 10,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -211,7 +211,7 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -221,17 +221,17 @@
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "wilks"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -249,7 +249,7 @@
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -265,25 +265,25 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 300,
-      "wordpress": false,
+      "dnsTtl": 299,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.3",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
