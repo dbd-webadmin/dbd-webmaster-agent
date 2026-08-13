@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-13T16:05:24.967Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-13T16:05:21.677Z",
     "type": "plugin_update",
     "data": {
@@ -471,14 +481,6 @@
     "data": {
       "event": "login_failed",
       "user": "zach"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:55:55.973Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "mariah"
     }
   }
 ]
