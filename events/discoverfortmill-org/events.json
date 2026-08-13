@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-13T16:05:21.677Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-13T16:05:11.307Z",
     "type": "plugin_update",
     "data": {
@@ -469,14 +479,6 @@
     "data": {
       "event": "login_failed",
       "user": "mariah"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:50:20.646Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "fmepintern"
     }
   }
 ]
