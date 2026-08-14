@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T08:40:39.458Z",
+  "updatedAt": "2026-08-14T08:34:46.061Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 599,
+      "dnsTtl": 600,
       "wordpress": true,
       "wpVersion": "7.0.4",
       "builder": "Gutenberg",
@@ -40,7 +40,7 @@
     {
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.0.4",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 10,
+      "dnsTtl": 261,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -211,7 +211,7 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.0.2",
       "builder": "Gutenberg",
@@ -221,10 +221,10 @@
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "wilks"
     },
     {
       "url": "https://legacysoccerpark.org/",
@@ -265,11 +265,11 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 299,
-      "wordpress": true,
+      "dnsTtl": 300,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
