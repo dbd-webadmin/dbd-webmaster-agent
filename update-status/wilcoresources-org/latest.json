@@ -1,14 +1,19 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-12T10:32:52.711Z",
+  "checkedAt": "2026-08-14T10:30:12.976Z",
   "currentWpVersion": "7.0.2",
   "wordpressUpdate": {
-    "version": "7.0.3",
+    "version": "7.0.4",
     "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.3-partial-2.zip"
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.0.4-partial-2.zip"
   },
   "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.55",
+      "update_version": "10.56"
+    },
     {
       "name": "seo-by-rank-math",
       "version": "1.0.275",

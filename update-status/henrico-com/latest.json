@@ -1,20 +1,9 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-08-13T10:32:58.346Z",
+  "checkedAt": "2026-08-14T10:28:43.287Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "fluent-smtp",
-      "version": "2.3.0",
-      "update_version": "2.3.1"
-    },
-    {
-      "name": "easy-code-manager",
-      "version": "10.55",
-      "update_version": "10.56"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }

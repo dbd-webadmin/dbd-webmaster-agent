@@ -1,60 +1,9 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-08-13T10:33:09.222Z",
+  "checkedAt": "2026-08-14T10:28:50.190Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "8.9.2",
-      "update_version": "9.0.0"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.11",
-      "update_version": "6.2.12"
-    },
-    {
-      "name": "fluentformpro",
-      "version": "6.2.10",
-      "update_version": "6.2.12"
-    },
-    {
-      "name": "fluent-smtp",
-      "version": "2.3.0",
-      "update_version": "2.3.1"
-    },
-    {
-      "name": "easy-code-manager",
-      "version": "10.55",
-      "update_version": "10.56"
-    },
-    {
-      "name": "itidi-ai-events-places",
-      "version": "1.0.2",
-      "update_version": "1.0.3"
-    },
-    {
-      "name": "optimization-detective",
-      "version": "1.0.0-beta5",
-      "update_version": "1.0.0-beta6"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.275",
-      "update_version": "1.0.276"
-    },
-    {
-      "name": "relevanssi",
-      "version": "4.27.2",
-      "update_version": "4.28.1"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.184.0",
-      "update_version": "1.185.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }
