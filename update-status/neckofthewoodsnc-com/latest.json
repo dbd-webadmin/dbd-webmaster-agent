@@ -1,7 +1,7 @@
 {
   "slug": "neckofthewoodsnc-com",
   "url": "https://neckofthewoodsnc.com/",
-  "checkedAt": "2026-08-14T10:30:34.610Z",
+  "checkedAt": "2026-08-15T09:49:22.273Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,11 @@
       "name": "easy-code-manager",
       "version": "10.55",
       "update_version": "10.56"
+    },
+    {
+      "name": "pods",
+      "version": "3.3.9",
+      "update_version": "3.3.9.1"
     },
     {
       "name": "seo-by-rank-math",
