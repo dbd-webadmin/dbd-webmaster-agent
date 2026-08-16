@@ -1,7 +1,7 @@
 {
   "slug": "tellingourpendletonstory-org",
   "url": "https://tellingourpendletonstory.org/",
-  "checkedAt": "2026-08-15T09:46:24.390Z",
+  "checkedAt": "2026-08-16T09:47:43.648Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,11 +9,6 @@
       "name": "admin-site-enhancements",
       "version": "8.9.1",
       "update_version": "9.0.0"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.9",
-      "update_version": "6.2.12"
     },
     {
       "name": "fluent-smtp",

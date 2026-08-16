@@ -1,15 +1,10 @@
 {
   "slug": "destinationswva-org",
   "url": "https://destinationswva.org/",
-  "checkedAt": "2026-08-15T09:46:14.405Z",
+  "checkedAt": "2026-08-16T09:47:35.002Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
-    {
-      "name": "fluentform",
-      "version": "6.2.9",
-      "update_version": "6.2.12"
-    },
     {
       "name": "fluent-smtp",
       "version": "2.3.0",
