@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-17T20:19:05.745Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluent-smtp/fluent-smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-17T20:19:02.841Z",
     "type": "plugin_update",
     "data": {
@@ -461,14 +471,6 @@
     "data": {
       "event": "login_failed",
       "user": "dylandbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:41:51.504Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "benflyingpebble-com"
     }
   }
 ]
