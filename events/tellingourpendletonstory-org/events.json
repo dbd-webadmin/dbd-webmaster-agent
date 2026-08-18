@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-18T12:45:12.518Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluent-smtp/fluent-smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-18T12:45:08.260Z",
     "type": "plugin_update",
     "data": {
