@@ -1,7 +1,7 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-08-17T10:02:16.413Z",
+  "checkedAt": "2026-08-18T09:52:56.605Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,16 @@
       "name": "admin-site-enhancements",
       "version": "9.0.0",
       "update_version": "9.0.1"
+    },
+    {
+      "name": "akismet",
+      "version": "5.7",
+      "update_version": "5.7.1"
+    },
+    {
+      "name": "post-types-order",
+      "version": "2.4.8",
+      "update_version": "2.4.9"
     },
     {
       "name": "relevanssi",
