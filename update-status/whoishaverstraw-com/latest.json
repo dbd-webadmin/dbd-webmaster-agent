@@ -1,34 +1,14 @@
 {
   "slug": "whoishaverstraw-com",
   "url": "https://whoishaverstraw.com/",
-  "checkedAt": "2026-08-18T09:54:13.158Z",
+  "checkedAt": "2026-08-19T09:55:16.739Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "easy-code-manager",
-      "version": "10.55",
-      "update_version": "10.56"
-    },
-    {
-      "name": "litespeed-cache",
-      "version": "7.8.1",
-      "update_version": "7.9"
-    },
-    {
       "name": "oxygen",
       "version": "4.9.6",
       "update_version": "4.9.7"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.275",
-      "update_version": "1.0.276"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.184.0",
-      "update_version": "1.185.0"
     }
   ],
   "phpVersion": "8.3.30"

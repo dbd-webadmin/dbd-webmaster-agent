@@ -1,20 +1,9 @@
 {
   "slug": "imaginewatauga-com",
   "url": "https://imaginewatauga.com/",
-  "checkedAt": "2026-08-18T09:54:37.545Z",
+  "checkedAt": "2026-08-19T09:55:52.185Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "easy-code-manager",
-      "version": "10.55",
-      "update_version": "10.56"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.275",
-      "update_version": "1.0.276"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }

@@ -1,45 +1,9 @@
 {
   "slug": "shelbyonthemove-com",
   "url": "https://shelbyonthemove.com/",
-  "checkedAt": "2026-08-18T09:55:13.896Z",
+  "checkedAt": "2026-08-19T09:56:45.640Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "coming-soon",
-      "version": "6.20.7",
-      "update_version": "6.20.8"
-    },
-    {
-      "name": "easy-code-manager",
-      "version": "10.55",
-      "update_version": "10.56"
-    },
-    {
-      "name": "formidable",
-      "version": "6.33.1",
-      "update_version": "6.34"
-    },
-    {
-      "name": "jetpack",
-      "version": "16.0.1",
-      "update_version": "16.1.1"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.275",
-      "update_version": "1.0.276"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.184.0",
-      "update_version": "1.185.0"
-    },
-    {
-      "name": "sg-cachepress",
-      "version": "7.8.0",
-      "update_version": "7.8.1"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }
