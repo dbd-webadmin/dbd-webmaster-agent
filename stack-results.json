@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T07:49:17.255Z",
+  "updatedAt": "2026-08-19T07:50:20.092Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -186,14 +186,14 @@
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.2",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 73,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -204,7 +204,7 @@
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.2",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": null
     },
@@ -213,7 +213,7 @@
       "name": "Cortland County Food Map",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.2",
+      "wpVersion": "7.0.4",
       "builder": "Gutenberg",
       "theme": "twentytwentyfour"
     },
