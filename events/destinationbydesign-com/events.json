@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-19T16:38:11.918Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "matt"
+    }
+  },
+  {
     "receivedAt": "2026-08-19T16:35:36.423Z",
     "type": "user_login",
     "data": {
@@ -430,16 +438,6 @@
       "event": "plugin_update",
       "plugins": [
         "formidable-pro/formidable-pro.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T17:41:52.883Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "formidable/formidable.php"
       ]
     }
   }
