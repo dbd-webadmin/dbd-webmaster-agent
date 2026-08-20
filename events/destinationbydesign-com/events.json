@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-20T01:14:05.209Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "akismet/akismet.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-20T01:14:01.463Z",
     "type": "plugin_update",
     "data": {
@@ -427,16 +437,6 @@
     "data": {
       "event": "user_login",
       "user": "ugurkan"
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T17:42:06.696Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "relevanssi/relevanssi.php"
-      ]
     }
   }
 ]
