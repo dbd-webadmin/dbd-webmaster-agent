@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-20T01:14:01.463Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-20T01:13:39.985Z",
     "type": "user_login",
     "data": {
@@ -426,16 +436,6 @@
       "event": "plugin_update",
       "plugins": [
         "relevanssi/relevanssi.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T17:42:03.200Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
       ]
     }
   }
