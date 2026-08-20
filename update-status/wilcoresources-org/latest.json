@@ -1,9 +1,19 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-19T09:56:28.510Z",
+  "checkedAt": "2026-08-20T09:55:45.442Z",
   "currentWpVersion": "7.0.4",
-  "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "wordpressUpdate": {
+    "version": "7.1",
+    "update_type": "major",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
+  },
+  "pluginUpdates": [
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.7",
+      "update_version": "6.8.8"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
