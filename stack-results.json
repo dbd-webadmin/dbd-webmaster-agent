@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T07:50:20.092Z",
+  "updatedAt": "2026-08-20T07:52:48.907Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -67,7 +67,7 @@
     {
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 31,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -249,7 +249,7 @@
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.4",
+      "wpVersion": "7.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -265,7 +265,7 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -276,7 +276,7 @@
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.0.4",
+      "wpVersion": "7.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
