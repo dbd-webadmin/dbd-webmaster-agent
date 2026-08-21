@@ -11,6 +11,16 @@
   },
   "recentEvents": [
     {
+      "type": "user_role_changed",
+      "time": "2026-08-21T14:19:44.230Z",
+      "data": {
+        "event": "user_role_changed",
+        "user": "Warren",
+        "new_role": "administrator",
+        "old_roles": []
+      }
+    },
+    {
       "type": "login_success",
       "time": "2026-08-20T16:18:15.792Z",
       "data": {
@@ -161,15 +171,7 @@
         "event": "login_success",
         "user": "holly"
       }
-    },
-    {
-      "type": "login_success",
-      "time": "2026-07-21T15:02:17.047Z",
-      "data": {
-        "event": "login_success",
-        "user": "holly"
-      }
     }
   ],
-  "lastCommitAt": "2026-08-20T16:18:15.792Z"
+  "lastCommitAt": "2026-08-21T14:19:44.230Z"
 }
