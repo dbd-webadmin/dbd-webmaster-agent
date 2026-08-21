@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-21T12:41:52.001Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1"
+    }
+  },
+  {
     "receivedAt": "2026-08-21T12:40:39.003Z",
     "type": "plugin_update",
     "data": {
@@ -469,16 +477,6 @@
   },
   {
     "receivedAt": "2026-07-08T16:46:03.356Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "ultimate-elementor/ultimate-elementor.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-08T16:45:55.545Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
