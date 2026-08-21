@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-21T12:52:42.932Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor-pro/elementor-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-21T12:44:46.838Z",
     "type": "plugin_update",
     "data": {
@@ -467,14 +477,6 @@
     "data": {
       "event": "login_failed",
       "user": "christin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:13:05.008Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "benflyingpebble-com"
     }
   }
 ]
