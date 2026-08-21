@@ -1,7 +1,7 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-20T09:55:45.442Z",
+  "checkedAt": "2026-08-21T09:58:30.806Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": {
     "version": "7.1",
@@ -10,9 +10,9 @@
   },
   "pluginUpdates": [
     {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.7",
-      "update_version": "6.8.8"
+      "name": "jetpack",
+      "version": "16.1.1",
+      "update_version": "16.1.2"
     }
   ],
   "phpVersion": "8.3.30"
