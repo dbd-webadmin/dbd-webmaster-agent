@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-21T12:39:55.853Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-08-21T12:39:40.438Z",
     "type": "plugin_update",
     "data": {
@@ -479,14 +487,6 @@
       "plugins": [
         "webp-uploads/load.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T14:23:34.752Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "matt"
     }
   }
 ]
