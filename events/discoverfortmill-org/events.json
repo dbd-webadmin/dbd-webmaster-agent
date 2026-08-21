@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-21T12:52:21.042Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor-pro/elementor-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-21T12:43:11.551Z",
     "type": "plugin_update",
     "data": {
@@ -472,16 +482,6 @@
       "event": "plugin_update",
       "plugins": [
         "bulk-edit-custom-tables-premium/custom-tables.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-08T16:46:08.730Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "jet-engine/jet-engine.php"
       ]
     }
   }
