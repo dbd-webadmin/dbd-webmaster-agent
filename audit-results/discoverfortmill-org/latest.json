@@ -1,20 +1,14 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-08-14T09:30:36.661Z",
-  "durationMs": 21444,
+  "auditedAt": "2026-08-22T08:51:33.309Z",
+  "durationMs": 40773,
   "pagesChecked": 30,
   "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://discoverfortmill.org/xmlrpc.php",
-      "status": 403,
-      "ok": false
-    }
-  ],
+  "brokenLinks": [],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": null
+    "mobile": 62,
+    "desktop": 88
   }
 }
