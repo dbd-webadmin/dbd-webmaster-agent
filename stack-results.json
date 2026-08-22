@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-21T07:53:15.899Z",
+  "updatedAt": "2026-08-22T07:41:10.902Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
       "name": "Destination by Design",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -13,29 +13,29 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
-      "wordpress": true,
+      "dnsTtl": 1799,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "jedco25"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "cleveland"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://destinationswva.org/",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Elementor",
@@ -104,10 +104,10 @@
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "talbot"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://elevatemitchell.com/",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 299,
+      "dnsTtl": 71,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -203,9 +203,9 @@
       "url": "https://wilkesoutdooractionplan.com/",
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
+      "wordpress": true,
+      "wpVersion": "7.0.4",
+      "builder": "Gutenberg",
       "theme": null
     },
     {
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -230,19 +230,19 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://beckleyoutdoors.com/",
@@ -274,11 +274,11 @@
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
-      "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "dnsTtl": 299,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://deepgaprecreationarea.org/",
