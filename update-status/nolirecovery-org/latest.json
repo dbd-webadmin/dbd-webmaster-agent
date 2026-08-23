@@ -1,13 +1,19 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-08-21T09:57:00.615Z",
+  "checkedAt": "2026-08-23T09:49:30.519Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": {
     "version": "7.1",
     "update_type": "major",
     "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
   },
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "fluentform",
+      "version": "6.2.12",
+      "update_version": "6.2.13"
+    }
+  ],
   "phpVersion": "8.3.30"
 }

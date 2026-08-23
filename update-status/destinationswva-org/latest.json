@@ -1,7 +1,7 @@
 {
   "slug": "destinationswva-org",
   "url": "https://destinationswva.org/",
-  "checkedAt": "2026-08-21T09:56:08.273Z",
+  "checkedAt": "2026-08-23T09:48:26.620Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": {
     "version": "7.1",
@@ -9,6 +9,11 @@
     "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
   },
   "pluginUpdates": [
+    {
+      "name": "fluentform",
+      "version": "6.2.12",
+      "update_version": "6.2.13"
+    },
     {
       "name": "hostinger",
       "version": "3.0.75",

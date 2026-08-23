@@ -1,19 +1,13 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-08-21T09:58:30.806Z",
+  "checkedAt": "2026-08-23T09:51:08.126Z",
   "currentWpVersion": "7.0.4",
   "wordpressUpdate": {
     "version": "7.1",
     "update_type": "major",
     "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
   },
-  "pluginUpdates": [
-    {
-      "name": "jetpack",
-      "version": "16.1.1",
-      "update_version": "16.1.2"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.30"
 }
