@@ -1,14 +1,20 @@
 {
   "url": "https://whoishaverstraw.com/",
   "name": "Who is Haverstraw?",
-  "auditedAt": "2026-08-15T08:48:25.746Z",
-  "durationMs": 23132,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-08-23T08:52:07.062Z",
+  "durationMs": 25646,
+  "pagesChecked": 15,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://whoishaverstraw.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 66,
+    "mobile": 65,
     "desktop": 94
   }
 }

@@ -1,64 +1,14 @@
 {
   "url": "https://elevatemitchell.com/",
   "name": "Elevate Mitchell",
-  "auditedAt": "2026-08-15T08:46:55.361Z",
-  "durationMs": 59883,
+  "auditedAt": "2026-08-23T08:50:01.431Z",
+  "durationMs": 28252,
   "pagesChecked": 15,
   "crawlBlocked": false,
   "brokenLinks": [
     {
-      "url": "https://elevatemitchell.com/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/feed/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/comments/feed/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-json/oembed/1.0/embed",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-json/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-json/wp/v2/pages/8",
-      "status": 403,
-      "ok": false
-    },
-    {
       "url": "https://elevatemitchell.com/xmlrpc.php",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-includes/js/dist/script-modules/interactivity/index.min.js",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/cropped-Elevate-Mitchell-County-Icon-Light-32x32.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/cropped-Elevate-Mitchell-County-Icon-Light-192x192.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/cropped-Elevate-Mitchell-County-Icon-Light-180x180.webp",
-      "status": 403,
+      "status": 405,
       "ok": false
     },
     {
@@ -67,70 +17,9 @@
       "ok": false
     }
   ],
-  "brokenImages": [
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/Elevate-Mitchell-County-Light.svg",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/W7B1806.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/W7B2918.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/IMG_2612.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/W7B2235.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/assets.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/network.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/gaps.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/unity_3.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/360-view.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/tactics.webp",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://elevatemitchell.com/wp-content/uploads/2025/08/W7B2614.webp",
-      "status": 403,
-      "ok": false
-    }
-  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 90,
-    "desktop": 98
+    "mobile": 89,
+    "desktop": 99
   }
 }

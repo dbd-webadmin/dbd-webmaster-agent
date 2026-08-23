@@ -1,14 +1,25 @@
 {
   "url": "https://adventuremeadowriver.com/",
   "name": "Adventure Meadow River",
-  "auditedAt": "2026-08-15T08:48:02.614Z",
-  "durationMs": 30977,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-08-23T08:51:41.416Z",
+  "durationMs": 38937,
+  "pagesChecked": 17,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://adventuremeadowriver.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://adventuremeadowriver.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 56,
-    "desktop": 76
+    "mobile": 63,
+    "desktop": 81
   }
 }
