@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-24T16:31:13.805Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1"
+    }
+  },
+  {
     "receivedAt": "2026-08-24T16:30:58.361Z",
     "type": "plugin_update",
     "data": {
@@ -409,14 +417,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:39:57.056Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:39:46.416Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
