@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-24T16:27:12.160Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-24T16:27:08.079Z",
     "type": "plugin_update",
     "data": {
