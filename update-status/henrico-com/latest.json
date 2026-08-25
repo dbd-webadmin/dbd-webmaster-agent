@@ -1,24 +1,14 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-08-24T10:08:51.599Z",
+  "checkedAt": "2026-08-25T09:55:46.675Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "admin-site-enhancements",
-      "version": "9.0.1",
-      "update_version": "9.0.2"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.12",
-      "update_version": "6.2.13"
-    },
-    {
-      "name": "fluentformpro",
-      "version": "6.2.12",
-      "update_version": "6.2.13"
+      "name": "google-site-kit",
+      "version": "1.185.0",
+      "update_version": "1.186.0"
     }
   ],
   "phpVersion": "8.3.30"

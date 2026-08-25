@@ -1,38 +1,14 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-08-24T10:08:58.629Z",
-  "currentWpVersion": "7.0.4",
-  "wordpressUpdate": {
-    "version": "7.1",
-    "update_type": "major",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
-  },
+  "checkedAt": "2026-08-25T09:55:53.488Z",
+  "currentWpVersion": "7.1",
+  "wordpressUpdate": null,
   "pluginUpdates": [
     {
-      "name": "admin-site-enhancements",
-      "version": "9.0.1",
-      "update_version": "9.0.2"
-    },
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.7",
-      "update_version": "6.8.8"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.12",
-      "update_version": "6.2.13"
-    },
-    {
-      "name": "fluentformpro",
-      "version": "6.2.12",
-      "update_version": "6.2.13"
-    },
-    {
-      "name": "simpletoc",
-      "version": "7.1.1",
-      "update_version": "7.3.0"
+      "name": "google-site-kit",
+      "version": "1.185.0",
+      "update_version": "1.186.0"
     }
   ],
   "phpVersion": "8.3.30"

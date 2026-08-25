@@ -1,13 +1,15 @@
 {
   "slug": "winklercreek-com",
   "url": "https://winklercreek.com/",
-  "checkedAt": "2026-08-24T10:09:57.701Z",
-  "currentWpVersion": "7.0.4",
-  "wordpressUpdate": {
-    "version": "7.1",
-    "update_type": "major",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.zip"
-  },
-  "pluginUpdates": [],
+  "checkedAt": "2026-08-25T09:56:53.263Z",
+  "currentWpVersion": "7.1",
+  "wordpressUpdate": null,
+  "pluginUpdates": [
+    {
+      "name": "google-site-kit",
+      "version": "1.185.0",
+      "update_version": "1.186.0"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
