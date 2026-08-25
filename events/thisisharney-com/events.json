@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-25T14:52:19.565Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-24T15:21:15.411Z",
     "type": "plugin_update",
     "data": {
@@ -471,14 +481,6 @@
     "data": {
       "event": "login_failed",
       "user": "dylandbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:29:31.133Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "christin"
     }
   }
 ]
