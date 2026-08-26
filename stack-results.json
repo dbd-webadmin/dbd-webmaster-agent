@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:54:26.170Z",
+  "updatedAt": "2026-08-26T07:55:30.986Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -130,7 +130,7 @@
     {
       "url": "https://adventuremeadowriver.com/",
       "name": "Adventure Meadow River",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 173,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -211,7 +211,7 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -274,7 +274,7 @@
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
