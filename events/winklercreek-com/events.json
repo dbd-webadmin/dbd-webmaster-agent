@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-08-27T16:41:10.790Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-08-24T16:38:53.326Z",
     "type": "core_update",
     "data": {
