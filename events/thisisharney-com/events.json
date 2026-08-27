@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-27T16:57:43.898Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "simple-custom-post-order/simple-custom-post-order.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-27T16:57:41.038Z",
     "type": "plugin_update",
     "data": {
@@ -479,14 +489,6 @@
       "plugins": [
         "jet-engine/jet-engine.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T14:34:10.274Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "benflyingpebble-com"
     }
   }
 ]
