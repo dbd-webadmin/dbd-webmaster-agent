@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-27T16:57:46.953Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "insert-headers-and-footers/ihaf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-27T16:57:43.898Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "webp-uploads/load.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-07T13:33:18.120Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "jet-engine/jet-engine.php"
       ]
     }
   }
