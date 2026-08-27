@@ -1,8 +1,8 @@
 {
   "url": "https://highcountrypathways.org/",
   "name": "High Country Pathways",
-  "auditedAt": "2026-08-19T08:57:35.133Z",
-  "durationMs": 71290,
+  "auditedAt": "2026-08-27T19:05:47.655Z",
+  "durationMs": 21442,
   "pagesChecked": 7,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -14,7 +14,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": null
+    "mobile": 90,
+    "desktop": 99
   }
 }
