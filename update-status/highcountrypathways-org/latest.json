@@ -1,10 +1,20 @@
 {
   "slug": "highcountrypathways-org",
   "url": "https://highcountrypathways.org/",
-  "checkedAt": "2026-08-26T10:05:22.894Z",
+  "checkedAt": "2026-08-27T19:58:24.710Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.276",
+      "update_version": "1.0.277.1"
+    },
+    {
+      "name": "sg-security",
+      "version": "1.6.5",
+      "update_version": "1.6.6"
+    },
     {
       "name": "google-site-kit",
       "version": "1.185.0",
