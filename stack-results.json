@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T07:55:30.986Z",
+  "updatedAt": "2026-08-27T18:15:39.658Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -176,10 +176,10 @@
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://winklercreek.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 173,
+      "dnsTtl": 56,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -239,19 +239,19 @@
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://neckofthewoodsnc.com/",
@@ -265,7 +265,7 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
