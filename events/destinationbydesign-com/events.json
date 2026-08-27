@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-27T15:39:11.522Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-27T15:39:09.043Z",
     "type": "plugin_update",
     "data": {
@@ -433,14 +443,6 @@
       "plugins": [
         "seo-by-rank-math/rank-math.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T13:57:30.241Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
