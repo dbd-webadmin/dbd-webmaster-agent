@@ -1,11 +1,121 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-08-20T08:58:47.178Z",
-  "durationMs": 43420,
+  "auditedAt": "2026-08-28T20:14:00.889Z",
+  "durationMs": 43554,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
+    {
+      "url": "https://jedco.org/resources/starting-a-business/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/housing-neighborhoods/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/arts-culture/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/outdoor-recreation/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/transportation/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/cost-of-living/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/safety/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/living-in-jp/quality-of-life-2/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/culinary-products/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/environmental-and-engineering-services/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/health-innovation/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/supply-chain-infrastructure/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/former-elmwood-kmart-site-to-be-reimagined-as-high-end-multifamily-development/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/regional-food-beverage-incubator-press-announcement/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/category/business-tax-incentives/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/digital-interactive-media-and-software-program/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/leforts-seafood-opens-second-location-in-jefferson-parish-with-support-from-jedco-and-home-bank/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/jedco-jefferson-chamber-of-commerce-announce-2026-lineup-for-prosper-jefferson-seminar-series/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/jedco-unveils-the-edge-2030-economic-development-strategic-plan-for-jefferson-parish/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/the-international-economic-development-council-proudly-awards-annalisa-kelly-the-certified-economic-developer-designation/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/jedco-recognizes-2025-business-award-winners-at-annual-luncheon/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/category/in-the-news/",
+      "status": 500,
+      "ok": false
+    },
     {
       "url": "https://jedco.org/events/$store.calendarEngine.eventUrl",
       "status": 404,
@@ -20,7 +130,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 100,
-    "desktop": 65
+    "mobile": 59,
+    "desktop": 87
   }
 }
