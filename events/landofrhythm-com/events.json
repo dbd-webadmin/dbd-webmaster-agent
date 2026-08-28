@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-28T05:42:11.285Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": {
+        "acf-extended/acf-extended.php": "acf-extended/acf-extended.php"
+      }
+    }
+  },
+  {
     "receivedAt": "2026-08-22T18:52:57.728Z",
     "type": "plugin_update",
     "data": {
@@ -453,14 +463,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:28:28.117Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:28:13.105Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
