@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-28T16:40:54.277Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-28T16:40:50.103Z",
     "type": "plugin_update",
     "data": {
@@ -459,14 +469,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:29:23.684Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:28:55.977Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
