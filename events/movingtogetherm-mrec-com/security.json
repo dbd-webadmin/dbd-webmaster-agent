@@ -5,11 +5,19 @@
     "lastSeen": "2026-08-28T12:42:43.874Z"
   },
   "loginSuccess": {
-    "count": 4,
-    "lastSeen": "2026-08-24T16:36:05.034Z",
+    "count": 5,
+    "lastSeen": "2026-08-28T16:48:01.112Z",
     "lastUser": "movingtogetherm-mrec.com"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-08-28T16:48:01.112Z",
+      "data": {
+        "event": "login_success",
+        "user": "movingtogetherm-mrec.com"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-08-24T16:36:05.034Z",
@@ -43,5 +51,5 @@
       }
     }
   ],
-  "lastCommitAt": "2026-08-28T12:42:43.874Z"
+  "lastCommitAt": "2026-08-28T16:48:01.112Z"
 }
