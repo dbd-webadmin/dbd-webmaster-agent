@@ -1,14 +1,64 @@
 {
   "url": "https://destinationswva.org/",
   "name": "Destination SWVA",
-  "auditedAt": "2026-08-21T08:59:40.905Z",
-  "durationMs": 35736,
+  "auditedAt": "2026-08-29T13:51:36.687Z",
+  "durationMs": 55109,
   "pagesChecked": 18,
   "crawlBlocked": false,
   "brokenLinks": [
     {
+      "url": "https://destinationswva.org/feed/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/comments/feed/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-json/oembed/1.0/embed",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-json/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-json/wp/v2/pages/8",
+      "status": 403,
+      "ok": false
+    },
+    {
       "url": "https://destinationswva.org/xmlrpc.php",
-      "status": 405,
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-includes/js/dist/script-modules/interactivity/index.min.js",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/cropped-SWVA-favicon-1-32x32.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/cropped-SWVA-favicon-1-192x192.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/cropped-SWVA-favicon-1-180x180.webp",
+      "status": 403,
       "ok": false
     },
     {
@@ -17,9 +67,75 @@
       "ok": false
     }
   ],
-  "brokenImages": [],
+  "brokenImages": [
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/Destination-SWVA-1.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/DSC_5652.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/02/Artboard-9-e1772121343474.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/JHA_9541-cropped.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/SWVA_Fall_2023_Day_2-2629-cropped-scaled.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/JHA_0081-DeNoiseAI-low-light-cropped.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/assets.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/partners.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/gaps.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/unity.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/strategy.svg",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/SWVA_Fall_2023_Day_3-1209-cropped-scaled.webp",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://destinationswva.org/wp-content/uploads/2026/04/SWVA-fav-1.svg",
+      "status": 403,
+      "ok": false
+    }
+  ],
   "pageSpeed": {
-    "mobile": 57,
-    "desktop": 98
+    "mobile": 62,
+    "desktop": 97
   }
 }

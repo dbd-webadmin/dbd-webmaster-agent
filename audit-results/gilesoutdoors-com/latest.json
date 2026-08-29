@@ -1,25 +1,14 @@
 {
   "url": "https://gilesoutdoors.com/",
   "name": "Giles Outdoors",
-  "auditedAt": "2026-08-21T09:01:38.589Z",
-  "durationMs": 15344,
-  "pagesChecked": 17,
-  "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://gilesoutdoors.com/xmlrpc.php",
-      "status": 405,
-      "ok": false
-    },
-    {
-      "url": "https://gilesoutdoors.com/cdn-cgi/l/email-protection",
-      "status": 404,
-      "ok": false
-    }
-  ],
-  "brokenImages": [],
+  "auditedAt": "2026-08-29T13:52:57.034Z",
+  "durationMs": 26384,
+  "pagesChecked": 1,
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 100
+    "mobile": 87,
+    "desktop": 98
   }
 }
