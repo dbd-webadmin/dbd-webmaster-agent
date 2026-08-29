@@ -1,9 +1,15 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-08-28T20:58:33.204Z",
+  "checkedAt": "2026-08-29T14:34:29.594Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.8",
+      "update_version": "6.8.9"
+    }
+  ],
   "phpVersion": "8.3.30"
 }
