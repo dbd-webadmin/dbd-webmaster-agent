@@ -1,14 +1,31 @@
 {
   "url": "https://henrico.com/",
   "name": "Henrico EDA",
-  "auditedAt": "2026-08-22T08:50:04.997Z",
-  "durationMs": 65505,
+  "auditedAt": "2026-08-30T13:50:13.877Z",
+  "durationMs": 73544,
   "pagesChecked": 30,
   "crawlBlocked": false,
-  "brokenLinks": [],
-  "brokenImages": [],
+  "brokenLinks": [
+    {
+      "url": "https://henrico.com/industries/health-life-science/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/business-retention/",
+      "status": 500,
+      "ok": false
+    }
+  ],
+  "brokenImages": [
+    {
+      "url": "https://henrico.com/wp-content/uploads/2026/02/Richmond-National-Banner-image.webp",
+      "status": 0,
+      "ok": false
+    }
+  ],
   "pageSpeed": {
-    "mobile": 61,
-    "desktop": 91
+    "mobile": 60,
+    "desktop": 67
   }
 }
