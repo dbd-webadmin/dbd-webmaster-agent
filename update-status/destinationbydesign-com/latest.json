@@ -1,9 +1,15 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-08-29T14:34:11.889Z",
+  "checkedAt": "2026-08-30T14:27:47.559Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.8",
+      "update_version": "6.8.9"
+    }
+  ],
   "phpVersion": "8.4.24"
 }
