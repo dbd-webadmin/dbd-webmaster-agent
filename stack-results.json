@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T13:08:18.093Z",
+  "updatedAt": "2026-08-30T12:49:23.864Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 244,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -230,10 +230,10 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
@@ -248,10 +248,10 @@
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://neckofthewoodsnc.com/",
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
