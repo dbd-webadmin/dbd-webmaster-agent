@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-08-31T01:43:35.933Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-27T20:46:34.152Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": [
         "advanced-custom-fields-pro/acf.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-08T16:46:51.637Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
