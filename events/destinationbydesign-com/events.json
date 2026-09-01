@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-01T21:56:22.628Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "dylan"
+    }
+  },
+  {
     "receivedAt": "2026-09-01T18:30:49.903Z",
     "type": "user_login",
     "data": {
@@ -433,16 +441,6 @@
     "data": {
       "event": "user_login",
       "user": "cameron"
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T19:53:07.165Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "advanced-custom-fields-pro/acf.php"
-      ]
     }
   }
 ]
