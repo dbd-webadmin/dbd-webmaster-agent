@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T15:02:32.547Z",
+  "updatedAt": "2026-09-01T12:32:04.326Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "henrico"
     },
     {
       "url": "https://thisisharney.com/",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Elementor",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 189,
+      "dnsTtl": 251,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -230,19 +230,19 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://beckleyoutdoors.com/",
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
