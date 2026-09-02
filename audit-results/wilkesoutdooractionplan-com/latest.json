@@ -1,11 +1,16 @@
 {
   "url": "https://wilkesoutdooractionplan.com/",
   "name": "Wilkes Outdoor Action Plan",
-  "auditedAt": "2026-08-25T09:03:30.990Z",
-  "durationMs": 43788,
+  "auditedAt": "2026-09-02T12:50:22.613Z",
+  "durationMs": 67758,
   "pagesChecked": 14,
   "crawlBlocked": false,
   "brokenLinks": [
+    {
+      "url": "https://wilkesoutdooractionplan.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
     {
       "url": "https://wilkesoutdooractionplan.com/cdn-cgi/l/email-protection",
       "status": 404,
@@ -14,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 81,
-    "desktop": 85
+    "mobile": 56,
+    "desktop": 83
   }
 }
