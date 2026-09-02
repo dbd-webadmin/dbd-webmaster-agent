@@ -1,7 +1,7 @@
 {
   "slug": "whoishaverstraw-com",
   "url": "https://whoishaverstraw.com/",
-  "checkedAt": "2026-09-01T14:14:42.542Z",
+  "checkedAt": "2026-09-02T13:47:10.997Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,11 @@
       "name": "gtranslate",
       "version": "3.1.1",
       "update_version": "3.1.2"
+    },
+    {
+      "name": "litespeed-cache",
+      "version": "7.9",
+      "update_version": "7.9.1"
     },
     {
       "name": "oxygen",
@@ -21,5 +26,5 @@
       "update_version": "1.0.277.2"
     }
   ],
-  "phpVersion": "8.3.30"
+  "phpVersion": "8.3.33"
 }
