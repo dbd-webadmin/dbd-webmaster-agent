@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T12:32:04.326Z",
+  "updatedAt": "2026-09-02T12:04:48.672Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -67,7 +67,7 @@
     {
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 251,
+      "dnsTtl": 225,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -269,7 +269,7 @@
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
