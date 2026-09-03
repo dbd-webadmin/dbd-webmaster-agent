@@ -1,11 +1,16 @@
 {
   "url": "https://wilcoresources.org/",
   "name": "Wilkes County Food Guide",
-  "auditedAt": "2026-08-26T09:04:15.337Z",
-  "durationMs": 42596,
+  "auditedAt": "2026-09-03T12:51:31.461Z",
+  "durationMs": 61564,
   "pagesChecked": 15,
   "crawlBlocked": false,
   "brokenLinks": [
+    {
+      "url": "https://wilcoresources.org/wp-json/wp/v2/pages/13",
+      "status": 0,
+      "ok": false
+    },
     {
       "url": "https://wilcoresources.org/xmlrpc.php",
       "status": 405,
@@ -14,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 81,
-    "desktop": 99
+    "mobile": null,
+    "desktop": null
   }
 }
