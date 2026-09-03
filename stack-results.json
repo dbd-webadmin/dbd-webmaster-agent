@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T12:04:48.672Z",
+  "updatedAt": "2026-09-03T12:04:02.983Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -67,7 +67,7 @@
     {
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -157,7 +157,7 @@
     {
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -185,15 +185,15 @@
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 225,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -266,9 +266,9 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
+      "builder": null,
       "theme": null
     },
     {
