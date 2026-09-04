@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-04T15:20:59.704Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-08-31T01:45:10.292Z",
     "type": "plugin_update",
     "data": {
@@ -465,14 +475,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:30:04.348Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "bailey"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:29:50.036Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
