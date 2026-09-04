@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-04T15:30:41.487Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "instagram-feed/instagram-feed.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-04T15:30:36.709Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "advanced-custom-fields-pro/acf.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T18:11:09.255Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
