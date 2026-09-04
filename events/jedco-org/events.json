@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-04T15:38:50.740Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "dylan"
+    }
+  },
+  {
     "receivedAt": "2026-08-31T14:17:49.343Z",
     "type": "plugin_update",
     "data": {
@@ -432,16 +440,6 @@
       "event": "plugin_update",
       "plugins": [
         "google-site-kit/google-site-kit.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:44:35.134Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
       ]
     }
   }
