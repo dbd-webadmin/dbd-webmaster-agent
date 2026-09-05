@@ -1,25 +1,9 @@
 {
   "slug": "legacysoccerpark-org",
   "url": "https://legacysoccerpark.org/",
-  "checkedAt": "2026-09-02T13:48:37.269Z",
+  "checkedAt": "2026-09-05T12:51:16.481Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.276",
-      "update_version": "1.0.277.2"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.185.0",
-      "update_version": "1.186.0"
-    },
-    {
-      "name": "sg-cachepress",
-      "version": "7.8.1",
-      "update_version": "7.8.2"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }
