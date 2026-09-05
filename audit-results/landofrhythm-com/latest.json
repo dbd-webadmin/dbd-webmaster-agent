@@ -1,8 +1,8 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-08-28T20:15:25.170Z",
-  "durationMs": 44298,
+  "auditedAt": "2026-09-05T11:55:01.205Z",
+  "durationMs": 40400,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,19 +12,19 @@
       "ok": false
     },
     {
-      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2190",
+      "url": "https://landofrhythm.com/plan-your-visit/",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/19",
+      "url": "https://landofrhythm.com/request-visitor-guide",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 40,
-    "desktop": 70
+    "mobile": 44,
+    "desktop": 61
   }
 }
