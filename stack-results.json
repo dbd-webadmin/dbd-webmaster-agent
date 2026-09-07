@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:37:30.858Z",
+  "updatedAt": "2026-09-07T13:28:44.922Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1798,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -40,7 +40,7 @@
     {
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -274,7 +274,7 @@
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
