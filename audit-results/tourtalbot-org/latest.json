@@ -1,8 +1,8 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-08-30T13:52:52.058Z",
-  "durationMs": 78695,
+  "auditedAt": "2026-09-07T14:20:31.456Z",
+  "durationMs": 89649,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,15 +12,9 @@
       "ok": false
     }
   ],
-  "brokenImages": [
-    {
-      "url": "https://tourtalbot.org/wp-content/uploads/2025/09/tighman-watermens-museum-talbot-county-md.webp",
-      "status": 0,
-      "ok": false
-    }
-  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 54,
-    "desktop": null
+    "mobile": null,
+    "desktop": 52
   }
 }
