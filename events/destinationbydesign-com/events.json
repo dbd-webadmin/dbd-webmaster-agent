@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-08T12:20:39.537Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "leadin/leadin.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-08T12:20:36.260Z",
     "type": "plugin_update",
     "data": {
@@ -440,16 +450,6 @@
       "event": "plugin_update",
       "plugins": [
         "formidable/formidable.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T14:19:20.468Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "easy-code-manager/easy-code-manager.php"
       ]
     }
   }
