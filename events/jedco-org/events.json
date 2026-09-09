@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:44:49.250Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluent-smtp/fluent-smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:44:44.292Z",
     "type": "plugin_update",
     "data": {
@@ -439,14 +449,6 @@
     "data": {
       "event": "user_login",
       "user": "scott"
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T19:32:16.970Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "acatalanotto@jedco.org"
     }
   }
 ]
