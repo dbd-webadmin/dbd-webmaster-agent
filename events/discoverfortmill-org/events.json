@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:43:18.931Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:43:11.229Z",
     "type": "plugin_update",
     "data": {
@@ -472,16 +482,6 @@
       "event": "plugin_update",
       "plugins": [
         "essential-addons-for-elementor-lite/essential_adons_elementor.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:47:11.733Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor/elementor.php"
       ]
     }
   }
