@@ -1,8 +1,8 @@
 {
   "url": "https://www.raisetherock.com/",
   "name": "Raise the Rock",
-  "auditedAt": "2026-09-01T13:31:51.227Z",
-  "durationMs": 60968,
+  "auditedAt": "2026-09-09T12:59:38.770Z",
+  "durationMs": 49785,
   "pagesChecked": 22,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 56,
-    "desktop": 77
+    "mobile": null,
+    "desktop": null
   }
 }
