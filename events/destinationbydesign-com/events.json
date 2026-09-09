@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:40:47.634Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-08T12:52:44.831Z",
     "type": "user_login",
     "data": {
@@ -438,16 +448,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T14:19:26.897Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "formidable-pro/formidable-pro.php"
       ]
     }
   }
