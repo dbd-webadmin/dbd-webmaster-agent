@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:43:22.202Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:43:18.931Z",
     "type": "plugin_update",
     "data": {
@@ -473,16 +483,6 @@
     "data": {
       "event": "plugin_update",
       "plugins": []
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:47:16.677Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "essential-addons-for-elementor-lite/essential_adons_elementor.php"
-      ]
     }
   }
 ]
