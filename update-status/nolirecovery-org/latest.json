@@ -1,10 +1,15 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-09-08T13:43:48.594Z",
+  "checkedAt": "2026-09-09T13:49:16.935Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "fluent-smtp",
+      "version": "2.3.1",
+      "update_version": "2.4.0"
+    },
     {
       "name": "seo-by-rank-math",
       "version": "1.0.277.1",
