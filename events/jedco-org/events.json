@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:44:52.188Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "pie-calendar/plugin.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:44:49.250Z",
     "type": "plugin_update",
     "data": {
@@ -441,14 +451,6 @@
     "data": {
       "event": "user_login",
       "user": "dylan"
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T20:06:09.449Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "scott"
     }
   }
 ]
