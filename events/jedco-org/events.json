@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-09T16:45:06.971Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:45:03.443Z",
     "type": "plugin_update",
     "data": {
@@ -445,14 +455,6 @@
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-05T13:26:36.629Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
