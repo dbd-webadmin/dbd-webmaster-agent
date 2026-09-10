@@ -1,25 +1,9 @@
 {
   "slug": "raisetherock-com",
   "url": "https://www.raisetherock.com/",
-  "checkedAt": "2026-09-09T13:49:36.650Z",
+  "checkedAt": "2026-09-10T13:43:09.843Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.1.0",
-      "update_version": "9.1.1"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.277.2",
-      "update_version": "1.0.278"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.186.0",
-      "update_version": "1.187.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

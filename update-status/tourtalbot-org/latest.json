@@ -1,30 +1,9 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-09-09T13:48:57.733Z",
+  "checkedAt": "2026-09-10T13:42:34.753Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.1.0",
-      "update_version": "9.1.1"
-    },
-    {
-      "name": "fluent-smtp",
-      "version": "2.3.1",
-      "update_version": "2.4.0"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.277.2",
-      "update_version": "1.0.278"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.186.0",
-      "update_version": "1.187.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }
