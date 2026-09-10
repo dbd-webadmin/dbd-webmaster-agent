@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-10T12:56:15.089Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "formidable-pro/formidable-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-10T12:56:11.887Z",
     "type": "plugin_update",
     "data": {
@@ -439,14 +449,6 @@
       "plugins": [
         "leadin/leadin.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T14:19:50.314Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.0.4"
     }
   }
 ]
