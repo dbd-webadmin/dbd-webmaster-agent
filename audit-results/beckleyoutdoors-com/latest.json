@@ -1,8 +1,8 @@
 {
   "url": "https://beckleyoutdoors.com/",
   "name": "Beckley Outdoors Action Plan",
-  "auditedAt": "2026-09-03T12:54:18.616Z",
-  "durationMs": 62235,
+  "auditedAt": "2026-09-11T12:54:00.623Z",
+  "durationMs": 38926,
   "pagesChecked": 17,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 62
+    "mobile": 60,
+    "desktop": 92
   }
 }
