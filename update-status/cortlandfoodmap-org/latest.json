@@ -1,19 +1,24 @@
 {
   "slug": "cortlandfoodmap-org",
   "url": "https://cortlandfoodmap.org/",
-  "checkedAt": "2026-09-10T13:43:42.793Z",
+  "checkedAt": "2026-09-11T13:41:39.790Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
     {
       "name": "advanced-custom-fields-pro",
       "version": "6.8.8",
-      "update_version": "6.8.9"
+      "update_version": "6.8.10"
     },
     {
       "name": "litespeed-cache",
       "version": "7.9",
       "update_version": "7.9.1"
+    },
+    {
+      "name": "popup-maker",
+      "version": "1.24.0",
+      "update_version": "1.25.0"
     },
     {
       "name": "seo-by-rank-math",

@@ -1,9 +1,15 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-09-10T13:42:28.873Z",
+  "checkedAt": "2026-09-11T13:40:13.107Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.9",
+      "update_version": "6.8.10"
+    }
+  ],
   "phpVersion": "8.3.33"
 }
