@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-11T15:46:06.984Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "matt"
+    }
+  },
+  {
     "receivedAt": "2026-09-10T17:36:16.681Z",
     "type": "plugin_update",
     "data": {
@@ -443,14 +451,6 @@
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-17T14:35:48.086Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
