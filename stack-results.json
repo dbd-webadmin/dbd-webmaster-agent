@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T12:10:15.029Z",
+  "updatedAt": "2026-09-12T11:34:56.359Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -77,10 +77,10 @@
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
       "dnsTtl": 1800,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "henrico"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://thisisharney.com/",
@@ -130,7 +130,7 @@
     {
       "url": "https://adventuremeadowriver.com/",
       "name": "Adventure Meadow River",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 212,
+      "dnsTtl": 16,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
