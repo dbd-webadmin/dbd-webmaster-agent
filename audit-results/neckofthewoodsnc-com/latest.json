@@ -1,14 +1,130 @@
 {
   "url": "https://neckofthewoodsnc.com/",
   "name": "Neck of the Woods",
-  "auditedAt": "2026-09-04T12:45:33.617Z",
-  "durationMs": 84455,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-09-12T12:12:31.736Z",
+  "durationMs": 77654,
+  "pagesChecked": 30,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://neckofthewoodsnc.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-hotel-tavern",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/avery-county-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-produce-stand",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/beech-mountain-brewing-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/blowing-rock-ale-house",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/blowing-rock-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/booneshine-brewing-company",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/edwards-casual-fine-dining",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/f-a-r-m-cafe-feed-all-regardless-of-means",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/grandfather-mountain-vineyard-winery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/joy-bistro-2",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/kindly-kitchen",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/lost-province",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/lost-province-brewing-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/over-yonder",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-appalachian-mountain-brewery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-speckled-trout",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/valle-crucis-farmers-market-at-mast-general",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/vidalia",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/homeplace-beer-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/open-ridge-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-mushroom-hut-at-fox-farms",
+      "status": 500,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": 90
+    "mobile": 69,
+    "desktop": null
   }
 }
