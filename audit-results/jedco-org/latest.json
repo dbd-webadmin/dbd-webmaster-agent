@@ -1,91 +1,11 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-09-05T11:53:10.301Z",
-  "durationMs": 89372,
+  "auditedAt": "2026-09-13T13:21:31.521Z",
+  "durationMs": 71898,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://jedco.org/living-in-jp/arts-culture/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/living-in-jp/outdoor-recreation/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/living-in-jp/transportation/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/living-in-jp/cost-of-living/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/living-in-jp/safety/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/living-in-jp/quality-of-life-2/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/culinary-products/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/environmental-and-engineering-services/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/health-innovation/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/supply-chain-infrastructure/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/former-elmwood-kmart-site-to-be-reimagined-as-high-end-multifamily-development/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/regional-food-beverage-incubator-press-announcement/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/category/business-tax-incentives/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/the-international-economic-development-council-proudly-awards-annalisa-kelly-the-certified-economic-developer-designation/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/jedco-recognizes-2025-business-award-winners-at-annual-luncheon/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/category/in-the-news/",
-      "status": 500,
-      "ok": false
-    },
     {
       "url": "https://jedco.org/events/$store.calendarEngine.eventUrl",
       "status": 404,
@@ -100,7 +20,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": 57
+    "mobile": 60,
+    "desktop": 79
   }
 }
