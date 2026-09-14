@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-14T12:22:17.110Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-09T16:44:00.678Z",
     "type": "plugin_update",
     "data": {
