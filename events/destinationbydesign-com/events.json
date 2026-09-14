@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-14T13:19:44.427Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "post-types-order/post-types-order.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-14T13:19:40.897Z",
     "type": "plugin_update",
     "data": {
@@ -439,16 +449,6 @@
     "data": {
       "event": "user_login",
       "user": "dylan"
-    }
-  },
-  {
-    "receivedAt": "2026-08-18T17:35:26.307Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "relevanssi/relevanssi.php"
-      ]
     }
   }
 ]
