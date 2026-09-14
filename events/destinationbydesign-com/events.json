@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-14T13:19:33.198Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-14T13:19:17.852Z",
     "type": "user_login",
     "data": {
@@ -438,16 +448,6 @@
       "event": "plugin_update",
       "plugins": [
         "post-types-order/post-types-order.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-18T17:35:14.833Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "akismet/akismet.php"
       ]
     }
   }
