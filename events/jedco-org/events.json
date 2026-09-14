@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-14T16:09:50.589Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-14T16:09:44.526Z",
     "type": "user_login",
     "data": {
@@ -441,16 +451,6 @@
     "data": {
       "event": "user_login",
       "user": "kscram"
-    }
-  },
-  {
-    "receivedAt": "2026-08-05T13:27:55.431Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentformpro/fluentformpro.php"
-      ]
     }
   }
 ]
