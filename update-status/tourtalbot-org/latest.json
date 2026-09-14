@@ -1,10 +1,15 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-09-13T13:52:33.349Z",
+  "checkedAt": "2026-09-14T15:58:22.600Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "9.1.1",
+      "update_version": "9.1.2"
+    },
     {
       "name": "advanced-custom-fields-pro",
       "version": "6.8.9",
