@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:27:06.112Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-08T14:40:36.654Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": [
         "webp-uploads/load.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T16:18:41.016Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "hostinger/hostinger.php"
       ]
     }
   }
