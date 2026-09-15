@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:24:27.039Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "block-visibility/block-visibility.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:24:23.842Z",
     "type": "plugin_update",
     "data": {
@@ -484,16 +494,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T14:42:16.948Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentformpro/fluentformpro.php"
       ]
     }
   }
