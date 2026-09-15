@@ -1,9 +1,15 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-09-14T15:58:14.056Z",
+  "checkedAt": "2026-09-15T14:24:20.724Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "block-visibility",
+      "version": "3.7.1",
+      "update_version": "3.8.0"
+    }
+  ],
   "phpVersion": "8.3.33"
 }
