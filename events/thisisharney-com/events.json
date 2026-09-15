@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:12:36.427Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:12:32.251Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": [
         "elementor/elementor.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T18:36:18.716Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
       ]
     }
   }
