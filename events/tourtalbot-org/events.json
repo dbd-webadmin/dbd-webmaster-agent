@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:24:54.481Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "wp-consent-api/wp-consent-api.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:24:51.941Z",
     "type": "plugin_update",
     "data": {
@@ -484,16 +494,6 @@
       "event": "plugin_update",
       "plugins": [
         "fluentform/fluentform.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-27T15:59:45.229Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
