@@ -1,20 +1,14 @@
 {
   "url": "https://henrico.com/",
   "name": "Henrico EDA",
-  "auditedAt": "2026-09-07T14:17:01.956Z",
-  "durationMs": 55603,
+  "auditedAt": "2026-09-15T13:36:14.198Z",
+  "durationMs": 59895,
   "pagesChecked": 30,
   "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://henrico.com/site-selectors/data-connectivity",
-      "status": 500,
-      "ok": false
-    }
-  ],
+  "brokenLinks": [],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 57,
-    "desktop": 84
+    "mobile": 61,
+    "desktop": 82
   }
 }

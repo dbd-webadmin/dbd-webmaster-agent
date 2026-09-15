@@ -1,14 +1,30 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-09-07T14:19:01.807Z",
-  "durationMs": 61540,
+  "auditedAt": "2026-09-15T13:38:09.303Z",
+  "durationMs": 54462,
   "pagesChecked": 30,
   "crawlBlocked": false,
-  "brokenLinks": [],
+  "brokenLinks": [
+    {
+      "url": "https://discoverfortmill.org/xmlrpc.php",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/tribute-fest-returns-to-fort-mill-on-august-8-with-a-night-of-country-music-food-and-family-fun/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/welcome-macs-speed-shop-to-fort-mill/",
+      "status": 0,
+      "ok": false
+    }
+  ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": 78
+    "mobile": 59,
+    "desktop": 88
   }
 }
