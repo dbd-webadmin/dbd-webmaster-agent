@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-15T21:27:37.515Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "scott"
+    }
+  },
+  {
     "receivedAt": "2026-09-14T16:09:53.554Z",
     "type": "plugin_update",
     "data": {
@@ -443,16 +451,6 @@
     "data": {
       "event": "user_login",
       "user": "scott"
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T20:03:47.442Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluent-smtp/fluent-smtp.php"
-      ]
     }
   }
 ]
