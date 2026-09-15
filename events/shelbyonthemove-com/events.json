@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:52:33.041Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "coming-soon/coming-soon.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-02T03:03:01.412Z",
     "type": "plugin_update",
     "data": {
