@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:47:38.291Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "block-visibility/block-visibility.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:47:35.065Z",
     "type": "plugin_update",
     "data": {
