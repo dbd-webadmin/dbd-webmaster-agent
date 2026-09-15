@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-15T23:14:16.885Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "block-visibility/block-visibility.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T21:27:37.515Z",
     "type": "user_login",
     "data": {
@@ -439,14 +449,6 @@
   },
   {
     "receivedAt": "2026-08-12T14:07:07.678Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "scott"
-    }
-  },
-  {
-    "receivedAt": "2026-08-11T23:14:58.072Z",
     "type": "user_login",
     "data": {
       "event": "user_login",
