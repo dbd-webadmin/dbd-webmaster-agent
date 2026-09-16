@@ -1,30 +1,9 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-09-15T14:24:29.533Z",
+  "checkedAt": "2026-09-16T14:16:33.914Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.1.1",
-      "update_version": "9.1.2"
-    },
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.9",
-      "update_version": "6.8.10"
-    },
-    {
-      "name": "block-visibility",
-      "version": "3.7.1",
-      "update_version": "3.8.0"
-    },
-    {
-      "name": "icon-block",
-      "version": "2.0.0",
-      "update_version": "2.1.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

@@ -1,25 +1,9 @@
 {
   "slug": "destinationswva-org",
   "url": "https://destinationswva.org/",
-  "checkedAt": "2026-09-15T14:23:50.822Z",
+  "checkedAt": "2026-09-16T14:15:55.439Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "fluent-smtp",
-      "version": "2.3.1",
-      "update_version": "2.4.0"
-    },
-    {
-      "name": "popup-maker",
-      "version": "1.24.0",
-      "update_version": "1.25.0"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.277.2",
-      "update_version": "1.0.278"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

@@ -1,45 +1,9 @@
 {
   "slug": "cortlandfoodmap-org",
   "url": "https://cortlandfoodmap.org/",
-  "checkedAt": "2026-09-15T14:26:16.030Z",
+  "checkedAt": "2026-09-16T14:18:22.123Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.8",
-      "update_version": "6.8.10"
-    },
-    {
-      "name": "block-visibility",
-      "version": "3.7.1",
-      "update_version": "3.8.0"
-    },
-    {
-      "name": "litespeed-cache",
-      "version": "7.9",
-      "update_version": "7.9.1"
-    },
-    {
-      "name": "popup-maker",
-      "version": "1.24.0",
-      "update_version": "1.25.0"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.276",
-      "update_version": "1.0.278"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.185.0",
-      "update_version": "1.187.0"
-    },
-    {
-      "name": "icon-block",
-      "version": "2.0.0",
-      "update_version": "2.1.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

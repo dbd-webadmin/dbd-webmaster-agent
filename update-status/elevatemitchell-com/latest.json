@@ -1,20 +1,9 @@
 {
   "slug": "elevatemitchell-com",
   "url": "https://elevatemitchell.com/",
-  "checkedAt": "2026-09-15T14:24:37.854Z",
+  "checkedAt": "2026-09-16T14:16:43.478Z",
   "currentWpVersion": "7.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.1.0",
-      "update_version": "9.1.2"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.277.2",
-      "update_version": "1.0.278"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }
