@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T12:34:11.464Z",
+  "updatedAt": "2026-09-17T12:34:07.140Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,11 +13,11 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1799,
-      "wordpress": true,
+      "dnsTtl": null,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "jedco25"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://onerichmondhwy.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 88,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
