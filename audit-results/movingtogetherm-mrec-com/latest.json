@@ -1,25 +1,14 @@
 {
   "url": "https://movingtogetherm-mrec.com/",
   "name": "Moving Together Madison - Mayodan",
-  "auditedAt": "2026-09-09T13:01:16.268Z",
-  "durationMs": 51911,
-  "pagesChecked": 14,
-  "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://movingtogetherm-mrec.com/xmlrpc.php",
-      "status": 405,
-      "ok": false
-    },
-    {
-      "url": "https://movingtogetherm-mrec.com/cdn-cgi/l/email-protection",
-      "status": 404,
-      "ok": false
-    }
-  ],
-  "brokenImages": [],
+  "auditedAt": "2026-09-17T13:32:40.384Z",
+  "durationMs": 74549,
+  "pagesChecked": 1,
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
   "pageSpeed": {
     "mobile": 70,
-    "desktop": 96
+    "desktop": 94
   }
 }
