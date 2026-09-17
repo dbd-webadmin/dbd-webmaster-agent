@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-17T19:12:30.425Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "simpletoc/plugin.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:24:54.481Z",
     "type": "plugin_update",
     "data": {
@@ -479,16 +489,6 @@
   },
   {
     "receivedAt": "2026-07-28T20:12:42.274Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentform/fluentform.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-27T15:59:49.119Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
