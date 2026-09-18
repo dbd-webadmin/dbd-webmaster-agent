@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T12:34:07.140Z",
+  "updatedAt": "2026-09-18T12:12:09.545Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,11 +13,11 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": null,
-      "wordpress": false,
+      "dnsTtl": 1800,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "jedco25"
     },
     {
       "url": "https://onerichmondhwy.com/",
@@ -177,7 +177,7 @@
       "name": "Imagine Watauga",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1",
+      "wpVersion": "7.1.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 88,
+      "dnsTtl": 102,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -231,7 +231,7 @@
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1",
+      "wpVersion": "7.1.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -248,10 +248,10 @@
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://neckofthewoodsnc.com/",
@@ -266,9 +266,9 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
+      "builder": "Gutenberg",
       "theme": null
     },
     {
@@ -276,7 +276,7 @@
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1",
+      "wpVersion": "7.1.1",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
