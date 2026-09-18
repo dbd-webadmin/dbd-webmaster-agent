@@ -1,9 +1,13 @@
 {
   "slug": "swvaoutdoors-org",
   "url": "https://swvaoutdoors.org/",
-  "checkedAt": "2026-09-17T14:23:21.665Z",
+  "checkedAt": "2026-09-18T13:42:08.825Z",
   "currentWpVersion": "7.1",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.1.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.1-partial-0.zip"
+  },
   "pluginUpdates": [
     {
       "name": "oxygen",

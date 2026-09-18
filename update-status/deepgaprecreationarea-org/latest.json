@@ -1,9 +1,13 @@
 {
   "slug": "deepgaprecreationarea-org",
   "url": "https://deepgaprecreationarea.org/",
-  "checkedAt": "2026-09-17T14:24:41.148Z",
+  "checkedAt": "2026-09-18T13:43:28.930Z",
   "currentWpVersion": "7.1",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.1.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.1-partial-0.zip"
+  },
   "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

@@ -1,14 +1,18 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-09-17T14:22:31.173Z",
+  "checkedAt": "2026-09-18T13:41:29.867Z",
   "currentWpVersion": "7.1",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.1.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.1-partial-0.zip"
+  },
   "pluginUpdates": [
     {
       "name": "simpletoc",
-      "version": "7.3.0",
-      "update_version": "7.3.1"
+      "version": "7.3.1",
+      "update_version": "7.4.0"
     }
   ],
   "phpVersion": "8.3.33"

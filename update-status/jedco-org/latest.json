@@ -1,9 +1,13 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-09-17T14:21:42.376Z",
+  "checkedAt": "2026-09-18T13:40:36.645Z",
   "currentWpVersion": "7.1",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.1.1",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.1-partial-0.zip"
+  },
   "pluginUpdates": [
     {
       "name": "pie-calendar",
