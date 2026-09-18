@@ -5,11 +5,19 @@
     "lastSeen": "2026-09-15T07:28:07.851Z"
   },
   "loginSuccess": {
-    "count": 49,
-    "lastSeen": "2026-09-17T14:02:29.237Z",
+    "count": 50,
+    "lastSeen": "2026-09-18T14:18:04.891Z",
     "lastUser": "holly"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-09-18T14:18:04.891Z",
+      "data": {
+        "event": "login_success",
+        "user": "holly"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-09-17T14:02:29.237Z",
@@ -161,19 +169,7 @@
         "event": "login_success",
         "user": "Warren"
       }
-    },
-    {
-      "type": "user_registered",
-      "time": "2026-08-21T14:19:45.716Z",
-      "data": {
-        "event": "user_registered",
-        "user": "Warren",
-        "email": "bow03@henrico.gov",
-        "roles": [
-          "administrator"
-        ]
-      }
     }
   ],
-  "lastCommitAt": "2026-09-17T14:02:29.237Z"
+  "lastCommitAt": "2026-09-18T14:18:04.891Z"
 }
