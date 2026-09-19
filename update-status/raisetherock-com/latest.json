@@ -1,13 +1,9 @@
 {
   "slug": "raisetherock-com",
   "url": "https://www.raisetherock.com/",
-  "checkedAt": "2026-09-18T13:41:58.503Z",
-  "currentWpVersion": "7.1",
-  "wordpressUpdate": {
-    "version": "7.1.1",
-    "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.1-partial-0.zip"
-  },
+  "checkedAt": "2026-09-19T13:15:42.247Z",
+  "currentWpVersion": "7.1.1",
+  "wordpressUpdate": null,
   "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }
