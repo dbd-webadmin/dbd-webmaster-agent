@@ -1,8 +1,8 @@
 {
   "url": "https://neckofthewoodsnc.com/",
   "name": "Neck of the Woods",
-  "auditedAt": "2026-09-12T12:12:31.736Z",
-  "durationMs": 77654,
+  "auditedAt": "2026-09-20T13:05:04.431Z",
+  "durationMs": 73071,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,12 +12,112 @@
       "ok": false
     },
     {
-      "url": "https://neckofthewoodsnc.com/location/the-hotel-tavern",
+      "url": "https://neckofthewoodsnc.com/location/molley-chomper",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://neckofthewoodsnc.com/location/avery-county-farmers-market",
+      "url": "https://neckofthewoodsnc.com/location/rose-mtn-butcher-shop",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/banner-elk-winery-villa",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/blind-squirrel-brewery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/flat-top-brewing-company",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/halls-hill-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/linville-falls-winery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/mountain-rooster-produce",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/reids-cafe-and-catering",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/trosly-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/bakersville-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/dry-county-brewing-company",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/fork-mtn-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/fox-the-fig",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/knife-fork-2",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/oak-moon-farm-creamery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/parkway-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/saylor-orchard",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/silver-apple-orchard",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/soggy-bottom-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/spruce-pine-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-orchard-at-altapass",
       "status": 500,
       "ok": false
     },
@@ -87,7 +187,22 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/proper",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/the-appalachian-mountain-brewery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-cardinal",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-gamekeeper-2",
       "status": 500,
       "ok": false
     },
@@ -107,6 +222,26 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/common-ground-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/firefly-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/garden-deli",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/harty-farms",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/homeplace-beer-co",
       "status": 500,
       "ok": false
@@ -117,14 +252,34 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/snap-dragon",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/the-mushroom-hut-at-fox-farms",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/yancey-county-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/wp-json/wp/v2/pages/771",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/wp-json/wp/v2/pages/781",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 69,
-    "desktop": null
+    "mobile": null,
+    "desktop": 95
   }
 }
