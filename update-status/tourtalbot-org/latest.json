@@ -1,20 +1,9 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-09-20T13:38:46.933Z",
+  "checkedAt": "2026-09-21T16:00:35.350Z",
   "currentWpVersion": "7.1.1",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "block-visibility",
-      "version": "3.8.0",
-      "update_version": "3.8.1"
-    },
-    {
-      "name": "simpletoc",
-      "version": "7.3.1",
-      "update_version": "7.4.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

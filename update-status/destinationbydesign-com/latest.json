@@ -1,20 +1,9 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-09-20T13:37:49.935Z",
-  "currentWpVersion": "7.1.1",
+  "checkedAt": "2026-09-21T15:58:42.241Z",
+  "currentWpVersion": null,
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "block-visibility",
-      "version": "3.8.0",
-      "update_version": "3.8.1"
-    },
-    {
-      "name": "microsoft-clarity",
-      "version": "0.10.31",
-      "update_version": "0.10.32"
-    }
-  ],
-  "phpVersion": "8.4.25"
+  "pluginUpdates": [],
+  "phpVersion": null
 }
