@@ -1,14 +1,20 @@
 {
   "url": "https://destinationbydesign.com",
   "name": "Destination by Design",
-  "auditedAt": "2026-09-13T13:20:19.622Z",
-  "durationMs": 60886,
+  "auditedAt": "2026-09-21T15:08:51.409Z",
+  "durationMs": 90654,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [],
-  "brokenImages": [],
+  "brokenImages": [
+    {
+      "url": "https://destinationbydesign.com/wp-content/uploads/2025/01/day-gateway-lenoir-gateway-destination-by-design.avif",
+      "status": 0,
+      "ok": false
+    }
+  ],
   "pageSpeed": {
-    "mobile": 48,
-    "desktop": 69
+    "mobile": null,
+    "desktop": null
   }
 }

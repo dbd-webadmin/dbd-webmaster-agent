@@ -1,8 +1,8 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-09-13T13:23:24.656Z",
-  "durationMs": 59307,
+  "auditedAt": "2026-09-21T15:12:50.375Z",
+  "durationMs": 102553,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,29 +12,14 @@
       "ok": false
     },
     {
-      "url": "https://landofrhythm.com/places-to-stay/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/7",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2105",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2179",
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2064",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 52,
-    "desktop": 67
+    "mobile": 37,
+    "desktop": null
   }
 }

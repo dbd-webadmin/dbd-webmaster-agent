@@ -1,8 +1,8 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-09-13T13:21:31.521Z",
-  "durationMs": 71898,
+  "auditedAt": "2026-09-21T15:10:18.459Z",
+  "durationMs": 87049,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -20,7 +20,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 60,
-    "desktop": 79
+    "mobile": null,
+    "desktop": 65
   }
 }
