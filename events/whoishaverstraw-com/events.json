@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-21T12:51:42.843Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "oxygen/functions.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-15T23:34:32.678Z",
     "type": "plugin_update",
     "data": {
@@ -425,14 +435,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:41:32.611Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:41:21.967Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
