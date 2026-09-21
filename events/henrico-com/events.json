@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-21T12:48:13.350Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "block-visibility/block-visibility.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-17T20:27:32.613Z",
     "type": "core_update",
     "data": {
@@ -474,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "webp-uploads/load.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-07T19:58:01.213Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
