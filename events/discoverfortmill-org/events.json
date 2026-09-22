@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-22T16:04:47.654Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "all-in-one-wp-migration/all-in-one-wp-migration.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-22T16:04:42.659Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:47:52.625Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
       ]
     }
   }
