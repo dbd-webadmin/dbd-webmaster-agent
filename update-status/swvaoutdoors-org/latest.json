@@ -1,14 +1,33 @@
 {
   "slug": "swvaoutdoors-org",
   "url": "https://swvaoutdoors.org/",
-  "checkedAt": "2026-09-21T16:01:37.555Z",
+  "checkedAt": "2026-09-22T14:08:17.114Z",
   "currentWpVersion": "7.1.1",
-  "wordpressUpdate": null,
+  "wordpressUpdate": {
+    "version": "7.1.2",
+    "update_type": "minor",
+    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.2-partial-1.zip"
+  },
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "9.1.2",
+      "update_version": "9.1.3.1"
+    },
     {
       "name": "oxygen",
       "version": "4.9.6",
       "update_version": "4.9.8"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.278",
+      "update_version": "1.0.279"
+    },
+    {
+      "name": "google-site-kit",
+      "version": "1.187.0",
+      "update_version": "1.188.0"
     }
   ],
   "phpVersion": "8.3.33"
