@@ -1,8 +1,8 @@
 {
   "url": "https://destinationswva.org/",
   "name": "Destination SWVA",
-  "auditedAt": "2026-09-14T15:03:19.950Z",
-  "durationMs": 70772,
+  "auditedAt": "2026-09-22T13:26:22.229Z",
+  "durationMs": 32392,
   "pagesChecked": 18,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -19,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 85
+    "mobile": 60,
+    "desktop": 98
   }
 }
