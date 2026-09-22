@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T14:43:57.581Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:43:49.280Z",
     "type": "plugin_update",
     "data": {
