@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T14:28:13.440Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-21T12:48:13.350Z",
     "type": "plugin_update",
     "data": {
@@ -475,16 +483,6 @@
     "data": {
       "event": "core_update",
       "version": "7.0.1"
-    }
-  },
-  {
-    "receivedAt": "2026-07-07T19:58:04.037Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "webp-uploads/load.php"
-      ]
     }
   }
 ]
