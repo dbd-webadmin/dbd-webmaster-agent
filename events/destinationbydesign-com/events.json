@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T19:46:49.782Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:47:54.708Z",
     "type": "plugin_update",
     "data": {
@@ -448,16 +456,6 @@
       "event": "plugin_update",
       "plugins": [
         "filebird/filebird.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-25T20:34:15.561Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
