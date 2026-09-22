@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T14:34:33.471Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-17T17:42:52.479Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "hostinger/hostinger.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-07T15:11:40.208Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
