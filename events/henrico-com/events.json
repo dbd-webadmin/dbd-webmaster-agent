@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-22T14:38:47.660Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:28:13.440Z",
     "type": "core_update",
     "data": {
@@ -475,14 +485,6 @@
       "plugins": [
         "fluentform/fluentform.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-09T18:25:41.189Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.0.1"
     }
   }
 ]
