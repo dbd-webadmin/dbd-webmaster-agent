@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T14:41:37.665Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:41:24.766Z",
     "type": "plugin_update",
     "data": {
@@ -441,14 +449,6 @@
   },
   {
     "receivedAt": "2026-07-02T04:53:08.870Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T04:52:58.100Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
