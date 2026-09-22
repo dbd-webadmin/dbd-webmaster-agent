@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-22T14:38:50.950Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:38:47.660Z",
     "type": "plugin_update",
     "data": {
@@ -475,16 +485,6 @@
     "data": {
       "event": "core_update",
       "version": "7.0.2"
-    }
-  },
-  {
-    "receivedAt": "2026-07-13T14:27:13.118Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentform/fluentform.php"
-      ]
     }
   }
 ]
