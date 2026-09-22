@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-22T14:35:15.851Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-22T14:35:08.663Z",
     "type": "plugin_update",
     "data": {
@@ -477,16 +485,6 @@
   },
   {
     "receivedAt": "2026-07-05T02:41:24.829Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": {
-        "advanced-custom-fields-pro/acf.php": "advanced-custom-fields-pro/acf.php"
-      }
-    }
-  },
-  {
-    "receivedAt": "2026-07-04T02:13:38.189Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
