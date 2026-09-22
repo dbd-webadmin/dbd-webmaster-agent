@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-22T16:04:16.303Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-22T16:03:51.513Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": [
         "jet-engine/jet-engine.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:50:50.201Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
       ]
     }
   }
