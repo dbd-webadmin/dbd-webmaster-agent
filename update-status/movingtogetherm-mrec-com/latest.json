@@ -1,24 +1,9 @@
 {
   "slug": "movingtogetherm-mrec-com",
   "url": "https://movingtogetherm-mrec.com/",
-  "checkedAt": "2026-09-22T14:08:25.760Z",
-  "currentWpVersion": "7.1.1",
-  "wordpressUpdate": {
-    "version": "7.1.2",
-    "update_type": "minor",
-    "package_url": "https://downloads.wordpress.org/release/wordpress-7.1.2-partial-1.zip"
-  },
-  "pluginUpdates": [
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.278",
-      "update_version": "1.0.279"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.187.0",
-      "update_version": "1.188.0"
-    }
-  ],
+  "checkedAt": "2026-09-23T14:19:50.569Z",
+  "currentWpVersion": "7.1.2",
+  "wordpressUpdate": null,
+  "pluginUpdates": [],
   "phpVersion": "8.3.33"
 }

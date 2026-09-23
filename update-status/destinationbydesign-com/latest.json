@@ -1,25 +1,9 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-09-22T14:06:08.687Z",
-  "currentWpVersion": "7.1.1",
+  "checkedAt": "2026-09-23T14:17:30.641Z",
+  "currentWpVersion": "7.1.2",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.1.2",
-      "update_version": "9.1.3.1"
-    },
-    {
-      "name": "post-types-order",
-      "version": "2.5.3",
-      "update_version": "2.5.5"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.278",
-      "update_version": "1.0.279"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.4.25"
 }
