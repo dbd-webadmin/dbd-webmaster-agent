@@ -1,8 +1,8 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-09-15T13:39:43.708Z",
-  "durationMs": 94405,
+  "auditedAt": "2026-09-23T13:44:42.041Z",
+  "durationMs": 103173,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -10,16 +10,11 @@
       "url": "https://tourtalbot.org/state.currentTownUrl",
       "status": 404,
       "ok": false
-    },
-    {
-      "url": "https://tourtalbot.org/itinerary/a-relaxing-weekend-in-oxford-maryland/",
-      "status": 500,
-      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 32,
+    "mobile": null,
     "desktop": null
   }
 }
