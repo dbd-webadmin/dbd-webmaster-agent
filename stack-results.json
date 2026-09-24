@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T12:43:19.387Z",
+  "updatedAt": "2026-09-24T12:41:39.032Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -175,7 +175,7 @@
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 254,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -230,19 +230,19 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://beckleyoutdoors.com/",
@@ -274,11 +274,11 @@
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
-      "dnsTtl": 299,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "dnsTtl": 300,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://deepgaprecreationarea.org/",
