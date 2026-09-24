@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-24T17:21:23.168Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-24T17:19:20.847Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "instagram-feed/instagram-feed.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:51:12.599Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "google-site-kit/google-site-kit.php"
       ]
     }
   }
