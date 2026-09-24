@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-24T19:15:01.795Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "matt"
+    }
+  },
+  {
     "receivedAt": "2026-09-24T15:54:30.970Z",
     "type": "plugin_update",
     "data": {
@@ -445,14 +453,6 @@
       "plugins": [
         "dominant-color-images/load.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-27T15:38:52.804Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
