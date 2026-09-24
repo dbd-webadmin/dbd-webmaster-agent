@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-24T20:52:08.899Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "scott"
+    }
+  },
+  {
     "receivedAt": "2026-09-23T18:42:37.753Z",
     "type": "user_login",
     "data": {
@@ -443,16 +451,6 @@
     "data": {
       "event": "user_login",
       "user": "scott"
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T15:49:57.564Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "google-site-kit/google-site-kit.php"
-      ]
     }
   }
 ]
