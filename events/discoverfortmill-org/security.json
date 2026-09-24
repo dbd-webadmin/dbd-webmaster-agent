@@ -11,6 +11,16 @@
   },
   "recentEvents": [
     {
+      "type": "user_role_changed",
+      "time": "2026-09-24T18:59:17.048Z",
+      "data": {
+        "event": "user_role_changed",
+        "user": "support-beyond",
+        "new_role": "administrator",
+        "old_roles": []
+      }
+    },
+    {
       "type": "user_registered",
       "time": "2026-09-24T18:58:02.705Z",
       "data": {
@@ -167,15 +177,7 @@
         "event": "login_success",
         "user": "dylan"
       }
-    },
-    {
-      "type": "login_success",
-      "time": "2026-08-04T18:12:06.684Z",
-      "data": {
-        "event": "login_success",
-        "user": "FMEPIntern"
-      }
     }
   ],
-  "lastCommitAt": "2026-09-24T18:58:02.705Z"
+  "lastCommitAt": "2026-09-24T18:59:17.048Z"
 }
