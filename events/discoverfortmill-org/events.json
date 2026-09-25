@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-25T18:26:50.052Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-09-25T18:26:35.527Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +482,6 @@
       "event": "plugin_update",
       "plugins": [
         "jet-smart-filters/jet-smart-filters.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-04T18:23:00.816Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "gravityforms/gravityforms.php"
       ]
     }
   }
