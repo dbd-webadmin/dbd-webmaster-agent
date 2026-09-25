@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-25T18:26:21.802Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor/elementor.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-22T16:05:24.167Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T14:54:10.891Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "ultimate-elementor/ultimate-elementor.php"
       ]
     }
   }
