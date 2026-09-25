@@ -1,91 +1,25 @@
 {
   "url": "https://swvaoutdoors.org/",
   "name": "Friends of SWVA",
-  "auditedAt": "2026-09-17T13:31:25.835Z",
-  "durationMs": 35162,
-  "pagesChecked": 13,
+  "auditedAt": "2026-09-25T13:51:04.990Z",
+  "durationMs": 22865,
+  "pagesChecked": 20,
   "crawlBlocked": false,
   "brokenLinks": [
     {
-      "url": "https://swvaoutdoors.org/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/feed/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/comments/feed/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-json/oembed/1.0/embed",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-content/plugins/oxygen/component-framework/oxygen.css",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-json/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-json/wp/v2/pages/13",
-      "status": 403,
-      "ok": false
-    },
-    {
       "url": "https://swvaoutdoors.org/xmlrpc.php",
-      "status": 403,
+      "status": 405,
       "ok": false
     },
     {
-      "url": "https://swvaoutdoors.org/wp-content/uploads/oxygen/css/13.css",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-content/uploads/oxygen/css/universal.css",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/foothills-of-the-blue-ridge/",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/powell-clinch/",
-      "status": 403,
+      "url": "https://swvaoutdoors.org/cdn-cgi/l/email-protection",
+      "status": 404,
       "ok": false
     }
   ],
-  "brokenImages": [
-    {
-      "url": "https://swvaoutdoors.org/wp-content/uploads/2024/10/friendsofswva_logo_400x150.png",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-content/uploads/2024/10/FOBR_Wordmark.png",
-      "status": 403,
-      "ok": false
-    },
-    {
-      "url": "https://swvaoutdoors.org/wp-content/uploads/2024/11/PC-Artboard-7.png",
-      "status": 403,
-      "ok": false
-    }
-  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 99
+    "mobile": 77,
+    "desktop": 98
   }
 }

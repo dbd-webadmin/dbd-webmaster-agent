@@ -1,14 +1,25 @@
 {
   "url": "https://imaginewatauga.com/",
   "name": "Imagine Watauga",
-  "auditedAt": "2026-09-17T13:33:50.266Z",
-  "durationMs": 69882,
-  "pagesChecked": 1,
-  "crawlBlocked": true,
-  "brokenLinks": null,
-  "brokenImages": null,
+  "auditedAt": "2026-09-25T13:52:12.267Z",
+  "durationMs": 41865,
+  "pagesChecked": 18,
+  "crawlBlocked": false,
+  "brokenLinks": [
+    {
+      "url": "https://imaginewatauga.com/xmlrpc.php",
+      "status": 405,
+      "ok": false
+    },
+    {
+      "url": "https://imaginewatauga.com/cdn-cgi/l/email-protection",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 69
+    "mobile": 71,
+    "desktop": 85
   }
 }

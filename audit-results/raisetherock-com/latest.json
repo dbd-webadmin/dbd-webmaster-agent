@@ -1,40 +1,25 @@
 {
   "url": "https://www.raisetherock.com/",
   "name": "Raise the Rock",
-  "auditedAt": "2026-09-17T13:30:50.672Z",
-  "durationMs": 69585,
+  "auditedAt": "2026-09-25T13:50:42.124Z",
+  "durationMs": 44812,
   "pagesChecked": 22,
   "crawlBlocked": false,
   "brokenLinks": [
     {
-      "url": "https://www.raisetherock.com/wp-json/oembed/1.0/embed",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://www.raisetherock.com/wp-json/wp/v2/pages/135",
-      "status": 403,
-      "ok": false
-    },
-    {
       "url": "https://www.raisetherock.com/xmlrpc.php",
-      "status": 403,
+      "status": 405,
       "ok": false
     },
     {
       "url": "https://www.raisetherock.com/cdn-cgi/l/email-protection",
       "status": 404,
       "ok": false
-    },
-    {
-      "url": "https://www.raisetherock.com/wp-json/wp/v2/pages/855",
-      "status": 403,
-      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 57,
-    "desktop": null
+    "mobile": 44,
+    "desktop": 72
   }
 }
