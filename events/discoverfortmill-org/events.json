@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-09-25T18:27:15.950Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.2"
+    }
+  },
+  {
     "receivedAt": "2026-09-25T18:26:50.052Z",
     "type": "plugin_update",
     "data": {
@@ -467,16 +475,6 @@
   },
   {
     "receivedAt": "2026-08-04T18:23:34.217Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "jet-smart-filters/jet-smart-filters.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-04T18:23:05.324Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
