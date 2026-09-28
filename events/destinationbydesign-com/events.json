@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-09-28T12:44:50.551Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-09-28T12:44:37.110Z",
     "type": "user_login",
     "data": {
@@ -441,16 +451,6 @@
     "data": {
       "event": "user_login",
       "user": "case"
-    }
-  },
-  {
-    "receivedAt": "2026-08-27T15:39:11.522Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
-      ]
     }
   }
 ]
