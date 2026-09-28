@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T12:58:02.586Z",
+  "updatedAt": "2026-09-28T15:21:23.449Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -22,7 +22,7 @@
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -41,10 +41,10 @@
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://visitridgwayco.com/",
@@ -76,7 +76,7 @@
     {
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -85,7 +85,7 @@
     {
       "url": "https://thisisharney.com/",
       "name": "Harney County",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -122,10 +122,10 @@
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://adventuremeadowriver.com/",
@@ -140,10 +140,10 @@
       "url": "https://whoishaverstraw.com/",
       "name": "Who is Haverstraw?",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://www.raisetherock.com/",
@@ -158,10 +158,10 @@
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://movingtogetherm-mrec.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 276,
+      "dnsTtl": 130,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -221,15 +221,15 @@
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "wilks"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
