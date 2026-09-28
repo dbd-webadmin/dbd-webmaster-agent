@@ -1,8 +1,8 @@
 {
   "url": "https://neckofthewoodsnc.com/",
   "name": "Neck of the Woods",
-  "auditedAt": "2026-09-20T13:05:04.431Z",
-  "durationMs": 73071,
+  "auditedAt": "2026-09-28T16:47:00.353Z",
+  "durationMs": 49323,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,12 +12,7 @@
       "ok": false
     },
     {
-      "url": "https://neckofthewoodsnc.com/location/molley-chomper",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/rose-mtn-butcher-shop",
+      "url": "https://neckofthewoodsnc.com/location/faith-mtn-farms",
       "status": 500,
       "ok": false
     },
@@ -222,6 +217,11 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/menarick-vineyard-and-winery",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/common-ground-farm",
       "status": 500,
       "ok": false
@@ -279,7 +279,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": 95
+    "mobile": 99,
+    "desktop": 89
   }
 }
