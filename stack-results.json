@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T13:37:38.484Z",
+  "updatedAt": "2026-10-01T14:24:58.655Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -23,19 +23,19 @@
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
       "dnsTtl": 1800,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
       "dnsTtl": 600,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "cleveland"
     },
     {
       "url": "https://destinationswva.org/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 149,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -203,9 +203,9 @@
       "url": "https://wilkesoutdooractionplan.com/",
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
       "theme": null
     },
     {
@@ -230,10 +230,10 @@
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
@@ -257,28 +257,28 @@
       "url": "https://neckofthewoodsnc.com/",
       "name": "Neck of the Woods",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
