@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-01T19:37:32.476Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor-pro/elementor-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-01T19:35:50.633Z",
     "type": "plugin_update",
     "data": {
@@ -473,16 +483,6 @@
     "data": {
       "event": "plugin_update",
       "plugins": []
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T16:04:49.145Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "essential-addons-for-elementor-lite/essential_adons_elementor.php"
-      ]
     }
   }
 ]
