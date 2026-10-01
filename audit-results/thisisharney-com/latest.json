@@ -1,8 +1,8 @@
 {
   "url": "https://thisisharney.com/",
   "name": "Harney County",
-  "auditedAt": "2026-09-23T13:42:11.116Z",
-  "durationMs": 58073,
+  "auditedAt": "2026-10-01T15:29:59.640Z",
+  "durationMs": 45811,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -14,7 +14,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 60,
-    "desktop": 76
+    "mobile": 58,
+    "desktop": 75
   }
 }

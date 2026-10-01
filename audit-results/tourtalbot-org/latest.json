@@ -1,8 +1,8 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-09-23T13:44:42.041Z",
-  "durationMs": 103173,
+  "auditedAt": "2026-10-01T15:31:50.430Z",
+  "durationMs": 78282,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -10,11 +10,21 @@
       "url": "https://tourtalbot.org/state.currentTownUrl",
       "status": 404,
       "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/itinerary/a-romantic-weekend-in-downtown-easton/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/itinerary/a-relaxing-weekend-in-oxford-maryland/",
+      "status": 500,
+      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": null,
-    "desktop": null
+    "mobile": 37,
+    "desktop": 46
   }
 }
