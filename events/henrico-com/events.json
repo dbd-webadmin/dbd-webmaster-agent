@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-01T12:49:23.568Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "wp-mail-smtp-pro/wp_mail_smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-01T12:49:19.571Z",
     "type": "plugin_update",
     "data": {
@@ -476,16 +486,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T17:43:51.627Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentformpro/fluentformpro.php"
       ]
     }
   }
