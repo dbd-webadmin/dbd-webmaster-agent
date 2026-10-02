@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-02T18:51:10.105Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "post-types-order/post-types-order.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-02T18:46:08.392Z",
     "type": "user_login",
     "data": {
@@ -439,16 +449,6 @@
     "data": {
       "event": "user_login",
       "user": "case"
-    }
-  },
-  {
-    "receivedAt": "2026-08-30T20:43:29.981Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "advanced-custom-fields-pro/acf.php"
-      ]
     }
   }
 ]
