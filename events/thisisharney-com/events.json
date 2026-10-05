@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-05T13:54:27.307Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluent-smtp/fluent-smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-05T13:54:24.133Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "jet-engine/jet-engine.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T14:05:00.967Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor/elementor.php"
       ]
     }
   }
