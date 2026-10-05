@@ -5,11 +5,19 @@
     "lastSeen": "2026-10-05T13:09:13.304Z"
   },
   "loginSuccess": {
-    "count": 27,
-    "lastSeen": "2026-09-28T16:08:02.947Z",
-    "lastUser": "marla"
+    "count": 28,
+    "lastSeen": "2026-10-05T13:54:01.747Z",
+    "lastUser": "dylan@dbdplanning.com"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-10-05T13:54:01.747Z",
+      "data": {
+        "event": "login_success",
+        "user": "dylan@dbdplanning.com"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-09-28T16:08:02.947Z",
@@ -161,15 +169,7 @@
         "event": "login_success",
         "user": "dylan@dbdplanning.com"
       }
-    },
-    {
-      "type": "login_success",
-      "time": "2026-08-06T20:00:46.909Z",
-      "data": {
-        "event": "login_success",
-        "user": "dylan@dbdplanning.com"
-      }
     }
   ],
-  "lastCommitAt": "2026-10-05T13:09:13.304Z"
+  "lastCommitAt": "2026-10-05T13:54:01.747Z"
 }
