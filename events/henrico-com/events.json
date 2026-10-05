@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-05T13:48:21.826Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-01T12:49:23.568Z",
     "type": "plugin_update",
     "data": {
@@ -476,16 +486,6 @@
       "event": "plugin_update",
       "plugins": [
         "google-site-kit/google-site-kit.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-20T17:44:12.833Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
       ]
     }
   }
