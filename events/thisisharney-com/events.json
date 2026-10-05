@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-05T13:54:24.133Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor/elementor.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-05T13:54:19.266Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "elementor/elementor.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T17:51:59.035Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
       ]
     }
   }
