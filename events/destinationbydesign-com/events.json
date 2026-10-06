@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-06T17:36:47.688Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.3"
+    }
+  },
+  {
     "receivedAt": "2026-10-06T11:42:10.551Z",
     "type": "plugin_update",
     "data": {
@@ -442,16 +450,6 @@
       "event": "plugin_update",
       "plugins": [
         "advanced-query-loop/index.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-01T21:56:33.868Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
