@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-06T20:39:19.003Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "scott"
+    }
+  },
+  {
     "receivedAt": "2026-10-06T17:39:02.671Z",
     "type": "core_update",
     "data": {
@@ -455,14 +463,6 @@
       "plugins": [
         "advanced-query-loop/index.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-04T15:38:50.740Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
