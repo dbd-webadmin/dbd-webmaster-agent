@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T15:56:08.473Z",
+  "updatedAt": "2026-10-06T14:08:11.110Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -94,11 +94,11 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "dnsTtl": 299,
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Elementor",
+      "theme": "hello-elementor"
     },
     {
       "url": "https://tourtalbot.org/",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -139,7 +139,7 @@
     {
       "url": "https://whoishaverstraw.com/",
       "name": "Who is Haverstraw?",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.2",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 263,
+      "dnsTtl": 58,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -248,10 +248,10 @@
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.2",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://neckofthewoodsnc.com/",
@@ -275,10 +275,10 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://deepgaprecreationarea.org/",
