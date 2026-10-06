@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-06T17:44:00.731Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-06T17:43:49.856Z",
     "type": "core_update",
     "data": {
@@ -479,16 +489,6 @@
       "plugins": {
         "advanced-custom-fields-pro/acf.php": "advanced-custom-fields-pro/acf.php"
       }
-    }
-  },
-  {
-    "receivedAt": "2026-07-08T16:44:22.444Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "insert-headers-and-footers/ihaf.php"
-      ]
     }
   }
 ]
