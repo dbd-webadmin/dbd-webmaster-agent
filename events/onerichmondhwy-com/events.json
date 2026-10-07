@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-07T15:16:43.188Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-07T15:16:35.549Z",
     "type": "plugin_update",
     "data": {
@@ -481,16 +491,6 @@
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T14:29:39.431Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": {
-        "hostinger/hostinger.php": "hostinger/hostinger.php"
-      }
     }
   }
 ]
