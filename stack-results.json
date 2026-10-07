@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T14:08:11.110Z",
+  "updatedAt": "2026-10-07T14:27:03.753Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -33,14 +33,14 @@
       "name": "Land of Rhythm",
       "dnsTtl": 600,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "cleveland"
     },
     {
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.2",
       "builder": "Elementor",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -131,17 +131,17 @@
       "url": "https://adventuremeadowriver.com/",
       "name": "Adventure Meadow River",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://whoishaverstraw.com/",
       "name": "Who is Haverstraw?",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -150,7 +150,7 @@
       "name": "Raise the Rock",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "twentytwentyfive"
     },
@@ -159,7 +159,7 @@
       "name": "Friends of SWVA",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -168,7 +168,7 @@
       "name": "Moving Together Madison - Mayodan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -177,7 +177,7 @@
       "name": "Imagine Watauga",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -185,15 +185,15 @@
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 58,
+      "dnsTtl": 167,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -204,7 +204,7 @@
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": null
     },
@@ -212,10 +212,10 @@
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://wilcoresources.org/",
@@ -231,7 +231,7 @@
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.2",
+      "wpVersion": "7.1.3",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -239,19 +239,19 @@
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.2",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://neckofthewoodsnc.com/",
