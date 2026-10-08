@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-08T15:04:41.641Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "cameron"
+    }
+  },
+  {
     "receivedAt": "2026-10-07T21:03:44.055Z",
     "type": "user_login",
     "data": {
@@ -437,16 +445,6 @@
     "data": {
       "event": "user_login",
       "user": "case"
-    }
-  },
-  {
-    "receivedAt": "2026-09-01T21:56:44.311Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
-      ]
     }
   }
 ]
