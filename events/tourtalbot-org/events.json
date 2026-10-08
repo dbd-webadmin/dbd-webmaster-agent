@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-08T16:10:21.670Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-06T17:39:38.880Z",
     "type": "core_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "itidi-ai-events-places/itidi-ai-events-places.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-13T15:51:36.242Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluent-smtp/fluent-smtp.php"
       ]
     }
   }
