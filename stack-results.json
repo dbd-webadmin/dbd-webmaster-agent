@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T14:27:03.753Z",
+  "updatedAt": "2026-10-08T14:32:11.414Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -176,24 +176,24 @@
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.3",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
-    },
-    {
-      "url": "https://winklercreek.com/",
-      "name": "Winklers Creek Park",
-      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
       "theme": null
     },
     {
+      "url": "https://winklercreek.com/",
+      "name": "Winklers Creek Park",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
+    },
+    {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 167,
+      "dnsTtl": 72,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -212,10 +212,10 @@
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://wilcoresources.org/",
@@ -239,19 +239,19 @@
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://neckofthewoodsnc.com/",
@@ -266,24 +266,24 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
