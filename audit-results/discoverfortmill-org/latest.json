@@ -1,20 +1,145 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-10-01T15:30:32.148Z",
-  "durationMs": 32507,
+  "auditedAt": "2026-10-09T15:22:13.768Z",
+  "durationMs": 72313,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
     {
       "url": "https://discoverfortmill.org/xmlrpc.php",
-      "status": 403,
+      "status": 422,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/live-here/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/exploring-micro%e2%80%90transit/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/work/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/biz-owners-entreprenuer/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/incentives/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/inquiry-request/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/thrive/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/stay/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/strawberry-sprint-and-stroll/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/about/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/event/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/blogs/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/education/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/job-listings/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/privacy-policy/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/tribute-fest-returns-to-fort-mill-on-august-8-with-a-night-of-country-music-food-and-family-fun/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/celebrate-christmas-in-july-at-the-fort-mill-farmers-artisans-market/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/welcome-macs-speed-shop-to-fort-mill/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/former-fort-mill-police-department-building-begins-new-chapter-as-home-of-david-w-martin-law-group/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/celebrate-independence-day-in-fort-mill-a-guide-to-this-years-festivities/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/youre-invited-to-an-evening-at-our-community-table-dinner-on-may-23/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/winthrop-university-to-bring-higher-education-opportunities-to-fort-mill/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/fort-mill-community-center-revitalization-project-moves-forward/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/fort-mill-farmers-artisans-market-returns-this-weekend/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/celebrate-strawberry-season-at-the-5th-annual-strawberry-soiree-in-fort-mill/",
+      "status": 0,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 64,
-    "desktop": 85
+    "mobile": 60,
+    "desktop": 78
   }
 }
