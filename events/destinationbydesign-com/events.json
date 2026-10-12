@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-12T19:03:18.810Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T19:03:04.579Z",
     "type": "user_login",
     "data": {
@@ -437,14 +447,6 @@
       "plugins": [
         "microsoft-clarity/clarity.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-04T15:10:48.766Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "dylan"
     }
   }
 ]
