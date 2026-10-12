@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-12T13:10:18.328Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T13:10:10.552Z",
     "type": "plugin_update",
     "data": {
