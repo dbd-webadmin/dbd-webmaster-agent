@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-12T19:03:04.579Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "dylan"
+    }
+  },
+  {
     "receivedAt": "2026-10-08T15:04:41.641Z",
     "type": "user_login",
     "data": {
@@ -437,14 +445,6 @@
     "data": {
       "event": "user_login",
       "user": "dylan"
-    }
-  },
-  {
-    "receivedAt": "2026-09-02T14:25:56.666Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "case"
     }
   }
 ]
