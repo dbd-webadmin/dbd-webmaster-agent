@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-12T13:07:36.069Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T13:07:29.953Z",
     "type": "plugin_update",
     "data": {
@@ -448,16 +458,6 @@
       "event": "plugin_update",
       "plugins": [
         "pie-calendar/plugin.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-09T16:44:49.250Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluent-smtp/fluent-smtp.php"
       ]
     }
   }
