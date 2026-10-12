@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-12T13:04:08.680Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "insert-headers-and-footers/ihaf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T13:03:27.305Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-12T12:59:22.916Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "instagram-feed/instagram-feed.php"
       ]
     }
   }
