@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-12T19:03:23.219Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "post-types-order/post-types-order.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T19:03:18.810Z",
     "type": "plugin_update",
     "data": {
@@ -437,16 +447,6 @@
     "data": {
       "event": "plugin_update",
       "plugins": []
-    }
-  },
-  {
-    "receivedAt": "2026-09-04T15:11:03.030Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "microsoft-clarity/clarity.php"
-      ]
     }
   }
 ]
