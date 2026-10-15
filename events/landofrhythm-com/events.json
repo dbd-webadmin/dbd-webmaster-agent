@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-15T09:36:15.422Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": {
+        "insert-headers-and-footers/ihaf.php": "insert-headers-and-footers/ihaf.php"
+      }
+    }
+  },
+  {
     "receivedAt": "2026-10-13T08:24:11.034Z",
     "type": "plugin_update",
     "data": {
@@ -481,14 +491,6 @@
       "plugins": {
         "advanced-custom-fields-pro/acf.php": "advanced-custom-fields-pro/acf.php"
       }
-    }
-  },
-  {
-    "receivedAt": "2026-07-09T19:08:56.523Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.0.1"
     }
   }
 ]
