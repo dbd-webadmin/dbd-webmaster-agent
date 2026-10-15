@@ -1,10 +1,15 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-10-14T14:37:51.901Z",
+  "checkedAt": "2026-10-15T14:17:11.209Z",
   "currentWpVersion": "7.1.3",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "formidable",
+      "version": "6.35",
+      "update_version": "7.0"
+    },
     {
       "name": "jetpack",
       "version": "16.2",
@@ -14,6 +19,11 @@
       "name": "seo-by-rank-math",
       "version": "1.0.279",
       "update_version": "1.0.280"
+    },
+    {
+      "name": "sg-security",
+      "version": "1.6.8",
+      "update_version": "1.6.9"
     },
     {
       "name": "google-site-kit",
