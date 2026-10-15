@@ -1,21 +1,11 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-10-07T15:36:03.974Z",
-  "durationMs": 47720,
+  "auditedAt": "2026-10-15T13:29:39.208Z",
+  "durationMs": 66928,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://jedco.org/key-industries/technology-design/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/foia-policy/",
-      "status": 500,
-      "ok": false
-    },
     {
       "url": "https://jedco.org/events/$store.calendarEngine.eventUrl",
       "status": 404,
@@ -30,7 +20,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 54,
-    "desktop": 78
+    "mobile": 45,
+    "desktop": 71
   }
 }

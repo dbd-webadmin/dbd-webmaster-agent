@@ -1,8 +1,8 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-10-07T15:37:32.964Z",
-  "durationMs": 46438,
+  "auditedAt": "2026-10-15T13:31:43.476Z",
+  "durationMs": 68377,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,14 +12,14 @@
       "ok": false
     },
     {
-      "url": "https://landofrhythm.com/tours/shop-dine/",
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2105",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 41,
-    "desktop": 51
+    "mobile": 23,
+    "desktop": 47
   }
 }
