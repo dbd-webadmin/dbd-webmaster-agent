@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-17T11:41:19.139Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluentform/fluentform.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-12T13:09:07.620Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "hostinger/hostinger.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T20:04:36.652Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentformpro/fluentformpro.php"
       ]
     }
   }
