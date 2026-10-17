@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-17T11:47:33.867Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-13T08:22:19.722Z",
     "type": "plugin_update",
     "data": {
@@ -453,14 +463,6 @@
     "data": {
       "event": "login_failed",
       "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T04:53:50.984Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
     }
   }
 ]
