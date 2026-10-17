@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-17T11:47:38.457Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "hostinger/hostinger.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-17T11:47:33.867Z",
     "type": "plugin_update",
     "data": {
@@ -455,14 +465,6 @@
     "data": {
       "event": "login_failed",
       "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:26:50.611Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
     }
   }
 ]
