@@ -1,20 +1,9 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-10-16T14:01:58.199Z",
+  "checkedAt": "2026-10-17T13:02:15.761Z",
   "currentWpVersion": "7.1.3",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "filebird",
-      "version": "6.5.8",
-      "update_version": "6.5.9"
-    },
-    {
-      "name": "formidable",
-      "version": "6.35",
-      "update_version": "7.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": "8.4.26"
 }
