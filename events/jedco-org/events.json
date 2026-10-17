@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-17T11:42:11.628Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "scott"
+    }
+  },
+  {
     "receivedAt": "2026-10-12T13:07:36.069Z",
     "type": "plugin_update",
     "data": {
@@ -448,16 +456,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-09T16:44:52.188Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "pie-calendar/plugin.php"
       ]
     }
   }
