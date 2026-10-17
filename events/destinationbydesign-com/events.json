@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-17T00:49:15.886Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "formidable/formidable.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-17T00:49:12.827Z",
     "type": "plugin_update",
     "data": {
@@ -439,14 +449,6 @@
       "plugins": [
         "seo-by-rank-math/rank-math.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-08T12:52:44.831Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "case"
     }
   }
 ]
