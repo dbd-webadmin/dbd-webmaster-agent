@@ -5,11 +5,19 @@
     "lastSeen": "2026-10-19T21:31:45.588Z"
   },
   "loginSuccess": {
-    "count": 47,
-    "lastSeen": "2026-10-19T13:05:33.537Z",
-    "lastUser": "dylan"
+    "count": 48,
+    "lastSeen": "2026-10-19T21:33:50.517Z",
+    "lastUser": "mariah"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-10-19T21:33:50.517Z",
+      "data": {
+        "event": "login_success",
+        "user": "mariah"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-10-19T13:05:33.537Z",
@@ -167,19 +175,7 @@
         "new_role": "administrator",
         "old_roles": []
       }
-    },
-    {
-      "type": "user_registered",
-      "time": "2026-09-24T18:58:02.705Z",
-      "data": {
-        "event": "user_registered",
-        "user": "kevinh",
-        "email": "kevin@beyondmarketing.xyz",
-        "roles": [
-          "administrator"
-        ]
-      }
     }
   ],
-  "lastCommitAt": "2026-10-19T21:31:45.588Z"
+  "lastCommitAt": "2026-10-19T21:33:50.517Z"
 }
