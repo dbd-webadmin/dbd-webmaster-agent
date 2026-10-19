@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-19T17:43:53.245Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "simple-history/index.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-19T17:43:49.195Z",
     "type": "plugin_update",
     "data": {
@@ -481,16 +491,6 @@
       "plugins": {
         "fluentform/fluentform.php": "fluentform/fluentform.php"
       }
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T20:04:45.046Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "simple-history/index.php"
-      ]
     }
   }
 ]
