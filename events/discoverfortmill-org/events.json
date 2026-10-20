@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-20T13:38:14.193Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "bulk-edit-custom-tables-premium/custom-tables.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-20T13:37:18.862Z",
     "type": "plugin_update",
     "data": {
@@ -475,16 +485,6 @@
   },
   {
     "receivedAt": "2026-08-21T12:52:21.042Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-21T12:43:11.551Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
