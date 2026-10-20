@@ -1,8 +1,8 @@
 {
   "url": "https://cortlandfoodmap.org/",
   "name": "Cortland County Food Map",
-  "auditedAt": "2026-10-12T18:00:23.607Z",
-  "durationMs": 34434,
+  "auditedAt": "2026-10-20T13:36:54.581Z",
+  "durationMs": 30101,
   "pagesChecked": 20,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -20,6 +20,6 @@
   "brokenImages": [],
   "pageSpeed": {
     "mobile": 72,
-    "desktop": 92
+    "desktop": 97
   }
 }
