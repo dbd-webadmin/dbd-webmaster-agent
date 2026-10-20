@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-20T13:36:25.002Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor-pro/elementor-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-19T13:07:38.364Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "jet-engine/jet-engine.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-21T12:40:12.688Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "gravityforms/gravityforms.php"
       ]
     }
   }
