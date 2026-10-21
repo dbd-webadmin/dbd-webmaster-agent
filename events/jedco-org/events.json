@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-21T15:49:16.317Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "pie-calendar/plugin.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-19T17:43:13.838Z",
     "type": "plugin_update",
     "data": {
@@ -448,16 +458,6 @@
       "event": "plugin_update",
       "plugins": [
         "fluentform/fluentform.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-15T23:14:16.885Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "block-visibility/block-visibility.php"
       ]
     }
   }
