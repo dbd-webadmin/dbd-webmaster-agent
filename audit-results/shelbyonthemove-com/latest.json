@@ -1,19 +1,14 @@
 {
   "url": "https://shelbyonthemove.com/",
   "name": "Shelby on the Move",
-  "auditedAt": "2026-10-13T16:05:04.424Z",
-  "durationMs": 66942,
+  "auditedAt": "2026-10-21T13:51:30.942Z",
+  "durationMs": 42534,
   "pagesChecked": 26,
   "crawlBlocked": false,
   "brokenLinks": [
     {
       "url": "https://shelbyonthemove.com/xmlrpc.php",
       "status": 405,
-      "ok": false
-    },
-    {
-      "url": "https://shelbyonthemove.com/wp-content/themes/kauaicreative.com/assets/css/site.css",
-      "status": 0,
       "ok": false
     },
     {
@@ -24,7 +19,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 55,
-    "desktop": 52
+    "mobile": 53,
+    "desktop": 25
   }
 }

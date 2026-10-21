@@ -1,16 +1,11 @@
 {
   "url": "https://legacysoccerpark.org/",
   "name": "Legacy Soccer Park",
-  "auditedAt": "2026-10-13T16:03:57.482Z",
-  "durationMs": 76593,
-  "pagesChecked": 22,
+  "auditedAt": "2026-10-21T13:50:48.407Z",
+  "durationMs": 30598,
+  "pagesChecked": 24,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://legacysoccerpark.org/wp-content/plugins/cryout-serious-slider/resources/style.css",
-      "status": 0,
-      "ok": false
-    },
     {
       "url": "https://legacysoccerpark.org/xmlrpc.php",
       "status": 405,
@@ -25,6 +20,6 @@
   "brokenImages": [],
   "pageSpeed": {
     "mobile": 58,
-    "desktop": null
+    "desktop": 75
   }
 }

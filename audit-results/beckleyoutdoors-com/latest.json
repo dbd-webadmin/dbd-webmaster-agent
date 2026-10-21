@@ -1,8 +1,8 @@
 {
   "url": "https://beckleyoutdoors.com/",
   "name": "Beckley Outdoors Action Plan",
-  "auditedAt": "2026-10-13T16:06:07.687Z",
-  "durationMs": 63263,
+  "auditedAt": "2026-10-21T13:52:15.908Z",
+  "durationMs": 44965,
   "pagesChecked": 17,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -17,20 +17,9 @@
       "ok": false
     }
   ],
-  "brokenImages": [
-    {
-      "url": "https://beckleyoutdoors.com/wp-content/uploads/2024/02/Artboard-22@3x.png",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://beckleyoutdoors.com/wp-content/uploads/2024/02/Combination-Badge-Full-Color.png",
-      "status": 0,
-      "ok": false
-    }
-  ],
+  "brokenImages": [],
   "pageSpeed": {
-    "mobile": 74,
-    "desktop": 46
+    "mobile": 82,
+    "desktop": 53
   }
 }
