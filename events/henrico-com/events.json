@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-21T16:14:11.554Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-19T17:42:43.266Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "fluent-smtp/fluent-smtp.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T16:02:55.657Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentformpro/fluentformpro.php"
       ]
     }
   }
