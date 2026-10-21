@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-21T17:22:08.125Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "litespeed-cache/litespeed-cache.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-21T17:22:01.299Z",
     "type": "plugin_update",
     "data": {
@@ -455,14 +465,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:31:07.026Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:30:56.490Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
