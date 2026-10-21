@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-21T16:37:39.571Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "hostinger/hostinger.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-17T11:48:34.849Z",
     "type": "plugin_update",
     "data": {
