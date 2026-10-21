@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-21T16:01:36.972Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-17T11:45:19.655Z",
     "type": "plugin_update",
     "data": {
@@ -483,14 +493,6 @@
       "plugins": [
         "hostinger/hostinger.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T03:39:36.329Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "guauserwa3"
     }
   }
 ]
