@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-24T22:18:59.082Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": {
+        "relevanssi/relevanssi.php": "relevanssi/relevanssi.php"
+      }
+    }
+  },
+  {
     "receivedAt": "2026-10-21T16:17:37.428Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "fluentformpro/fluentformpro.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-24T16:27:16.533Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluentform/fluentform.php"
       ]
     }
   }
