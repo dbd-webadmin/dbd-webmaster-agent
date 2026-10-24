@@ -1,9 +1,15 @@
 {
   "slug": "adventuremeadowriver-com",
   "url": "https://adventuremeadowriver.com/",
-  "checkedAt": "2026-10-23T14:20:41.959Z",
+  "checkedAt": "2026-10-24T13:25:55.176Z",
   "currentWpVersion": "7.1.3",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.56",
+      "update_version": "10.58"
+    }
+  ],
   "phpVersion": null
 }

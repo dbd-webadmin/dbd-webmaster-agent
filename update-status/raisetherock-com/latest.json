@@ -1,9 +1,15 @@
 {
   "slug": "raisetherock-com",
   "url": "https://www.raisetherock.com/",
-  "checkedAt": "2026-10-23T14:21:00.796Z",
+  "checkedAt": "2026-10-24T13:26:16.101Z",
   "currentWpVersion": "7.1.3",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "easy-code-manager",
+      "version": "10.56",
+      "update_version": "10.58"
+    }
+  ],
   "phpVersion": null
 }
