@@ -5,11 +5,19 @@
     "lastSeen": "2026-10-25T02:30:53.275Z"
   },
   "loginSuccess": {
-    "count": 48,
-    "lastSeen": "2026-10-19T21:33:50.517Z",
-    "lastUser": "mariah"
+    "count": 49,
+    "lastSeen": "2026-10-25T02:57:35.058Z",
+    "lastUser": "dylan"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-10-25T02:57:35.058Z",
+      "data": {
+        "event": "login_success",
+        "user": "dylan"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-10-19T21:33:50.517Z",
@@ -165,17 +173,7 @@
           "administrator"
         ]
       }
-    },
-    {
-      "type": "user_role_changed",
-      "time": "2026-09-24T18:59:17.048Z",
-      "data": {
-        "event": "user_role_changed",
-        "user": "support-beyond",
-        "new_role": "administrator",
-        "old_roles": []
-      }
     }
   ],
-  "lastCommitAt": "2026-10-25T02:30:53.275Z"
+  "lastCommitAt": "2026-10-25T02:57:35.058Z"
 }
