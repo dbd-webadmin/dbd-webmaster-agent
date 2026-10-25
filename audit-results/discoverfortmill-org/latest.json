@@ -1,8 +1,8 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-10-17T12:16:05.282Z",
-  "durationMs": 67850,
+  "auditedAt": "2026-10-25T13:14:49.963Z",
+  "durationMs": 65365,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,17 +12,12 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/quality-of-life/",
-      "status": 0,
-      "ok": false
-    },
-    {
       "url": "https://discoverfortmill.org/exploring-micro%e2%80%90transit/",
       "status": 0,
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/live-here/education/",
+      "url": "https://discoverfortmill.org/work/",
       "status": 0,
       "ok": false
     },
@@ -32,12 +27,22 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/inquiry-request/",
+      "url": "https://discoverfortmill.org/incentives/",
       "status": 0,
       "ok": false
     },
     {
       "url": "https://discoverfortmill.org/thrive/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/stay/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/explore/",
       "status": 0,
       "ok": false
     },
@@ -52,17 +57,37 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/event/",
+      "url": "https://discoverfortmill.org/blogs/",
       "status": 0,
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/tribute-fest-returns-to-fort-mill-on-august-8-with-a-night-of-country-music-food-and-family-fun/",
+      "url": "https://discoverfortmill.org/welcoming-mills-house-antiques-to-fort-mill/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/blog/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/education/",
       "status": 0,
       "ok": false
     },
     {
       "url": "https://discoverfortmill.org/job-listings/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/privacy-policy/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/tribute-fest-returns-to-fort-mill-on-august-8-with-a-night-of-country-music-food-and-family-fun/",
       "status": 0,
       "ok": false
     },
@@ -105,16 +130,11 @@
       "url": "https://discoverfortmill.org/fort-mill-farmers-artisans-market-returns-this-weekend/",
       "status": 0,
       "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/celebrate-strawberry-season-at-the-5th-annual-strawberry-soiree-in-fort-mill/",
-      "status": 0,
-      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 59,
-    "desktop": 89
+    "mobile": 61,
+    "desktop": 85
   }
 }
