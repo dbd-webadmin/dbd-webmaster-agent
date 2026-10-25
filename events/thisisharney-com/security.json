@@ -11,6 +11,18 @@
   },
   "recentEvents": [
     {
+      "type": "user_registered",
+      "time": "2026-10-25T04:22:15.109Z",
+      "data": {
+        "event": "user_registered",
+        "user": "localadmin",
+        "email": "admin@localhost.test",
+        "roles": [
+          "administrator"
+        ]
+      }
+    },
+    {
       "type": "user_role_changed",
       "time": "2026-10-25T04:22:13.821Z",
       "data": {
@@ -181,15 +193,7 @@
         "event": "login_success",
         "user": "marla"
       }
-    },
-    {
-      "type": "login_success",
-      "time": "2026-09-15T23:12:17.441Z",
-      "data": {
-        "event": "login_success",
-        "user": "dylan@dbdplanning.com"
-      }
     }
   ],
-  "lastCommitAt": "2026-10-25T04:22:13.821Z"
+  "lastCommitAt": "2026-10-25T04:22:15.109Z"
 }
