@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-26T19:30:34.894Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-21T15:51:04.711Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "hostinger/hostinger.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-17T20:57:40.461Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "easy-code-manager/easy-code-manager.php"
       ]
     }
   }
