@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:31:36.730Z",
+  "updatedAt": "2026-10-26T14:10:17.519Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -40,7 +40,7 @@
     {
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -139,7 +139,7 @@
     {
       "url": "https://whoishaverstraw.com/",
       "name": "Who is Haverstraw?",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.3",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 140,
+      "dnsTtl": 223,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
