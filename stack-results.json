@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T07:31:10.892Z",
+  "updatedAt": "2026-10-28T07:19:29.498Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -41,10 +41,10 @@
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://visitridgwayco.com/",
@@ -68,10 +68,10 @@
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://henrico.com/",
@@ -94,7 +94,7 @@
     {
       "url": "https://discoverfortmill.org/",
       "name": "Discover Fort Mill",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.3",
       "builder": "Elementor",
@@ -113,24 +113,24 @@
       "url": "https://elevatemitchell.com/",
       "name": "Elevate Mitchell",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "dbd24"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://adventuremeadowriver.com/",
       "name": "Adventure Meadow River",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.3",
       "builder": "Gutenberg",
@@ -148,7 +148,7 @@
     {
       "url": "https://www.raisetherock.com/",
       "name": "Raise the Rock",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.3",
       "builder": "Gutenberg",
@@ -158,10 +158,10 @@
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.3",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://movingtogetherm-mrec.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 265,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -229,20 +229,20 @@
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.3",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "dnsTtl": 299,
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
-      "dnsTtl": 299,
-      "wordpress": true,
+      "dnsTtl": 300,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://beckleyoutdoors.com/",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
