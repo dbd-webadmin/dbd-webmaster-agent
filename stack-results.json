@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T07:19:29.498Z",
+  "updatedAt": "2026-10-29T07:19:33.405Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -41,10 +41,10 @@
       "url": "https://destinationswva.org/",
       "name": "Destination SWVA",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "dbd24"
     },
     {
       "url": "https://visitridgwayco.com/",
@@ -68,10 +68,10 @@
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "dbd24"
     },
     {
       "url": "https://henrico.com/",
@@ -113,19 +113,19 @@
       "url": "https://elevatemitchell.com/",
       "name": "Elevate Mitchell",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "dbd24"
     },
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "dbd24"
     },
     {
       "url": "https://adventuremeadowriver.com/",
@@ -158,10 +158,10 @@
       "url": "https://swvaoutdoors.org/",
       "name": "Friends of SWVA",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://movingtogetherm-mrec.com/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 300,
+      "dnsTtl": 264,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -229,20 +229,20 @@
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 299,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": "7.1.3",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://shelbyonthemove.com/",
       "name": "Shelby on the Move",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://beckleyoutdoors.com/",
