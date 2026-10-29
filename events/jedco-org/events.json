@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-10-29T13:27:38.298Z",
+    "type": "user_login",
+    "data": {
+      "event": "user_login",
+      "user": "scott"
+    }
+  },
+  {
     "receivedAt": "2026-10-28T22:29:33.733Z",
     "type": "user_login",
     "data": {
@@ -445,14 +453,6 @@
     "data": {
       "event": "user_login",
       "user": "scott"
-    }
-  },
-  {
-    "receivedAt": "2026-09-22T14:35:51.705Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.1.2"
     }
   }
 ]
