@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-29T17:40:15.616Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "easy-code-manager/easy-code-manager.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-29T17:40:10.773Z",
     "type": "plugin_update",
     "data": {
@@ -465,14 +475,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:08:32.491Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T11:57:00.913Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
