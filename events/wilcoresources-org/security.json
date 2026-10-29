@@ -5,11 +5,19 @@
     "lastSeen": "2026-10-28T08:52:03.978Z"
   },
   "loginSuccess": {
-    "count": 9,
-    "lastSeen": "2026-10-21T17:46:13.368Z",
+    "count": 10,
+    "lastSeen": "2026-10-29T17:52:18.358Z",
     "lastUser": "sunny"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-10-29T17:52:18.358Z",
+      "data": {
+        "event": "login_success",
+        "user": "sunny"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-10-21T17:46:13.368Z",
@@ -83,5 +91,5 @@
       }
     }
   ],
-  "lastCommitAt": "2026-10-28T08:52:03.978Z"
+  "lastCommitAt": "2026-10-29T17:52:18.358Z"
 }
