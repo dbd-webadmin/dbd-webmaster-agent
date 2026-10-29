@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-29T17:42:54.642Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "all-in-one-wp-migration/all-in-one-wp-migration.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-29T17:42:48.272Z",
     "type": "plugin_update",
     "data": {
