@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-29T17:49:09.452Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "wpforms-lite/wpforms.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-29T17:49:01.319Z",
     "type": "plugin_update",
     "data": {
