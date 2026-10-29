@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-10-29T17:47:29.839Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "easy-code-manager/easy-code-manager.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-21T17:32:32.698Z",
     "type": "plugin_update",
     "data": {
