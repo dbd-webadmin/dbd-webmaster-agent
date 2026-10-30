@@ -1,19 +1,14 @@
 {
   "url": "https://neckofthewoodsnc.com/",
   "name": "Neck of the Woods",
-  "auditedAt": "2026-10-22T13:49:58.325Z",
-  "durationMs": 59246,
+  "auditedAt": "2026-10-30T08:27:18.192Z",
+  "durationMs": 35811,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
     {
       "url": "https://neckofthewoodsnc.com/xmlrpc.php",
       "status": 405,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/molley-chomper",
-      "status": 500,
       "ok": false
     },
     {
@@ -122,12 +117,27 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/beech-mountain-brewing-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/blowing-rock-ale-house",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/blowing-rock-farmers-market",
       "status": 500,
       "ok": false
     },
     {
       "url": "https://neckofthewoodsnc.com/location/booneshine-brewing-company",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/edwards-casual-fine-dining",
       "status": 500,
       "ok": false
     },
@@ -147,12 +157,72 @@
       "ok": false
     },
     {
+      "url": "https://neckofthewoodsnc.com/location/kindly-kitchen",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/lost-province",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/lost-province-brewing-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/over-yonder",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/proper",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-appalachian-mountain-brewery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-cardinal",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-gamekeeper-2",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-speckled-trout",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/valle-crucis-farmers-market-at-mast-general",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/vidalia",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://neckofthewoodsnc.com/location/watauga-county-farmers-market",
       "status": 500,
       "ok": false
     },
     {
       "url": "https://neckofthewoodsnc.com/location/yonder-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/american-alcohollery-2",
       "status": 500,
       "ok": false
     },
@@ -187,97 +257,7 @@
       "ok": false
     },
     {
-      "url": "https://neckofthewoodsnc.com/location/mcritchie-winery-and-ciderworks",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/menarick-vineyard-and-winery",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/olivias-legacy-meats",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/piccone-vineyards",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/raffaldini-winery",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/roaring-river-vineyards",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/wilkes-county-farmers-market",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/wilkesboro-open-air-market",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/blind-squirrel-brewery-outpost",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/burnsville-health-and-nutrition",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/common-ground-farm",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/firefly-farm",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/garden-deli",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/harty-farms",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/homeplace-beer-co",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/open-ridge-farm",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/snap-dragon",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/the-mushroom-hut-at-fox-farms",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/location/yancey-county-farmers-market",
+      "url": "https://neckofthewoodsnc.com/location/jones-von-drehle",
       "status": 500,
       "ok": false
     },
@@ -285,16 +265,11 @@
       "url": "https://neckofthewoodsnc.com/wp-json/wp/v2/pages/771",
       "status": 500,
       "ok": false
-    },
-    {
-      "url": "https://neckofthewoodsnc.com/wp-json/wp/v2/pages/781",
-      "status": 500,
-      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": 71
+    "mobile": 100,
+    "desktop": 97
   }
 }
