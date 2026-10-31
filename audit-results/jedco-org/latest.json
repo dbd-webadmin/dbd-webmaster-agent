@@ -1,28 +1,13 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-10-23T13:30:03.144Z",
-  "durationMs": 47243,
+  "auditedAt": "2026-10-31T08:23:04.313Z",
+  "durationMs": 52628,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
     {
-      "url": "https://jedco.org/business-in-jp/data/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/key-industries/culinary-products/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/key-industries/environmental-and-engineering-services/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://jedco.org/financing/sba-504/",
+      "url": "https://jedco.org/key-industries/supply-chain-infrastructure/",
       "status": 500,
       "ok": false
     },
@@ -40,7 +25,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 68,
-    "desktop": 87
+    "mobile": 54,
+    "desktop": 71
   }
 }
