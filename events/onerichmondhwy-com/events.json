@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-02T17:31:45.460Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluentform/fluentform.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-02T17:31:37.291Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-17T20:59:11.117Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "instagram-feed/instagram-feed.php"
       ]
     }
   }
