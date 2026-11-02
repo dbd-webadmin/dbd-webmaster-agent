@@ -1,11 +1,31 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-10-25T13:15:57.481Z",
-  "durationMs": 67517,
+  "auditedAt": "2026-11-02T08:28:58.587Z",
+  "durationMs": 68622,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
+    {
+      "url": "https://tourtalbot.org/places-to-stay-guide/vacation-rentals/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/places-to-stay-guide/dock-stay/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/food-drink-guide/beer-wine-spirits/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/events/",
+      "status": 500,
+      "ok": false
+    },
     {
       "url": "https://tourtalbot.org/state.currentTownUrl",
       "status": 404,
@@ -14,7 +34,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 52,
-    "desktop": 42
+    "mobile": 38,
+    "desktop": 45
   }
 }
