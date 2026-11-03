@@ -1,9 +1,20 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-11-02T09:31:22.298Z",
+  "checkedAt": "2026-11-03T09:28:41.976Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "advanced-custom-fields-pro",
+      "version": "6.8.10",
+      "update_version": "6.8.11"
+    },
+    {
+      "name": "google-site-kit",
+      "version": "1.190.0",
+      "update_version": "1.191.0"
+    }
+  ],
   "phpVersion": null
 }

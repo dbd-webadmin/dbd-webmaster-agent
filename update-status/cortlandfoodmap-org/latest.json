@@ -1,10 +1,15 @@
 {
   "slug": "cortlandfoodmap-org",
   "url": "https://cortlandfoodmap.org/",
-  "checkedAt": "2026-11-02T09:31:15.953Z",
+  "checkedAt": "2026-11-03T09:28:35.285Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "google-site-kit",
+      "version": "1.190.0",
+      "update_version": "1.191.0"
+    },
     {
       "name": "svg-support",
       "version": "2.6.1",
