@@ -1,7 +1,7 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-11-03T09:28:41.976Z",
+  "checkedAt": "2026-11-04T09:29:05.782Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -9,6 +9,21 @@
       "name": "advanced-custom-fields-pro",
       "version": "6.8.10",
       "update_version": "6.8.11"
+    },
+    {
+      "name": "jetpack",
+      "version": "16.3.1",
+      "update_version": "16.4"
+    },
+    {
+      "name": "litespeed-cache",
+      "version": "7.9.2",
+      "update_version": "7.9.3"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.280",
+      "update_version": "1.0.281"
     },
     {
       "name": "google-site-kit",

@@ -1,10 +1,15 @@
 {
   "slug": "beckleyoutdoors-com",
   "url": "https://beckleyoutdoors.com/",
-  "checkedAt": "2026-11-03T09:29:10.382Z",
+  "checkedAt": "2026-11-04T09:29:25.661Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.280",
+      "update_version": "1.0.281"
+    },
     {
       "name": "google-site-kit",
       "version": "1.190.0",

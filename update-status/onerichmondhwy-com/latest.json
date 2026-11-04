@@ -1,10 +1,20 @@
 {
   "slug": "onerichmondhwy-com",
   "url": "https://onerichmondhwy.com/",
-  "checkedAt": "2026-11-03T09:26:24.672Z",
+  "checkedAt": "2026-11-04T09:27:04.322Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "litespeed-cache",
+      "version": "7.9.2",
+      "update_version": "7.9.3"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.280",
+      "update_version": "1.0.281"
+    },
     {
       "name": "google-site-kit",
       "version": "1.190.0",

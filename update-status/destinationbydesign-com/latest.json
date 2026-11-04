@@ -1,7 +1,7 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-11-03T09:26:02.078Z",
+  "checkedAt": "2026-11-04T09:26:49.585Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -11,9 +11,9 @@
       "update_version": "6.8.11"
     },
     {
-      "name": "google-site-kit",
-      "version": "1.190.0",
-      "update_version": "1.191.0"
+      "name": "seo-by-rank-math",
+      "version": "1.0.280",
+      "update_version": "1.0.281"
     }
   ],
   "phpVersion": "8.4.27"
