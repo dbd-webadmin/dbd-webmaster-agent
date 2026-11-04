@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T07:16:18.092Z",
+  "updatedAt": "2026-11-04T07:17:32.599Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -49,7 +49,7 @@
     {
       "url": "https://visitridgwayco.com/",
       "name": "Visit Ridgway Colorado",
-      "dnsTtl": 599,
+      "dnsTtl": 600,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -67,7 +67,7 @@
     {
       "url": "https://gilesoutdoors.com/",
       "name": "Giles Outdoors",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 276,
+      "dnsTtl": 162,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -265,7 +265,7 @@
     {
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
