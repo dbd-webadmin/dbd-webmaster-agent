@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:20:04.277Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:19:57.455Z",
     "type": "plugin_update",
     "data": {
@@ -461,14 +471,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:44:53.998Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:44:43.401Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
