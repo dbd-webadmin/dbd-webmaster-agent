@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T14:46:11.250Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluentform/fluentform.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T14:46:04.059Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": [
         "optimization-detective/load.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-27T20:46:20.206Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "image-prioritizer/load.php"
       ]
     }
   }
