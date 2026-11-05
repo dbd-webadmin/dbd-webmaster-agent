@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:13:53.116Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:13:46.933Z",
     "type": "plugin_update",
     "data": {
@@ -483,16 +493,6 @@
       "plugins": {
         "popup-maker/popup-maker.php": "popup-maker/popup-maker.php"
       }
-    }
-  },
-  {
-    "receivedAt": "2026-07-30T14:02:56.163Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "hostinger/hostinger.php"
-      ]
     }
   }
 ]
