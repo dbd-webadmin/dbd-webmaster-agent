@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T07:17:32.599Z",
+  "updatedAt": "2026-11-05T07:16:20.887Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -22,7 +22,7 @@
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.4",
       "builder": "Gutenberg",
@@ -49,7 +49,7 @@
     {
       "url": "https://visitridgwayco.com/",
       "name": "Visit Ridgway Colorado",
-      "dnsTtl": 600,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -76,7 +76,7 @@
     {
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -85,7 +85,7 @@
     {
       "url": "https://thisisharney.com/",
       "name": "Harney County",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -150,9 +150,9 @@
       "name": "Raise the Rock",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": null,
       "builder": "Gutenberg",
-      "theme": "twentytwentyfive"
+      "theme": "raise-the-rock"
     },
     {
       "url": "https://swvaoutdoors.org/",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 162,
+      "dnsTtl": 252,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
