@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T14:41:14.939Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "advanced-custom-fields-pro/acf.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T14:41:11.289Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "litespeed-cache/litespeed-cache.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-04T15:30:26.365Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor/elementor.php"
       ]
     }
   }
