@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T14:15:55.875Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "fluentformpro/fluentformpro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T14:15:51.934Z",
     "type": "plugin_update",
     "data": {
@@ -445,14 +455,6 @@
       "plugins": {
         "fluentform/fluentform.php": "fluentform/fluentform.php"
       }
-    }
-  },
-  {
-    "receivedAt": "2026-10-01T14:39:39.974Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "scott"
     }
   }
 ]
