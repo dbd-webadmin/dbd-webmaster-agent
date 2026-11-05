@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:32:53.024Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-10-29T17:53:46.672Z",
     "type": "plugin_update",
     "data": {
@@ -475,14 +485,6 @@
       "plugins": [
         "cryout-serious-slider/cryout-serious-slider.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-09T18:42:46.678Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.0.1"
     }
   }
 ]
