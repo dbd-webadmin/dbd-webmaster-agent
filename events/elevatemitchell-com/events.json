@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:17:15.127Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "svg-support/svg-support.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:17:09.920Z",
     "type": "plugin_update",
     "data": {
@@ -477,14 +487,6 @@
   },
   {
     "receivedAt": "2026-07-02T14:12:44.724Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T14:01:54.203Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
