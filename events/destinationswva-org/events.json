@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:11:38.267Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:11:31.473Z",
     "type": "plugin_update",
     "data": {
@@ -481,14 +491,6 @@
       "plugins": [
         "hostinger/hostinger.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T13:52:31.740Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "85631"
     }
   }
 ]
