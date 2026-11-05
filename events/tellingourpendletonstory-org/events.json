@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:12:58.899Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:12:51.449Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +492,6 @@
       "event": "plugin_update",
       "plugins": {
         "fluent-smtp/fluent-smtp.php": "fluent-smtp/fluent-smtp.php"
-      }
-    }
-  },
-  {
-    "receivedAt": "2026-08-06T19:08:02.437Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": {
-        "popup-maker/popup-maker.php": "popup-maker/popup-maker.php"
       }
     }
   }
