@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-05T15:35:38.408Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "sg-cachepress/sg-cachepress.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:35:32.043Z",
     "type": "plugin_update",
     "data": {
