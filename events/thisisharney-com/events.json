@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-06T19:12:03.091Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.4"
+    }
+  },
+  {
     "receivedAt": "2026-11-06T18:56:04.711Z",
     "type": "plugin_update",
     "data": {
@@ -476,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-22T16:03:28.774Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
