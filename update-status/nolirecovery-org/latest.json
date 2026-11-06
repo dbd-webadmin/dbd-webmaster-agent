@@ -1,35 +1,9 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-11-05T09:28:11.062Z",
+  "checkedAt": "2026-11-06T09:27:22.423Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "fluentform",
-      "version": "6.2.16",
-      "update_version": "6.2.17"
-    },
-    {
-      "name": "fluent-smtp",
-      "version": "2.4.1",
-      "update_version": "2.4.5"
-    },
-    {
-      "name": "litespeed-cache",
-      "version": "7.9.2",
-      "update_version": "7.9.3"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.280",
-      "update_version": "1.0.281"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.190.0",
-      "update_version": "1.191.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": null
 }

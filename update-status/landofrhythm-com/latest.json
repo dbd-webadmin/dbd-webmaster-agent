@@ -1,40 +1,9 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-11-05T09:27:20.852Z",
+  "checkedAt": "2026-11-06T09:26:32.336Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.3.0",
-      "update_version": "9.3.1"
-    },
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.10",
-      "update_version": "6.8.11"
-    },
-    {
-      "name": "hostinger",
-      "version": "3.0.80",
-      "update_version": "3.0.81"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.280",
-      "update_version": "1.0.281"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.190.0",
-      "update_version": "1.191.0"
-    },
-    {
-      "name": "insert-headers-and-footers",
-      "version": "2.4.0",
-      "update_version": "2.4.1"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": null
 }

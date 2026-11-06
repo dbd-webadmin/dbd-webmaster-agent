@@ -1,30 +1,9 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-11-05T09:27:50.110Z",
+  "checkedAt": "2026-11-06T09:27:01.196Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "advanced-custom-fields-pro",
-      "version": "6.8.10",
-      "update_version": "6.8.11"
-    },
-    {
-      "name": "fluentform",
-      "version": "6.2.16",
-      "update_version": "6.2.17"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.280",
-      "update_version": "1.0.281"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.190.0",
-      "update_version": "1.191.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": null
 }

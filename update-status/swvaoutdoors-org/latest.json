@@ -1,20 +1,10 @@
 {
   "slug": "swvaoutdoors-org",
   "url": "https://swvaoutdoors.org/",
-  "checkedAt": "2026-11-05T09:28:40.715Z",
+  "checkedAt": "2026-11-06T09:27:51.913Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.3.0",
-      "update_version": "9.3.1"
-    },
-    {
-      "name": "litespeed-cache",
-      "version": "7.9.2",
-      "update_version": "7.9.3"
-    },
     {
       "name": "oxygen",
       "version": "4.9.6",
