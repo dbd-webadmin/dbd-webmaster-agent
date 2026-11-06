@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T07:16:20.887Z",
+  "updatedAt": "2026-11-06T07:16:06.390Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 300,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -22,7 +22,7 @@
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
-      "dnsTtl": 300,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 300,
+      "dnsTtl": 599,
       "wordpress": true,
       "wpVersion": "7.1.4",
       "builder": "Gutenberg",
@@ -49,7 +49,7 @@
     {
       "url": "https://visitridgwayco.com/",
       "name": "Visit Ridgway Colorado",
-      "dnsTtl": 300,
+      "dnsTtl": 600,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -76,7 +76,7 @@
     {
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
-      "dnsTtl": 300,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -85,7 +85,7 @@
     {
       "url": "https://thisisharney.com/",
       "name": "Harney County",
-      "dnsTtl": 300,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 300,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -167,10 +167,10 @@
       "url": "https://movingtogetherm-mrec.com/",
       "name": "Moving Together Madison - Mayodan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.4",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://imaginewatauga.com/",
@@ -185,15 +185,15 @@
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.4",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 252,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -257,28 +257,28 @@
       "url": "https://neckofthewoodsnc.com/",
       "name": "Neck of the Woods",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": null,
-      "builder": "Divi",
-      "theme": "Divi"
-    },
-    {
-      "url": "https://highcountrypathways.org/",
-      "name": "High Country Pathways",
-      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
       "theme": null
     },
     {
+      "url": "https://highcountrypathways.org/",
+      "name": "High Country Pathways",
+      "dnsTtl": 300,
+      "wordpress": true,
+      "wpVersion": null,
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
+    },
+    {
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": true,
-      "wpVersion": "7.1.4",
-      "builder": "Gutenberg",
-      "theme": "oxygen-is-not-a-theme"
+      "wordpress": false,
+      "wpVersion": null,
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://deepgaprecreationarea.org/",
