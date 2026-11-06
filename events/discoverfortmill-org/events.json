@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-06T06:10:36.778Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-11-06T06:09:16.820Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +482,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-01T19:02:51.727Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "elementor-pro/elementor-pro.php"
       ]
     }
   }
