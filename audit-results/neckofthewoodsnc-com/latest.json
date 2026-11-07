@@ -1,8 +1,8 @@
 {
   "url": "https://neckofthewoodsnc.com/",
   "name": "Neck of the Woods",
-  "auditedAt": "2026-10-30T08:27:18.192Z",
-  "durationMs": 35811,
+  "auditedAt": "2026-11-07T08:21:48.352Z",
+  "durationMs": 28982,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -262,7 +262,97 @@
       "ok": false
     },
     {
-      "url": "https://neckofthewoodsnc.com/wp-json/wp/v2/pages/771",
+      "url": "https://neckofthewoodsnc.com/location/mcritchie-winery-and-ciderworks",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/menarick-vineyard-and-winery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/olivias-legacy-meats",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/piccone-vineyards",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/raffaldini-winery",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/roaring-river-vineyards",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/wilkes-county-farmers-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/wilkesboro-open-air-market",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/blind-squirrel-brewery-outpost",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/burnsville-health-and-nutrition",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/common-ground-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/firefly-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/garden-deli",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/harty-farms",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/homeplace-beer-co",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/open-ridge-farm",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/snap-dragon",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/the-mushroom-hut-at-fox-farms",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://neckofthewoodsnc.com/location/yancey-county-farmers-market",
       "status": 500,
       "ok": false
     }
@@ -270,6 +360,6 @@
   "brokenImages": [],
   "pageSpeed": {
     "mobile": 100,
-    "desktop": 97
+    "desktop": 98
   }
 }
