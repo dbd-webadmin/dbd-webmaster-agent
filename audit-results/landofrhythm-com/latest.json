@@ -1,8 +1,8 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-10-31T08:24:47.994Z",
-  "durationMs": 52967,
+  "auditedAt": "2026-11-08T08:24:37.373Z",
+  "durationMs": 49065,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -10,11 +10,16 @@
       "url": "https://landofrhythm.com/xmlrpc.php",
       "status": 405,
       "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2142",
+      "status": 500,
+      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 36,
-    "desktop": 50
+    "mobile": 58,
+    "desktop": 68
   }
 }
