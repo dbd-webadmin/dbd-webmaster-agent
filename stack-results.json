@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T07:15:42.324Z",
+  "updatedAt": "2026-11-09T07:18:02.950Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 222,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -248,19 +248,19 @@
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.4",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://neckofthewoodsnc.com/",
       "name": "Neck of the Woods",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Divi",
+      "theme": "Divi"
     },
     {
       "url": "https://highcountrypathways.org/",
