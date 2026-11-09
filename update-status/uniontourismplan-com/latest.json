@@ -1,9 +1,15 @@
 {
   "slug": "uniontourismplan-com",
   "url": "https://uniontourismplan.com/",
-  "checkedAt": "2026-11-08T09:28:30.396Z",
+  "checkedAt": "2026-11-09T09:31:45.138Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "9.3.1",
+      "update_version": "9.3.2"
+    }
+  ],
   "phpVersion": null
 }

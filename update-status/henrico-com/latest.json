@@ -1,9 +1,15 @@
 {
   "slug": "henrico-com",
   "url": "https://henrico.com/",
-  "checkedAt": "2026-11-08T09:26:59.395Z",
+  "checkedAt": "2026-11-09T09:29:30.319Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "9.3.1",
+      "update_version": "9.3.2"
+    }
+  ],
   "phpVersion": null
 }
