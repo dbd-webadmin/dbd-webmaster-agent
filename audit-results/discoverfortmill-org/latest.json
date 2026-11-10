@@ -1,8 +1,8 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-11-02T08:27:49.964Z",
-  "durationMs": 58403,
+  "auditedAt": "2026-11-10T08:26:43.970Z",
+  "durationMs": 67720,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,17 +12,7 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/exploring-micro%e2%80%90transit/",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/biz-owners-entreprenuer/",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/stay/",
+      "url": "https://discoverfortmill.org/inquiry-request/",
       "status": 0,
       "ok": false
     },
@@ -32,27 +22,17 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/about/",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/blogs/",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/fort-mills-christmas-parade-brings-holiday-magic-to-downtown-fort-mill/",
-      "status": 0,
-      "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/job-listings/",
+      "url": "https://discoverfortmill.org/meet-fort-milli-a-new-way-to-get-around-town-is-coming-in-january-2027/",
       "status": 0,
       "ok": false
     },
     {
       "url": "https://discoverfortmill.org/privacy-policy/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/fort-mills-christmas-parade-brings-holiday-magic-to-downtown-fort-mill/",
       "status": 0,
       "ok": false
     },
@@ -95,16 +75,11 @@
       "url": "https://discoverfortmill.org/former-fort-mill-police-department-building-begins-new-chapter-as-home-of-david-w-martin-law-group/",
       "status": 0,
       "ok": false
-    },
-    {
-      "url": "https://discoverfortmill.org/celebrate-independence-day-in-fort-mill-a-guide-to-this-years-festivities/",
-      "status": 0,
-      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 61,
-    "desktop": 84
+    "mobile": 65,
+    "desktop": 87
   }
 }
