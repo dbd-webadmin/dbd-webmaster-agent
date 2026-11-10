@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T07:18:02.950Z",
+  "updatedAt": "2026-11-10T07:16:24.012Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -121,7 +121,7 @@
     {
       "url": "https://nolirecovery.org/",
       "name": "Nolichucky Recovery Initiative",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -211,7 +211,7 @@
     {
       "url": "https://cortlandfoodmap.org/",
       "name": "Cortland County Food Map",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.4",
       "builder": "Gutenberg",
@@ -275,15 +275,15 @@
       "url": "https://uniontourismplan.com/",
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.4",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
