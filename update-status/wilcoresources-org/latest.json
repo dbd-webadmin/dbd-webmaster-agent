@@ -1,9 +1,15 @@
 {
   "slug": "wilcoresources-org",
   "url": "https://wilcoresources.org/",
-  "checkedAt": "2026-11-10T09:28:24.329Z",
+  "checkedAt": "2026-11-11T09:28:06.725Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.281",
+      "update_version": "1.0.282"
+    }
+  ],
   "phpVersion": null
 }

@@ -1,9 +1,20 @@
 {
   "slug": "destinationbydesign-com",
   "url": "https://destinationbydesign.com",
-  "checkedAt": "2026-11-10T09:26:52.998Z",
+  "checkedAt": "2026-11-11T09:26:35.102Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "microsoft-clarity",
+      "version": "0.10.37",
+      "update_version": "0.10.38"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.281",
+      "update_version": "1.0.282"
+    }
+  ],
   "phpVersion": "8.4.27"
 }

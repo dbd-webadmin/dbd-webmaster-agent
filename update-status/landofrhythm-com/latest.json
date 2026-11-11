@@ -1,7 +1,7 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-11-10T09:27:07.879Z",
+  "checkedAt": "2026-11-11T09:26:49.153Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -14,6 +14,16 @@
       "name": "gravityforms",
       "version": "3.2.1",
       "update_version": "3.2.2"
+    },
+    {
+      "name": "hostinger",
+      "version": "3.0.81",
+      "update_version": "3.0.82"
+    },
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.281",
+      "update_version": "1.0.282"
     }
   ],
   "phpVersion": null

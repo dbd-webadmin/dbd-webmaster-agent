@@ -1,9 +1,15 @@
 {
   "slug": "nolirecovery-org",
   "url": "https://nolirecovery.org/",
-  "checkedAt": "2026-11-10T09:27:38.038Z",
+  "checkedAt": "2026-11-11T09:27:19.639Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.281",
+      "update_version": "1.0.282"
+    }
+  ],
   "phpVersion": null
 }

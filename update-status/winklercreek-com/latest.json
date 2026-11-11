@@ -1,10 +1,15 @@
 {
   "slug": "winklercreek-com",
   "url": "https://winklercreek.com/",
-  "checkedAt": "2026-11-10T09:28:11.119Z",
+  "checkedAt": "2026-11-11T09:27:52.656Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "seo-by-rank-math",
+      "version": "1.0.281",
+      "update_version": "1.0.282"
+    },
     {
       "name": "wpforms-lite",
       "version": "2.0.3.1",
