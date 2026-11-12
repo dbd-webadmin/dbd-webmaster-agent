@@ -11,6 +11,16 @@
   },
   "recentEvents": [
     {
+      "type": "user_role_changed",
+      "time": "2026-11-12T17:36:25.043Z",
+      "data": {
+        "event": "user_role_changed",
+        "user": "dylan@dbdplanning.com",
+        "new_role": "administrator",
+        "old_roles": []
+      }
+    },
+    {
       "type": "user_registered",
       "time": "2026-11-12T14:13:18.711Z",
       "data": {
@@ -183,17 +193,7 @@
           "administrator"
         ]
       }
-    },
-    {
-      "type": "user_role_changed",
-      "time": "2026-10-25T04:12:28.982Z",
-      "data": {
-        "event": "user_role_changed",
-        "user": "localadmin",
-        "new_role": "administrator",
-        "old_roles": []
-      }
     }
   ],
-  "lastCommitAt": "2026-11-12T14:13:18.711Z"
+  "lastCommitAt": "2026-11-12T17:36:25.043Z"
 }
