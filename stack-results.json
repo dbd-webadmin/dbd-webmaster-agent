@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T07:16:39.391Z",
+  "updatedAt": "2026-11-12T07:17:23.880Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": true,
+      "wordpress": false,
       "wpVersion": null,
-      "builder": "Gutenberg",
-      "theme": "twentytwentyfour"
+      "builder": null,
+      "theme": null
     },
     {
       "url": "https://uniontourismplan.com/",
