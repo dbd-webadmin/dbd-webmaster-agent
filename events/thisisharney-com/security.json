@@ -11,6 +11,18 @@
   },
   "recentEvents": [
     {
+      "type": "user_registered",
+      "time": "2026-11-12T14:13:18.711Z",
+      "data": {
+        "event": "user_registered",
+        "user": "zz_author",
+        "email": "zz_author@example.invalid",
+        "roles": [
+          "author"
+        ]
+      }
+    },
+    {
       "type": "user_role_changed",
       "time": "2026-11-12T14:13:17.311Z",
       "data": {
@@ -181,19 +193,7 @@
         "new_role": "administrator",
         "old_roles": []
       }
-    },
-    {
-      "type": "user_registered",
-      "time": "2026-10-25T04:04:14.828Z",
-      "data": {
-        "event": "user_registered",
-        "user": "localadmin",
-        "email": "admin@localhost.test",
-        "roles": [
-          "administrator"
-        ]
-      }
     }
   ],
-  "lastCommitAt": "2026-11-12T14:13:17.311Z"
+  "lastCommitAt": "2026-11-12T14:13:18.711Z"
 }
