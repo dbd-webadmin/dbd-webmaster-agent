@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-12T23:50:12.236Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "elementor-pro/elementor-pro.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-12T23:48:22.152Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +488,6 @@
       "event": "plugin_update",
       "plugins": [
         "insert-headers-and-footers/ihaf.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-10-12T13:03:27.305Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "seo-by-rank-math/rank-math.php"
       ]
     }
   }
