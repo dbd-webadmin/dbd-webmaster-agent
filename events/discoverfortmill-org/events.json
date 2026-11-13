@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-13T06:19:10.661Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-11-11T14:15:05.987Z",
     "type": "plugin_update",
     "data": {
@@ -472,16 +480,6 @@
       "event": "plugin_update",
       "plugins": [
         "gravityforms/gravityforms.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-01T19:03:00.199Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "ultimate-elementor/ultimate-elementor.php"
       ]
     }
   }
