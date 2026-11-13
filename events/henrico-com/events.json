@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-13T15:44:06.660Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "wp-mail-smtp-pro/wp_mail_smtp.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-13T15:44:01.990Z",
     "type": "plugin_update",
     "data": {
@@ -481,14 +491,6 @@
       "plugins": [
         "advanced-custom-fields-pro/acf.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-20T16:18:55.717Z",
-    "type": "core_update",
-    "data": {
-      "event": "core_update",
-      "version": "7.1"
     }
   }
 ]
