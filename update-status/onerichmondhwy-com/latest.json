@@ -1,45 +1,9 @@
 {
   "slug": "onerichmondhwy-com",
   "url": "https://onerichmondhwy.com/",
-  "checkedAt": "2026-11-13T09:27:26.472Z",
+  "checkedAt": "2026-11-14T09:25:44.131Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [
-    {
-      "name": "admin-site-enhancements",
-      "version": "9.3.1",
-      "update_version": "9.3.2"
-    },
-    {
-      "name": "fluent-smtp",
-      "version": "2.4.1",
-      "update_version": "2.4.5"
-    },
-    {
-      "name": "hostinger",
-      "version": "3.0.80",
-      "update_version": "3.0.82"
-    },
-    {
-      "name": "litespeed-cache",
-      "version": "7.9.2",
-      "update_version": "7.9.3"
-    },
-    {
-      "name": "seo-by-rank-math",
-      "version": "1.0.280",
-      "update_version": "1.0.282"
-    },
-    {
-      "name": "google-site-kit",
-      "version": "1.190.0",
-      "update_version": "1.191.0"
-    },
-    {
-      "name": "instagram-feed",
-      "version": "6.15.0",
-      "update_version": "6.16.0"
-    }
-  ],
+  "pluginUpdates": [],
   "phpVersion": null
 }
