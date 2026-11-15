@@ -1,20 +1,14 @@
 {
   "url": "https://highcountrypathways.org/",
   "name": "High Country Pathways",
-  "auditedAt": "2026-11-07T08:22:07.536Z",
-  "durationMs": 19183,
-  "pagesChecked": 7,
-  "crawlBlocked": false,
-  "brokenLinks": [
-    {
-      "url": "https://highcountrypathways.org/xmlrpc.php",
-      "status": 403,
-      "ok": false
-    }
-  ],
-  "brokenImages": [],
+  "auditedAt": "2026-11-15T08:23:29.764Z",
+  "durationMs": 27916,
+  "pagesChecked": 1,
+  "crawlBlocked": true,
+  "brokenLinks": null,
+  "brokenImages": null,
   "pageSpeed": {
-    "mobile": 93,
-    "desktop": 100
+    "mobile": 92,
+    "desktop": null
   }
 }
