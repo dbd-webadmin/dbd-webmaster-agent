@@ -1,10 +1,15 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-11-15T09:25:52.897Z",
+  "checkedAt": "2026-11-16T09:38:36.840Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "admin-site-enhancements",
+      "version": "9.3.2",
+      "update_version": "9.3.3"
+    },
     {
       "name": "pie-calendar-connector",
       "version": "1.0.0",
