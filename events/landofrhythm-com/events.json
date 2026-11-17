@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-17T18:32:41.397Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-17T18:32:38.383Z",
     "type": "plugin_update",
     "data": {
@@ -481,16 +491,6 @@
     "data": {
       "event": "core_update",
       "version": "7.1"
-    }
-  },
-  {
-    "receivedAt": "2026-08-20T17:55:02.385Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "hostinger/hostinger.php"
-      ]
     }
   }
 ]
