@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-16T07:26:19.992Z",
+  "updatedAt": "2026-11-17T07:17:23.437Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
       "name": "Destination by Design",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1799,
+      "dnsTtl": 1800,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -175,7 +175,7 @@
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.4",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 134,
+      "dnsTtl": 286,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
