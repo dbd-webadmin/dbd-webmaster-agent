@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-17T18:37:25.633Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "admin-site-enhancements/admin-site-enhancements.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-17T18:37:17.270Z",
     "type": "user_login",
     "data": {
@@ -431,16 +441,6 @@
   },
   {
     "receivedAt": "2026-10-05T13:46:24.083Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "pie-calendar/plugin.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-10-05T13:44:32.708Z",
     "type": "plugin_update",
     "data": {
       "event": "plugin_update",
