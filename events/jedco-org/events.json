@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-17T18:37:33.714Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-17T18:37:29.541Z",
     "type": "plugin_update",
     "data": {
@@ -439,14 +449,6 @@
       "plugins": [
         "pie-calendar/plugin.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-10-05T17:21:40.258Z",
-    "type": "user_login",
-    "data": {
-      "event": "user_login",
-      "user": "scott"
     }
   }
 ]
