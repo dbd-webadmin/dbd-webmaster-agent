@@ -1,9 +1,15 @@
 {
   "slug": "tourtalbot-org",
   "url": "https://tourtalbot.org/",
-  "checkedAt": "2026-11-16T09:39:04.038Z",
+  "checkedAt": "2026-11-17T09:28:33.121Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "google-site-kit",
+      "version": "1.191.0",
+      "update_version": "1.192.0"
+    }
+  ],
   "phpVersion": null
 }

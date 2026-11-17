@@ -1,7 +1,7 @@
 {
   "slug": "jedco-org",
   "url": "https://jedco.org/",
-  "checkedAt": "2026-11-16T09:38:36.840Z",
+  "checkedAt": "2026-11-17T09:28:07.869Z",
   "currentWpVersion": "7.1.4",
   "wordpressUpdate": null,
   "pluginUpdates": [
@@ -24,6 +24,11 @@
       "name": "query-loop-load-more",
       "version": "1.0.18",
       "update_version": "1.0.19"
+    },
+    {
+      "name": "google-site-kit",
+      "version": "1.191.0",
+      "update_version": "1.192.0"
     }
   ],
   "phpVersion": null
