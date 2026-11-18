@@ -1,8 +1,8 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-11-10T08:26:43.970Z",
-  "durationMs": 67720,
+  "auditedAt": "2026-11-18T08:26:34.454Z",
+  "durationMs": 60775,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,12 +12,22 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/inquiry-request/",
+      "url": "https://discoverfortmill.org/strawberry-sprint-and-stroll/",
       "status": 0,
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/strawberry-sprint-and-stroll/",
+      "url": "https://discoverfortmill.org/about/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/event/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/blogs/",
       "status": 0,
       "ok": false
     },
@@ -27,7 +37,7 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/privacy-policy/",
+      "url": "https://discoverfortmill.org/blog/",
       "status": 0,
       "ok": false
     },
@@ -79,7 +89,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 65,
-    "desktop": 87
+    "mobile": 63,
+    "desktop": 90
   }
 }

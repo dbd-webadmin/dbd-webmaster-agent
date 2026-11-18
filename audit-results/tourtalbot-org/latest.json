@@ -1,35 +1,35 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-11-10T08:28:09.591Z",
-  "durationMs": 85621,
+  "auditedAt": "2026-11-18T08:28:11.633Z",
+  "durationMs": 97178,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
-    {
-      "url": "https://tourtalbot.org/food-drink-guide/waterfront-dining/",
-      "status": 500,
-      "ok": false
-    },
-    {
-      "url": "https://tourtalbot.org/food-drink-guide/beer-wine-spirits/",
-      "status": 500,
-      "ok": false
-    },
     {
       "url": "https://tourtalbot.org/state.currentTownUrl",
       "status": 404,
       "ok": false
     },
     {
-      "url": "https://tourtalbot.org/listing/",
+      "url": "https://tourtalbot.org/request-a-web-listing/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/wp-json/wp/v2/pages/685",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/wp-json/wp/v2/pages/908",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 41,
+    "mobile": null,
     "desktop": null
   }
 }
