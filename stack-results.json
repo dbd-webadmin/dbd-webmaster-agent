@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T07:17:23.437Z",
+  "updatedAt": "2026-11-18T07:17:33.364Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -58,7 +58,7 @@
     {
       "url": "https://tellingourpendletonstory.org/",
       "name": "Discovering Our Pendleton Story",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -175,7 +175,7 @@
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.4",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 286,
+      "dnsTtl": 194,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -266,10 +266,10 @@
       "url": "https://highcountrypathways.org/",
       "name": "High Country Pathways",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "twentytwentyfour"
     },
     {
       "url": "https://uniontourismplan.com/",
