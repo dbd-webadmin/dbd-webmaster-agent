@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-18T19:26:37.696Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.5"
+    }
+  },
+  {
     "receivedAt": "2026-11-17T14:48:00.654Z",
     "type": "plugin_update",
     "data": {
@@ -478,16 +486,6 @@
       "event": "plugin_update",
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-10-16T05:14:29.447Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "jet-engine/jet-engine.php"
       ]
     }
   }
