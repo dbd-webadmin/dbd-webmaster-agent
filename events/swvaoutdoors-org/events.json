@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-19T04:40:13.352Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.5"
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:40:04.687Z",
     "type": "plugin_update",
     "data": {
@@ -483,14 +491,6 @@
       "plugins": [
         "all-in-one-wp-migration/all-in-one-wp-migration.php"
       ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T10:14:37.761Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "amandamedison"
     }
   }
 ]
