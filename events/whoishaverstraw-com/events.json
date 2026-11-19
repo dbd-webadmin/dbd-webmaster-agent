@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:37:39.259Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:37:32.249Z",
     "type": "plugin_update",
     "data": {
@@ -465,14 +475,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:45:25.701Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:45:15.113Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
