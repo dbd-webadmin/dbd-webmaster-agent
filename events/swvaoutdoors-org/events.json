@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:40:00.197Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:39:54.524Z",
     "type": "plugin_update",
     "data": {
@@ -475,14 +485,6 @@
   },
   {
     "receivedAt": "2026-07-02T07:32:52.872Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admin"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T07:32:42.295Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
