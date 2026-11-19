@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:12:18.955Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "pie-calendar/plugin.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-17T18:37:33.714Z",
     "type": "plugin_update",
     "data": {
@@ -438,16 +448,6 @@
       "event": "plugin_update",
       "plugins": [
         "google-site-kit/google-site-kit.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-10-06T17:38:41.931Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "pie-calendar/plugin.php"
       ]
     }
   }
