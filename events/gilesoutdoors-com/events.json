@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-19T04:24:16.266Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.5"
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:23:42.087Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "hostinger/hostinger.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-18T12:46:44.581Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "fluent-smtp/fluent-smtp.php"
       ]
     }
   }
