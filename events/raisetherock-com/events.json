@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:38:14.004Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "google-site-kit/google-site-kit.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:38:07.378Z",
     "type": "core_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T20:16:15.137Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "all-in-one-wp-migration/all-in-one-wp-migration.php"
       ]
     }
   }
