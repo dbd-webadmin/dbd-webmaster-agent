@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-19T04:06:01.139Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.5"
+    }
+  },
+  {
     "receivedAt": "2026-11-13T15:38:39.976Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "admin-site-enhancements/admin-site-enhancements.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-27T20:49:43.614Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "simple-history/index.php"
       ]
     }
   }
