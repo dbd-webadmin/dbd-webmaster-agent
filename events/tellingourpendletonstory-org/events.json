@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-19T04:16:23.634Z",
+    "type": "core_update",
+    "data": {
+      "event": "core_update",
+      "version": "7.1.5"
+    }
+  },
+  {
     "receivedAt": "2026-11-05T15:12:58.899Z",
     "type": "plugin_update",
     "data": {
@@ -482,16 +490,6 @@
       "event": "plugin_update",
       "plugins": {
         "fluentform/fluentform.php": "fluentform/fluentform.php"
-      }
-    }
-  },
-  {
-    "receivedAt": "2026-08-07T19:41:44.027Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": {
-        "fluent-smtp/fluent-smtp.php": "fluent-smtp/fluent-smtp.php"
       }
     }
   }
