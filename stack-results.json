@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-18T07:17:33.364Z",
+  "updatedAt": "2026-11-19T07:17:21.986Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
       "name": "Destination by Design",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -33,9 +33,9 @@
       "name": "Land of Rhythm",
       "dnsTtl": 600,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": null,
       "builder": "Gutenberg",
-      "theme": "cleveland"
+      "theme": "land-of-rhythm"
     },
     {
       "url": "https://destinationswva.org/",
@@ -58,7 +58,7 @@
     {
       "url": "https://tellingourpendletonstory.org/",
       "name": "Discovering Our Pendleton Story",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -132,7 +132,7 @@
       "name": "Adventure Meadow River",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -141,7 +141,7 @@
       "name": "Who is Haverstraw?",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -159,7 +159,7 @@
       "name": "Friends of SWVA",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -168,16 +168,16 @@
       "name": "Moving Together Madison - Mayodan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -186,14 +186,14 @@
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 194,
+      "dnsTtl": 250,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -204,7 +204,7 @@
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": null
     },
@@ -213,14 +213,14 @@
       "name": "Cortland County Food Map",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "twentytwentyfour"
     },
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -231,7 +231,7 @@
       "name": "Legacy Soccer Park",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -249,7 +249,7 @@
       "name": "Beckley Outdoors Action Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
@@ -276,7 +276,7 @@
       "name": "Union County Tourism Plan",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Gutenberg",
       "theme": "oxygen-is-not-a-theme"
     },
