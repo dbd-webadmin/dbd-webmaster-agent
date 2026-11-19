@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:58:14.595Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:58:09.821Z",
     "type": "plugin_update",
     "data": {
@@ -474,16 +484,6 @@
       "event": "plugin_update",
       "plugins": [
         "formidable/formidable.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-07-28T20:35:31.409Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "coming-soon/coming-soon.php"
       ]
     }
   }
