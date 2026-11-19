@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-19T04:17:10.028Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": [
+        "seo-by-rank-math/rank-math.php"
+      ]
+    }
+  },
+  {
     "receivedAt": "2026-11-19T04:17:06.607Z",
     "type": "plugin_update",
     "data": {
@@ -480,16 +490,6 @@
       "event": "plugin_update",
       "plugins": [
         "fluent-smtp/fluent-smtp.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-08-18T12:45:08.260Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "easy-code-manager/easy-code-manager.php"
       ]
     }
   }
