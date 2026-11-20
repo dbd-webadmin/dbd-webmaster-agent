@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-20T06:29:53.525Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-11-13T06:21:19.345Z",
     "type": "plugin_update",
     "data": {
@@ -468,16 +476,6 @@
       "event": "plugin_update",
       "plugins": [
         "jet-engine/jet-engine.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-09T16:43:02.705Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "admin-site-enhancements/admin-site-enhancements.php"
       ]
     }
   }
