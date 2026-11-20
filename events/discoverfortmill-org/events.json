@@ -1,5 +1,13 @@
 [
   {
+    "receivedAt": "2026-11-20T06:31:35.092Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": []
+    }
+  },
+  {
     "receivedAt": "2026-11-20T06:29:53.525Z",
     "type": "plugin_update",
     "data": {
@@ -466,16 +474,6 @@
       "event": "plugin_update",
       "plugins": [
         "seo-by-rank-math/rank-math.php"
-      ]
-    }
-  },
-  {
-    "receivedAt": "2026-09-09T16:43:11.229Z",
-    "type": "plugin_update",
-    "data": {
-      "event": "plugin_update",
-      "plugins": [
-        "jet-engine/jet-engine.php"
       ]
     }
   }
