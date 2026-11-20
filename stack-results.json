@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T07:17:21.986Z",
+  "updatedAt": "2026-11-20T07:17:33.785Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -175,7 +175,7 @@
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.5",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 250,
+      "dnsTtl": 81,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
