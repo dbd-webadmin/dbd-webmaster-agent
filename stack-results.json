@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T07:17:33.785Z",
+  "updatedAt": "2026-11-21T07:15:14.168Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -22,7 +22,7 @@
     {
       "url": "https://onerichmondhwy.com/",
       "name": "One Richmond Hwy",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Divi",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 599,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -49,7 +49,7 @@
     {
       "url": "https://visitridgwayco.com/",
       "name": "Visit Ridgway Colorado",
-      "dnsTtl": 600,
+      "dnsTtl": 300,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -76,7 +76,7 @@
     {
       "url": "https://henrico.com/",
       "name": "Henrico EDA",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -85,7 +85,7 @@
     {
       "url": "https://thisisharney.com/",
       "name": "Harney County",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -96,14 +96,14 @@
       "name": "Discover Fort Mill",
       "dnsTtl": 300,
       "wordpress": true,
-      "wpVersion": "7.1.4",
+      "wpVersion": "7.1.5",
       "builder": "Elementor",
       "theme": "hello-elementor"
     },
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -175,7 +175,7 @@
     {
       "url": "https://imaginewatauga.com/",
       "name": "Imagine Watauga",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": "7.1.5",
       "builder": "Gutenberg",
@@ -193,7 +193,7 @@
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 81,
+      "dnsTtl": 228,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -220,7 +220,7 @@
     {
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
-      "dnsTtl": 299,
+      "dnsTtl": 300,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
