@@ -1,9 +1,15 @@
 {
   "slug": "legacysoccerpark-org",
   "url": "https://legacysoccerpark.org/",
-  "checkedAt": "2026-11-20T09:29:31.850Z",
+  "checkedAt": "2026-11-21T09:27:17.303Z",
   "currentWpVersion": "7.1.5",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "superb-blocks",
+      "version": "4.2.6",
+      "update_version": "4.2.7"
+    }
+  ],
   "phpVersion": null
 }
