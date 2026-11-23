@@ -5,11 +5,19 @@
     "lastSeen": "2026-11-23T13:31:43.015Z"
   },
   "loginSuccess": {
-    "count": 132,
-    "lastSeen": "2026-11-23T16:59:10.109Z",
+    "count": 133,
+    "lastSeen": "2026-11-23T17:04:59.541Z",
     "lastUser": "KGoller"
   },
   "recentEvents": [
+    {
+      "type": "login_success",
+      "time": "2026-11-23T17:04:59.541Z",
+      "data": {
+        "event": "login_success",
+        "user": "KGoller"
+      }
+    },
     {
       "type": "login_success",
       "time": "2026-11-23T16:59:10.109Z",
@@ -187,15 +195,7 @@
         "event": "login_success",
         "user": "localadmin"
       }
-    },
-    {
-      "type": "login_success",
-      "time": "2026-11-11T13:53:31.219Z",
-      "data": {
-        "event": "login_success",
-        "user": "localadmin"
-      }
     }
   ],
-  "lastCommitAt": "2026-11-23T16:59:10.109Z"
+  "lastCommitAt": "2026-11-23T17:04:59.541Z"
 }
