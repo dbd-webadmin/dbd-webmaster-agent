@@ -1,8 +1,8 @@
 {
   "url": "https://landofrhythm.com/",
   "name": "Land of Rhythm",
-  "auditedAt": "2026-11-16T08:41:27.939Z",
-  "durationMs": 45599,
+  "auditedAt": "2026-11-24T08:27:09.272Z",
+  "durationMs": 30580,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -10,11 +10,301 @@
       "url": "https://landofrhythm.com/xmlrpc.php",
       "status": 405,
       "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/where-mounds-of-clay-come-to-life/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/cleveland-sweet-trail/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/the-great-outdoors-tour/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/find-your-rhythm-weekend/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2105",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/trivia-tuesday-the-lost-dog/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/night-before-party/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/turkey-trot/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/trivia-night-at-newgrass-brewing/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/karaoke-w-scott-richard-in-tune-entertainment/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/photos-with-santa-at-cleveland-mall/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/wrapping-it-up-for-dogs-with-cliffords-army-rescue-extravaganza/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/shop-small-saturday/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/event/steel-challenge-match/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2179",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/139-clothing-boutique-upscale-consignment/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/all-seasons-acupuncture-wellness/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/angie-brooke-boutique/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/antique-market-of-shelby/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/arnolds-jewelry/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/back-road-pickers/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/bell-farm-supply/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/belvedere-station/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/beyond-the-moon-boutique/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/133-west/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/238-cherokee-grill/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/morgan-and-wells-bed-breakfast/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/opal-west-house/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/price-family-farmstead-estate/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/rustic-ridge-rooftop-skoolie/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/south-mountain-family-camp/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/the-hunt-house-bed-breakfast/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/the-inn-of-the-patriots/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/19",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/2064",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/pages/1570",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/ron-philbeck-pottery/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/broad-river-campground-2/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-drive/videos/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-drive/brochures/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/shopping/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/locally-crafted/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/the-great-outdoors/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/media-item/food-drink/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/page/2/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/feed/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/cleveland-county-african-american-heritage-trail/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/foothills-break/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/inspiration-everywhere/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/like-a-local/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/locally-crafted-tour/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/shop-dine/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/1174/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/tours/the-best-of-cleveland-county/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/wp-json/wp/v2/lor_place/2489",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/the-presidential-culinary-museum-and-presidential-service-center/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/kings-mountain-historical-museum/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://landofrhythm.com/place/earl-scruggs-center/",
+      "status": 500,
+      "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 65,
-    "desktop": 58
+    "mobile": 100,
+    "desktop": 88
   }
 }

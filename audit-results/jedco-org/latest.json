@@ -1,14 +1,59 @@
 {
   "url": "https://jedco.org/",
   "name": "JEDCO",
-  "auditedAt": "2026-11-16T08:40:00.040Z",
-  "durationMs": 58604,
+  "auditedAt": "2026-11-24T08:25:55.714Z",
+  "durationMs": 40959,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
     {
+      "url": "https://jedco.org/health-innovation/",
+      "status": 500,
+      "ok": false
+    },
+    {
       "url": "https://jedco.org/events/$store.calendarEngine.eventUrl",
       "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/wp-json/wp/v2/pages/17918",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/wp-json/wp/v2/pages/6242",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/wp-json/wp/v2/pages/17920",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/properties/3001-us-highway-90/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/properties/avondale-global-gateway/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/properties/churchill-farms-fairfield-development/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/properties/cornerstone-energy-park/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://jedco.org/featured-properties/",
+      "status": 500,
       "ok": false
     }
   ],
@@ -20,7 +65,7 @@
     }
   ],
   "pageSpeed": {
-    "mobile": 56,
-    "desktop": 60
+    "mobile": 70,
+    "desktop": 88
   }
 }
