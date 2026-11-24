@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T07:19:43.396Z",
+  "updatedAt": "2026-11-24T07:17:25.730Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -13,7 +13,7 @@
     {
       "url": "https://jedco.org/",
       "name": "JEDCO",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -229,7 +229,7 @@
     {
       "url": "https://legacysoccerpark.org/",
       "name": "Legacy Soccer Park",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.5",
       "builder": "Gutenberg",
@@ -247,7 +247,7 @@
     {
       "url": "https://beckleyoutdoors.com/",
       "name": "Beckley Outdoors Action Plan",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": true,
       "wpVersion": "7.1.5",
       "builder": "Gutenberg",
@@ -283,7 +283,7 @@
     {
       "url": "https://deepgaprecreationarea.org/",
       "name": "Deep Gap Recreation Area",
-      "dnsTtl": 300,
+      "dnsTtl": 299,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
