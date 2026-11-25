@@ -1,9 +1,15 @@
 {
   "slug": "deepgaprecreationarea-org",
   "url": "https://deepgaprecreationarea.org/",
-  "checkedAt": "2026-11-24T09:30:03.733Z",
+  "checkedAt": "2026-11-25T09:29:50.854Z",
   "currentWpVersion": "7.1.5",
   "wordpressUpdate": null,
-  "pluginUpdates": [],
+  "pluginUpdates": [
+    {
+      "name": "litespeed-cache",
+      "version": "7.9.3",
+      "update_version": "7.9.4"
+    }
+  ],
   "phpVersion": null
 }
