@@ -1,8 +1,8 @@
 {
   "url": "https://discoverfortmill.org/",
   "name": "Discover Fort Mill",
-  "auditedAt": "2026-11-18T08:26:34.454Z",
-  "durationMs": 60775,
+  "auditedAt": "2026-11-26T08:27:06.139Z",
+  "durationMs": 62178,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,12 +12,27 @@
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/strawberry-sprint-and-stroll/",
+      "url": "https://discoverfortmill.org/exploring-micro%e2%80%90transit/",
       "status": 0,
       "ok": false
     },
     {
-      "url": "https://discoverfortmill.org/about/",
+      "url": "https://discoverfortmill.org/live-here/education/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/inquiry-request/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/stay/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/explore/",
       "status": 0,
       "ok": false
     },
@@ -38,6 +53,21 @@
     },
     {
       "url": "https://discoverfortmill.org/blog/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/education/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/job-listings/",
+      "status": 0,
+      "ok": false
+    },
+    {
+      "url": "https://discoverfortmill.org/privacy-policy/",
       "status": 0,
       "ok": false
     },
@@ -89,7 +119,7 @@
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 63,
-    "desktop": 90
+    "mobile": 67,
+    "desktop": 87
   }
 }

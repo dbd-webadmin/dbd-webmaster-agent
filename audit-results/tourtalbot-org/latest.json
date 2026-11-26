@@ -1,8 +1,8 @@
 {
   "url": "https://tourtalbot.org/",
   "name": "Talbot County",
-  "auditedAt": "2026-11-18T08:28:11.633Z",
-  "durationMs": 97178,
+  "auditedAt": "2026-11-26T08:28:43.853Z",
+  "durationMs": 97714,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
@@ -12,17 +12,87 @@
       "ok": false
     },
     {
-      "url": "https://tourtalbot.org/request-a-web-listing/",
+      "url": "https://tourtalbot.org/listing-guide/p/foxys-harbor-grille-66eb07483625521b93ba9c92/",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://tourtalbot.org/wp-json/wp/v2/pages/685",
+      "url": "https://tourtalbot.org/listing-guide/p/bistro-st-michaels-66eb07483625521b93ba9cb6/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/listing-guide/p/harrisons-harbour-lights-66eb07493625521b93baa2dc/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/listing-guide/p/eat-sprout---saint-michaels-66eb07483625521b93ba9c6e/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/listing-guide/p/st-michaels-winery-66eb07483625521b93ba9ed6/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/food-drink-guide/maryland-seafood/p/two-if-by-sea-66eb1d393625521b93bcf61b/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/place/blue-heron-coffee-66eb07483625521b93ba9d60/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/place/healing-grounds-coffee-678a9a7d42f44c35e6132a83/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/place/hummingbird-inn-66eb030e3625521b93ba0456/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/wp-json/wp/v2/pages/6977",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/stories-preserved-exploring-the-museums-of-talbot-county/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/wp-json/wp/v2/pages/6970",
       "status": 500,
       "ok": false
     },
     {
       "url": "https://tourtalbot.org/wp-json/wp/v2/pages/908",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/spectacular-sunsets-awaken-serene-sunrises/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/our-guide-on-how-to-cruise-the-bay/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/smooth-sailing/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://tourtalbot.org/paddling-tilghman-island-where-land-and-water-meet/",
       "status": 500,
       "ok": false
     }

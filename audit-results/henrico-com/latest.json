@@ -1,35 +1,115 @@
 {
   "url": "https://henrico.com/",
   "name": "Henrico EDA",
-  "auditedAt": "2026-11-18T08:24:43.954Z",
-  "durationMs": 39701,
+  "auditedAt": "2026-11-26T08:25:16.820Z",
+  "durationMs": 32679,
   "pagesChecked": 30,
   "crawlBlocked": false,
   "brokenLinks": [
     {
-      "url": "https://henrico.com/industries/it-tech/",
+      "url": "https://henrico.com/event/henrico-business-resource-fair/",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://henrico.com/locate-here/",
+      "url": "https://henrico.com/find-a-property/innsbrook-technology-zone",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://henrico.com/site-selectors/incentives",
+      "url": "https://henrico.com/news/press-releases-and-announcements/2021-04-21/amazon-04-21-21",
       "status": 500,
       "ok": false
     },
     {
-      "url": "https://henrico.com/news/henrico-now/innsbrook-ascends-as-premier-destination",
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-04-18/board-of-supervisors",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/innsbrook-ascends-as-premier-destination/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-06-28/eab",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-12-8/berkshire-and-mondelez-investments",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2023-5-2/richmond-national-group",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/growing-henricos-economy/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-03-14/thermofisher",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-03-25/hamilton",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/business-retention/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2022-02-08/apc",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/existing-business/grow-your-business",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/innsbrook-community/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/richmond-raceway/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/new-ric-flights/",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/news/press-releases-and-announcements/2020-03-17/henrico-va-home-to-one-of-the-fastest-growing-airports-in-nation",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/wp-json/wp/v2/pages/1336",
+      "status": 500,
+      "ok": false
+    },
+    {
+      "url": "https://henrico.com/wp-json/wp/v2/pages/1337",
       "status": 500,
       "ok": false
     }
   ],
   "brokenImages": [],
   "pageSpeed": {
-    "mobile": 68,
+    "mobile": 71,
     "desktop": 84
   }
 }
