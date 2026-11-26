@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T07:17:53.629Z",
+  "updatedAt": "2026-11-26T07:17:49.858Z",
   "sites": [
     {
       "url": "https://destinationbydesign.com",
@@ -31,7 +31,7 @@
     {
       "url": "https://landofrhythm.com/",
       "name": "Land of Rhythm",
-      "dnsTtl": 600,
+      "dnsTtl": 599,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -103,7 +103,7 @@
     {
       "url": "https://tourtalbot.org/",
       "name": "Talbot County",
-      "dnsTtl": 1800,
+      "dnsTtl": 1799,
       "wordpress": true,
       "wpVersion": null,
       "builder": "Gutenberg",
@@ -185,15 +185,15 @@
       "url": "https://winklercreek.com/",
       "name": "Winklers Creek Park",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "wordpress": true,
+      "wpVersion": "7.1.5",
+      "builder": "Gutenberg",
+      "theme": "oxygen-is-not-a-theme"
     },
     {
       "url": "https://www.rutherfordbound.com/",
       "name": "Rutherford Bound",
-      "dnsTtl": 225,
+      "dnsTtl": 65,
       "wordpress": false,
       "wpVersion": null,
       "builder": null,
@@ -203,9 +203,9 @@
       "url": "https://wilkesoutdooractionplan.com/",
       "name": "Wilkes Outdoor Action Plan",
       "dnsTtl": 300,
-      "wordpress": false,
-      "wpVersion": null,
-      "builder": null,
+      "wordpress": true,
+      "wpVersion": "7.1.5",
+      "builder": "Gutenberg",
       "theme": null
     },
     {
@@ -221,10 +221,10 @@
       "url": "https://wilcoresources.org/",
       "name": "Wilkes County Food Guide",
       "dnsTtl": 300,
-      "wordpress": false,
+      "wordpress": true,
       "wpVersion": null,
-      "builder": null,
-      "theme": null
+      "builder": "Gutenberg",
+      "theme": "wilks"
     },
     {
       "url": "https://legacysoccerpark.org/",
