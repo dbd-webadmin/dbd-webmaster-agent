@@ -1,5 +1,15 @@
 [
   {
+    "receivedAt": "2026-11-26T06:40:53.991Z",
+    "type": "plugin_update",
+    "data": {
+      "event": "plugin_update",
+      "plugins": {
+        "litespeed-cache/litespeed-cache.php": "litespeed-cache/litespeed-cache.php"
+      }
+    }
+  },
+  {
     "receivedAt": "2026-11-23T14:06:18.529Z",
     "type": "plugin_update",
     "data": {
@@ -471,14 +481,6 @@
   },
   {
     "receivedAt": "2026-07-02T12:45:57.518Z",
-    "type": "login_failed",
-    "data": {
-      "event": "login_failed",
-      "user": "admindbdplanning-com"
-    }
-  },
-  {
-    "receivedAt": "2026-07-02T12:45:46.922Z",
     "type": "login_failed",
     "data": {
       "event": "login_failed",
