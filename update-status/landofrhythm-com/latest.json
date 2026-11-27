@@ -1,10 +1,15 @@
 {
   "slug": "landofrhythm-com",
   "url": "https://landofrhythm.com/",
-  "checkedAt": "2026-11-26T09:29:19.076Z",
+  "checkedAt": "2026-11-27T09:29:14.808Z",
   "currentWpVersion": "7.1.5",
   "wordpressUpdate": null,
   "pluginUpdates": [
+    {
+      "name": "all-in-one-wp-migration",
+      "version": "7.113",
+      "update_version": "7.114"
+    },
     {
       "name": "seo-by-rank-math",
       "version": "1.0.282",
